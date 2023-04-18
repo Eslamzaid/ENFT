@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import loadable from "@loadable/component";
 import { lazy } from "@loadable/component";
+import Sign from "./LoginSign/Sign";
+import SignUp from "./LoginSign/SignUp";
+
 import "./App.css";
 
 const LoadingComp = loadable(() => import("./loading/LoadingComp"));
-const MarketPlace = lazy(() => import("./Components/MarketPlace/MarketP"));
 const LandingP = loadable(() => import("./Components/LandingPage/LandingP"));
+const MarketPlace = lazy(() => import("./Components/MarketPlace/MarketP"));
 
 function App() {
   let [here, setHere] = useState(null);
