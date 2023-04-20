@@ -14,7 +14,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        
+        backColor: '#2F80ED'
       },
     },
     fontFamily: {
