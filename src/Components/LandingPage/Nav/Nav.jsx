@@ -22,9 +22,9 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className=" fixed top-0 transition-all  font-semibold text-white">
+    <nav className="transition-all font-semibold text-white">
       {x < 725 ? (
-        <div className="  backdrop-blur-xl bg  w-screen">
+        <div className="w-screen">
           <div className=" absolute w-12 top-6 right-4 h-[3.5em] bg-gradient-to-r from-blue-400 via-sky-700 to-purple-400 opacity-20 rounded-3xl"></div>
           <img
             alt="NavBar"
@@ -33,14 +33,14 @@ const Nav = () => {
             src={resp ? Close : Menu}
           />
 
-          <ul className={resp ? " pt-4 pl-4 inline-block" : " pt-4 pl-4"}>
+          <ul className={resp ? "  pt-4 inline-block" : " mb-2 pt-4 "}>
             <li>
-              <img src={TextLogo} className=" cursor-pointer" alt="ENFT" />
+              <img src={TextLogo} className=" ml-4 cursor-pointer" alt="ENFT" />
             </li>
             <div
               className={
                 resp
-                  ? "child:my-5 child:border-2 child:border-transparent child:cursor-pointer child:w-fit  child:p-4 child-hover:text-slate-200"
+                  ? " border-b-2 absolute z-50 backdrop-blur-md child:ml-4  w-screen child:my-5 child:border-2 child:border-transparent child:cursor-pointer child:w-fit  child:p-4 child-hover:text-slate-200"
                   : " hidden"
               }
             >
@@ -63,13 +63,13 @@ const Nav = () => {
           </ul>
         </div>
       ) : (
-        <div className=" backdrop-blur-md w-screen">
+        <div className=" w-screen">
           <img
             src={Shades}
-            className=" w-[80em] z-10 absolute right-0  opacity-70 "
+            className=" w-[80em] h-[60em] z-10 fixed right-0  opacity-70 "
             alt="decorations"
           />
-          <ul className="flex justify-end items-center  child:z-30 sm:p-4 sm:m-3 child:border-transparent child:border-2 child:transition-all sm:bg-rd-300 sm:text-sm md:child:text-base md:p-4 md-10 lg:py-8 lg:px-20 child:cursor-pointer">
+          <ul className="flex justify-end items-center child:z-30 sm:p-4 sm:m-3 child:border-transparent child:border-2 child:transition-all sm:bg-rd-300 sm:text-sm md:child:text-base md:p-4 lg:py-6 lg:px-16 child:cursor-pointer">
             <li className="justify-self-start mr-auto">
               <img src={TextLogo} alt="ENFT" />
             </li>
@@ -91,7 +91,7 @@ const Nav = () => {
           </ul>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 export default Nav;

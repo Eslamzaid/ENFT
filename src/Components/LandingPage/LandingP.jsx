@@ -1,11 +1,13 @@
 import React from "react";
 import Nav from "./Nav/Nav";
+import Nbody from './Nbody'
 
 const LandingP = () => {
   return (
-    <div className=" w-screen h-screen flex justify-center items-start bg-[#141845]">
+    <article className=" w-screen h-screen flex flex-col justify-start gap-x-10 relative items-center bg-[#141845]">
       <Nav />
-    </div>
+      <Nbody />
+    </article>
   );
 };
 
