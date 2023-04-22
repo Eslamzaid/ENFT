@@ -11,11 +11,9 @@ function Number({ n, str }) {
   });
 
   return (
-    <div className=" inline-block child:mx-4 child:my-6">
-      <div className=" flex text-center">
-      <animated.div>
-        {number.to((n) => n.toFixed(0))}
-        </animated.div>
+    <div className=" inline-block h-min mt-10 ">
+      <div className=" flex text-center mx-4">
+        <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
         K+
       </div>
       <p className=" text-xs font-normal text-slate-200">{str}</p>
@@ -43,7 +41,7 @@ const Nbody = () => {
           The leading NFT Marketplace on EthereumHome to the next generation of
           digital creators.Discover the best NFT collections.
         </p>
-        <div className=" child:cursor-pointer relative flex justify-between w-8/12 ">
+        <div className=" child:cursor-pointer gap-x-2 relative flex justify-between w-8/12 ">
           <button className=" bg-backColor p-1 h-fit w-28 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300">
             Explore
           </button>
