@@ -55,6 +55,10 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
+      <section>
+        
+      </section>
+
     </section>
   );
 };
