@@ -1,6 +1,7 @@
 import React from "react";
-import FtextSha from "./../../assets/Icons/H1TextColor.png";
+import FtextSha from "./../../../../assets/Icons/H1TextColor.png";
 import { useSpring, animated } from "@react-spring/web";
+import Nbody2 from "./Nbody2";
 
 function Number({ n, str }) {
   const { number } = useSpring({
@@ -56,7 +57,7 @@ const Nbody = () => {
         </div>
       </section>
       <section>
-        
+        <Nbody2/>
       </section>
 
     </section>

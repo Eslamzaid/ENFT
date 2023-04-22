@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav/Nav";
-import Nbody from './Nbody'
+import Nbody from './Nav/NavB/Nbody'
 
 const LandingP = () => {
   return (

@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <nav className="font-semibold text-white">
       {x < 725 ? (
-        <div className=" w-screen">
+        <div className="w-screen">
           <img
             alt="NavBar"
             className=" absolute w-10 top-8 right-5 cursor-pointer"
@@ -43,16 +43,16 @@ const Nav = () => {
                   : " hidden"
               }
             >
-              <li className=" hover:border-b-2  text-left w-32 hover:border-b-white transition-all">
+              <li className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all">
                 Marketplace
               </li>
-              <li className=" hover:border-b-2  text-left w-32 hover:border-b-white transition-all">
+              <li className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all">
                 Collection
               </li>
-              <li className=" hover:border-b-2  text-left w-32 hover:border-b-white transition-all">
+              <li className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all">
                 Articles
               </li>
-              <li className=" hover:border-b-2  text-left w-32 hover:border-b-white transition-all">
+              <li className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all">
                 Bid now
               </li>
               <li className="bg-backColor w-fit rounded-full hover:bg-sky-400 hover:text-slate-400 transition-colors">
