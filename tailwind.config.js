@@ -28,8 +28,8 @@ export default {
         "ClashDisplay-Semibold",
         "ClashDisplay-Bold",
       ],
-      partsFont: ["Inter", "sans-serif"],
-      bodyFont: ["Poppins", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+      poppi: ["Poppins", "sans-serif"],
     },
   },
 };
