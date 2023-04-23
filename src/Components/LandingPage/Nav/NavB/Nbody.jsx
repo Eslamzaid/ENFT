@@ -57,9 +57,8 @@ const Nbody = () => {
         </div>
       </section>
       <section>
-        <Nbody2/>
+        <Nbody2 />
       </section>
-
     </section>
   );
 };

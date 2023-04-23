@@ -1,7 +1,10 @@
+
+
 const data = [
   {
-    nft: require("./../assets/images/nfts/MonBan.png"),
-    imgOwner: require("./../assets/images/Users/Verifi.png"),
+    id: 1,
+    nft: require("./../../../../assets/images/nfts/MonBan.png"),
+    imgOwner: require("./../../../../assets/images/Users/Verifi.png"),
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
     CurrentPrince: "5.758 ETH",
@@ -9,8 +12,9 @@ const data = [
     Profits: "+12.45%",
   },
   {
-    nft: require("./../assets/images/nfts/owl.webp"),
-    imgOwner: require("./../assets/images/Users/Verifi.png"),
+    id: 2,
+    nft: require("./../../../../assets/images/nfts/owl.webp"),
+    imgOwner: require("./../../../../assets/images/Users/Verifi.png"),
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
     CurrentPrice: "3.142 ETH",
@@ -18,8 +22,9 @@ const data = [
     Profits: "+48.55%",
   },
   {
-    nft: require("./../assets/images/nfts/cheap.webp"),
-    imgOwner: require("./../assets/images/Users/ahbal.png"),
+    id: 3,
+    nft: require("./../../../../assets/images/nfts/cheap.webp"),
+    imgOwner: require("./../../../../assets/images/Users/ahbal.png"),
     imgName: "alokir #3154",
     imgSmName: "alokir shaow",
     CurrentPrice: "6.142 ETH",
@@ -27,8 +32,9 @@ const data = [
     Profits: "+11.12%",
   },
   {
-    nft: require("./../assets/images/nfts/Cool.png"),
-    imgOwner: require("./../assets/images/Users/chanda.png"),
+    id: 4,
+    nft: require("./../../../../assets/images/nfts/Cool.png"),
+    imgOwner: require("./../../../../assets/images/Users/chanda.png"),
     imgName: "Chanda #2412",
     imgSmName: "Chanda chanda",
     CurrentPrice: "2.1245 ETH",
@@ -36,8 +42,9 @@ const data = [
     Profits: "+2.99%",
   },
   {
-    nft: require("./../assets/images/nfts/crocPi.webp"),
-    imgOwner: require("./../assets/images/Users/MSRT.png"),
+    id: 5,
+    nft: require("./../../../../assets/images/nfts/crocPi.webp"),
+    imgOwner: require("./../../../../assets/images/Users/MSRT.png"),
     imgName: "msrt #8831",
     imgSmName: "msrt mosrt",
     CurrentPrice: "8.231 ETH",
@@ -45,3 +52,6 @@ const data = [
     Profits: "+78.24%",
   },
 ];
+
+
+export default data
