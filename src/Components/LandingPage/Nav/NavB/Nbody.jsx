@@ -1,5 +1,4 @@
 import React from "react";
-import FtextSha from "./../../../../assets/Icons/H1TextColor.png";
 import { useSpring, animated } from "@react-spring/web";
 import Nbody2 from "./Nbody2";
 
@@ -12,12 +11,14 @@ function Number({ n, str }) {
   });
 
   return (
-    <div className=" inline-block h-min mt-10 ">
-      <div className=" flex text-center mx-4">
+    <div className=" inline-block w-fi">
+      <div className="  flex justify-center items-center text-center mx-4">
         <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
         K+
       </div>
-      <p className=" text-xs font-normal text-slate-200">{str}</p>
+      <div className=" flex justify-center">
+        <p className=" text-sm font-normal text-slate-200">{str}</p>
+      </div>
     </div>
   );
 }
@@ -25,13 +26,18 @@ function Number({ n, str }) {
 const Nbody = () => {
   return (
     <section
-      style={{ backgroundImage: `url(${FtextSha})` }}
-      className=" bg-left prose-xl mt-12 w-screen text-white md:flex md:justify-center md:gap-x-12  md:items-middle"
+      className="  mt-12 w-[89.6%] gap-x-12 text-white 
+                         md:flex md:justify-between  md:items-middle"
     >
-      <section className="relative ml-3 py-8 text-center flex flex-col items-center">
+      <section
+        className="relative  my-6 text-center flex flex-col items-center
+                          md:text-left md:items-start
+                          "
+      >
         <h1
-          className=" relative exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
-        lg:text-7xl lg:text-left "
+          className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
+                      mb-7
+                      lg:text-7xl lg:text-left "
         >
           Discover
           <br />
@@ -46,21 +52,30 @@ const Nbody = () => {
         </h1>
         <p
           className=" font-poppi text-xs  text-slate-400
-                    w-72 relative bottom-7 
+                    w-72 relative bottom-7 sm:mt-5
                     "
         >
           The leading NFT Marketplace on EthereumHome to the next generation of
           digital creators.Discover the best NFT collections.
         </p>
-        <div className=" child:cursor-pointer gap-x-2 relative flex justify-between w-8/12 ">
-          <button className=" bg-backColor p-1 h-fit w-28 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300">
+        <div
+          className=" child:mx-3 md:child:p-1  md:child:py-1 md:child:font-semibold child:cursor-pointer w-screen relative flex justify-evenly
+                         md:w-3/4 md:justify-start md:ml-1 md:gap-4 md:child:mx-0"
+        >
+          <button
+            className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
+                          md:rounded-full md:ml-4"
+          >
             Explore
           </button>
-          <button className=" hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl">
+          <button
+            className=" hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl
+                              md:rounded-full"
+          >
             Bid now
           </button>
         </div>
-        <div className=" font-headerFont w-full font-semibold">
+        <div className=" font-headerFont w-full mt-8 sm:text-3xl font-semibold">
           <Number n={432} str={"collections"} />
           <Number n={200} str={"Artists"} />
           <Number n={10} str={"Community"} />

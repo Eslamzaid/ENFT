@@ -72,7 +72,7 @@ const Nav = () => {
             <ul
               className="flex justify-end items-center child:z-30  sm:m-3
                 child:border-transparent child:border-2 child:transition-all
-                sm:text-sm md:p-2 child:cursor-pointer child:font-semibold
+                sm:text-sm  child:cursor-pointer child:font-semibold
                  "
             >
               <li className="justify-self-start mr-auto">
