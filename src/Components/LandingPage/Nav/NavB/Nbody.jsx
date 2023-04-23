@@ -24,21 +24,31 @@ function Number({ n, str }) {
 
 const Nbody = () => {
   return (
-    <section className=" prose-xl mt-12 text-white md:flex md:justify-center  w-11/12  md:items-middle">
-      <section className="relative py-10 text-center flex flex-col items-center">
-        <img src={FtextSha} className=" absolute -right-28 top-10" />
-        <h1 className=" relative text-[2.6rem] font-headerFont font-semibold ">
+    <section
+      style={{ backgroundImage: `url(${FtextSha})` }}
+      className=" bg-left prose-xl mt-12 w-screen text-white md:flex md:justify-center md:gap-x-12  md:items-middle"
+    >
+      <section className="relative ml-3 py-8 text-center flex flex-col items-center">
+        <h1
+          className=" relative exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
+        lg:text-7xl lg:text-left "
+        >
           Discover
           <br />
           Collect, & Sell
           <br />
           <span className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block text-transparent bg-clip-text">
             {" "}
-            Extraordinary
+            Extraordinary{" "}
           </span>
+          <br />
           NFTs
         </h1>
-        <p className=" font-poppi text-sm mb-8  text-prose-sm text-slate-400">
+        <p
+          className=" font-poppi text-xs  text-slate-400
+                    w-72 relative bottom-7 sm:text-white ssm:text-black
+                    "
+        >
           The leading NFT Marketplace on EthereumHome to the next generation of
           digital creators.Discover the best NFT collections.
         </p>
@@ -56,7 +66,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section>
+      <section className=" w-[50em] bg-green-700 hidden ssm:block">
         <Nbody2 />
       </section>
     </section>

@@ -29,6 +29,12 @@ export default {
       animation: {
         "waving-hand": "testt 0.5s linear ",
       },
+      screens: {
+        extsm: "342px",
+        exsm: "468px",
+        ssm: "845px",
+        md: "900px"
+      },
     },
     fontFamily: {
       headerFont: [
@@ -44,5 +50,6 @@ export default {
       inter: ["Inter", "sans-serif"],
       poppi: ["Poppins", "sans-serif"],
     },
+
   },
 };
