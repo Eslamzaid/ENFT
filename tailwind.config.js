@@ -14,7 +14,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        backColor: '#2F80ED'
+        backColor: "#2F80ED",
+      },
+      keyframes: {
+        testt: {
+          "0%": {
+            opacity: `0`,
+          },
+          "100%": {
+            opacity: `1`,
+          },
+        },
+      },
+      animation: {
+        "waving-hand": "testt 0.5s linear ",
       },
     },
     fontFamily: {

@@ -1,20 +1,33 @@
+import nft1 from "./../../../../assets/images/nfts/MonBan.png";
+import nft1Ava from "./../../../../assets/images/Users/Verifi.png";
 
+import nft2 from "./../../../../assets/images/nfts/owl.webp";
+import nft2Ava from "./../../../../assets/images/Users/Verifi.png";
+
+import nft3 from "./../../../../assets/images/nfts/cheap.webp";
+import nft3Ava from "./../../../../assets/images/Users/ahbal.png";
+
+import nft4 from "./../../../../assets/images/nfts/Cool.png";
+import nft4Ava from "./../../../../assets/images/Users/chanda.png";
+
+import nft5 from "./../../../../assets/images/nfts/crocPi.webp";
+import nft5Ava from "./../../../../assets/images/Users/MSRT.png";
 
 const data = [
   {
     id: 1,
-    nft: require("./../../../../assets/images/nfts/MonBan.png"),
-    imgOwner: require("./../../../../assets/images/Users/Verifi.png"),
+    nft: nft1,
+    imgOwner: nft1Ava,
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
     CurrentPrince: "5.758 ETH",
-    TotalPrince: "$5758.31",
+    TotalPrice: "$5758.31",
     Profits: "+12.45%",
   },
   {
     id: 2,
-    nft: require("./../../../../assets/images/nfts/owl.webp"),
-    imgOwner: require("./../../../../assets/images/Users/Verifi.png"),
+    nft: nft2,
+    imgOwner: nft2Ava,
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
     CurrentPrice: "3.142 ETH",
@@ -23,8 +36,8 @@ const data = [
   },
   {
     id: 3,
-    nft: require("./../../../../assets/images/nfts/cheap.webp"),
-    imgOwner: require("./../../../../assets/images/Users/ahbal.png"),
+    nft: nft3,
+    imgOwner: nft3Ava,
     imgName: "alokir #3154",
     imgSmName: "alokir shaow",
     CurrentPrice: "6.142 ETH",
@@ -33,8 +46,8 @@ const data = [
   },
   {
     id: 4,
-    nft: require("./../../../../assets/images/nfts/Cool.png"),
-    imgOwner: require("./../../../../assets/images/Users/chanda.png"),
+    nft: nft4,
+    imgOwner: nft4Ava,
     imgName: "Chanda #2412",
     imgSmName: "Chanda chanda",
     CurrentPrice: "2.1245 ETH",
@@ -43,8 +56,8 @@ const data = [
   },
   {
     id: 5,
-    nft: require("./../../../../assets/images/nfts/crocPi.webp"),
-    imgOwner: require("./../../../../assets/images/Users/MSRT.png"),
+    nft: nft5,
+    imgOwner: nft5Ava,
     imgName: "msrt #8831",
     imgSmName: "msrt mosrt",
     CurrentPrice: "8.231 ETH",
@@ -53,5 +66,4 @@ const data = [
   },
 ];
 
-
-export default data
+export default data;

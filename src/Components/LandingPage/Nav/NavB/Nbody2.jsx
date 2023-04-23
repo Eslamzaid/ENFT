@@ -6,25 +6,13 @@ const Nbody2 = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        if (prevIndex === data.length - 1) {
-          return 0;
-        } else {
-          return prevIndex + 1;
-        }
-      });
+      setCurrentIndex((prevIndex) =>
+        prevIndex === data.length - 1 ? 0 : prevIndex + 1
+      );
     }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
-
-  const currentRow = (
-    <tr key={data[currentIndex].id}>
-      <td>{data[currentIndex].id}</td>
-      <img src={data[currentIndex].nft}/>
-      <td>{data[currentIndex].TotalPrince}</td>
-    </tr>
-  );
 
   return (
     <div>
@@ -33,10 +21,24 @@ const Nbody2 = () => {
           <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Age</th>
+            <th>Price</th>
           </tr>
         </thead>
-        <tbody>{currentRow}</tbody>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={item.id} className={index === currentIndex ? " animate-waving-hand" : " "}>
+              {index === currentIndex && (
+                <>
+                  <td>{item.id}</td>
+                  <td>
+                    <img src={item.nft} alt={item.imgName} />
+                  </td>
+                  <td>{item.TotalPrice}</td>
+                </>
+              )}
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
