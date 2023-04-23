@@ -46,7 +46,7 @@ const Nbody = () => {
         </h1>
         <p
           className=" font-poppi text-xs  text-slate-400
-                    w-72 relative bottom-7 sm:text-white ssm:text-black
+                    w-72 relative bottom-7 
                     "
         >
           The leading NFT Marketplace on EthereumHome to the next generation of
@@ -66,7 +66,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" w-[50em] bg-green-700 hidden ssm:block">
+      <section className=" w-[50em] bg-green-700 hidden md:block">
         <Nbody2 />
       </section>
     </section>
