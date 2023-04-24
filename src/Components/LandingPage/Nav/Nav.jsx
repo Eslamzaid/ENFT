@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import TextLogo from "./../../../assets/Icons/LogoText.png";
 import Menu from "./../../../assets/Icons/menu.png";
 import Close from "./../../../assets/Icons/close.png";
+import Shades from "./../../../assets/images/Images/NavShades.png";
 
 const Nav = () => {
   let [resp, setresp] = useState(false);
@@ -21,7 +22,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className=" w-screen flex justify-center ">
+    <div style={{ backgroundImage: `url(${Shades})` }} className=" w-screen flex justify-center ">
       {x < 725 ? (
         <nav className="font-semibold text-white w-screen">
           <div className="w-screen">

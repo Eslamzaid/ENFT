@@ -26,18 +26,20 @@ function Number({ n, str }) {
 const Nbody = () => {
   return (
     <section
-      className="  mt-12 w-[89.6%] gap-x-12 text-white 
+      className="lg:mt-14 mt-12 w-[89.6%] text-white 
                          md:flex md:justify-between  md:items-middle"
     >
       <section
-        className="relative  my-6 text-center flex flex-col items-center
+        className="relative bg-red-300 my-6 text-center flex flex-col items-center
                           md:text-left md:items-start
                           "
       >
         <h1
           className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
-                      mb-7
-                      lg:text-7xl lg:text-left "
+                      mb-7 
+                      md:text-[3rem]
+                      lg:text-[4rem] lg:text-left 
+                      xl:text-[5.5rem]"
         >
           Discover
           <br />
@@ -64,13 +66,13 @@ const Nbody = () => {
         >
           <button
             className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
-                          md:rounded-full md:ml-4"
+                          md:rounded-full md:ml-4 shadow-lg shadow-backColor"
           >
             Explore
           </button>
           <button
-            className=" hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl
-                              md:rounded-full"
+            className=" hover:ring-2 hover:ring-offset-2hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl
+                              md:rounded-full shadow-lg shadow-slate-400"
           >
             Bid now
           </button>
@@ -81,7 +83,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" w-[50em] bg-green-700 hidden md:block">
+      <section className=" md:w-[20rem] lg:w-fit md:mr-96 lg:mr-0 xl:bg-rose-300 lg:bg-indigo-700 md:bg-red-700 hidden md:block">
         <Nbody2 />
       </section>
     </section>
