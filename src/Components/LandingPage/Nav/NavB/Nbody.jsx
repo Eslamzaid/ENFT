@@ -30,7 +30,7 @@ const Nbody = () => {
                          md:flex md:justify-between  md:items-middle"
     >
       <section
-        className="relative bg-red-300 my-6 text-center flex flex-col items-center
+        className="relative my-6 text-center flex flex-col items-center
                           md:text-left md:items-start
                           "
       >
@@ -83,7 +83,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" md:w-[20rem] lg:w-fit md:mr-96 lg:mr-0 xl:bg-rose-300 lg:bg-indigo-700 md:bg-red-700 hidden md:block">
+      <section className=" md:w-[20rem] lg:w-fit lg:mr-0 hidden md:block">
         <Nbody2 />
       </section>
     </section>

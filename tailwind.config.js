@@ -33,7 +33,8 @@ export default {
         extsm: "342px",
         exsm: "468px",
         ssm: "845px",
-        md: "900px"
+        md: "900px",
+        llg:"1170px"
       },
     },
     fontFamily: {
