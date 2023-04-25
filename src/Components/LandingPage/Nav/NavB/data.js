@@ -1,4 +1,4 @@
-import nft1 from "./../../../../assets/images/nfts/MonBan.png";
+import nft1 from "./../../../../assets/images/nfts/MonBan.webp";
 import nft1Ava from "./../../../../assets/images/Users/Verifi.png";
 
 import nft2 from "./../../../../assets/images/nfts/owl.webp";
@@ -7,7 +7,7 @@ import nft2Ava from "./../../../../assets/images/Users/Verifi.png";
 import nft3 from "./../../../../assets/images/nfts/cheap.webp";
 import nft3Ava from "./../../../../assets/images/Users/ahbal.png";
 
-import nft4 from "./../../../../assets/images/nfts/Cool.png";
+import nft4 from "./../../../../assets/images/nfts/Cool.webp";
 import nft4Ava from "./../../../../assets/images/Users/chanda.png";
 
 import nft5 from "./../../../../assets/images/nfts/crocPi.webp";
@@ -17,6 +17,7 @@ const data = [
   {
     id: 1,
     nft: nft1,
+    alt: "A pink monkey, NFT",
     imgOwner: nft1Ava,
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
@@ -26,6 +27,7 @@ const data = [
   },
   {
     id: 2,
+    alt: "An owl, NFT",
     nft: nft2,
     imgOwner: nft2Ava,
     imgName: "HAPE #6959",
@@ -36,6 +38,7 @@ const data = [
   },
   {
     id: 3,
+    alt: " A sheep, NFT",
     nft: nft3,
     imgOwner: nft3Ava,
     imgName: "alokir #3154",
@@ -46,6 +49,7 @@ const data = [
   },
   {
     id: 4,
+    alt: "An invisible man, NFT",
     nft: nft4,
     imgOwner: nft4Ava,
     imgName: "Chanda #2412",
@@ -56,6 +60,7 @@ const data = [
   },
   {
     id: 5,
+    alt: "A crocodile dripped up, NFT",
     nft: nft5,
     imgOwner: nft5Ava,
     imgName: "msrt #8831",

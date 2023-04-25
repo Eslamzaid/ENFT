@@ -39,7 +39,7 @@ const Nbody = () => {
                       mb-7 
                       md:text-[3rem]
                       lg:text-[4rem] lg:text-left 
-                      xl:text-[5.5rem]"
+                      xl:text-[5.5rem] w "
         >
           Discover
           <br />
@@ -53,9 +53,8 @@ const Nbody = () => {
           NFTs
         </h1>
         <p
-          className=" font-poppi text-xs  text-slate-400
-                    w-72 relative bottom-7 sm:mt-5
-                    "
+          className=" font-poppi text-xs  text-slate-400 w-72 relative bottom-7 
+          sm:mt-5"
         >
           The leading NFT Marketplace on EthereumHome to the next generation of
           digital creators.Discover the best NFT collections.
