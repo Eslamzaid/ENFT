@@ -78,7 +78,7 @@ const Nbody2 = () => {
                          llg:left-[19.5rem] llg:h-[30rem]
                          xl:h-[28em] xl:left-44 xl:w-[22rem]"
         ></div>
-        <div className=" absolute z-30 xl:left-20">
+        <div className=" absolute z-30 xl:left-32">
           {data.map((item, index) => (
             <>
               {index === currentIndex && (
