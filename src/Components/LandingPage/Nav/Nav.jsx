@@ -5,7 +5,7 @@ import Close from "./../../../assets/Icons/close.png";
 import Shades from "./../../../assets/images/Images/NavShades.png";
 
 const Nav = () => {
-  let [resp, setresp] = useState(false);
+  let [resp, setresp] = useState(true );
   const [x, setX] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -14,9 +14,9 @@ const Nav = () => {
     }
     window.addEventListener("resize", widthTracker);
     if (x > 725) {
-      setresp(() => (resp = false));
-    } else {
       setresp(() => (resp = true));
+    } else {
+      setresp(() => (resp = false));
     }
     return () => window.removeEventListener("resize", widthTracker);
   }, []);

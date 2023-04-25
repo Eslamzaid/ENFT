@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import data from "./data";
 import Vec1 from "./../../../../assets/Icons/Vector6.png";
 import Vec2 from "./../../../../assets/Icons/Vector5.png";
-import Vec23 from "./../../../../assets/images/Images/Articel1.png";
 
 const Nbody2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  let [hours, setHours] = useState(17);
+  let [min, setMin] = useState(59);
+  let [sec, setSec] = useState(59);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -16,6 +19,45 @@ const Nbody2 = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    let tSec = setInterval(() => {
+      if (min > 0) {
+        if (sec > 0) {
+          setSec((prevTime) => prevTime - 1);
+        }
+      } else {
+        clearInterval(tSec);
+      }
+    }, 1000);
+    let tMin = setInterval(() => {
+      if (min > 0) {
+        if (sec == 0) {
+          setMin((prevTime) => prevTime - 1);
+          setSec(() => (sec = 59));
+        }
+      }
+    }, 1000);
+    let tHours = setInterval(() => {
+      if (hours > 0) {
+        if (min == 0) {
+          if (sec == 0) {
+            setHours((prevTime) => prevTime - 1);
+            setMin(() => (min = 59));
+            setSec(() => (sec = 59));
+          }
+        }
+      } else {
+        setHours(() => (hours = 17));
+        setMin(() => (min = 59));
+        setSec(() => (sec = 59));
+      }
+    }, 1000);
+    return () => {
+      clearInterval(tSec);
+      clearInterval(tMin);
+      clearInterval(tHours);
+    };
+  });
   return (
     <div>
       <div className="bg-left w-[45rem] relative">
@@ -74,6 +116,11 @@ const Nbody2 = () => {
             className=" bg-right absolute -right-20
                         md:-left-4 lg:left-44 llg:left-56"
           />
+        </div>
+        <div>
+          {sec}
+          {min}
+          {hours}
         </div>
       </div>
       {/* <table>
