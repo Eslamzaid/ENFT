@@ -61,24 +61,42 @@ const Nbody2 = () => {
   });
   return (
     <div>
-      <div className="bg-left w-[45rem] z-10 relative">
+      <div className="bg-left w-full z-10 relative bg-red-300">
         <div
-          className=" z-20 absolute ring-1 -bottom-[13rem] rounded-xl
+          className=" z-20 absolute ring-1 rounded-xl
                        ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
-                         md:w-60 md:-left-7 md:-bottom-[13.5rem]
+                         md:w-60 md:-left-7 md:-bottom-[14.2rem]
                          lg:w-64  lg:left-[9rem] 
-                         llg:left-[16rem]
-                         xl:left-[9rem]  xl:w-80 "
+                         llg:left-[16rem] llg:w-[18.4rem]
+                          xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
+                          2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
         ></div>
         <div
           className=" z-20 absolute top-10 ring-1 
-                         rounded-xl ring-slate-400 -skew-x-[8deg] backdrop-blur-2xl
-                         md:w-72 md:left-0 md:h-[25rem] 
-                         lg:left-44 lg:h-[28rem]
-                         llg:left-[19.5rem] llg:h-[30rem]
-                         xl:h-[28em] xl:left-44 xl:w-[22rem]"
+                      rounded-xl ring-slate-400 -skew-x-[8deg] backdrop-blur-2xl
+                      md:w-72 md:left-0 md:h-[23rem]
+                      lg:left-44 lg:h-[28rem]
+                      llg:left-[19.5rem] llg:h-[26.7rem]
+                      xl:h-[30em] xl:left-48 xl:w-[22.6rem]
+                      2xl:w-[28.5rem]"
         ></div>
-        <div className=" absolute z-30 xl:left-32">
+        <div
+          className=" z-40 child:-skew-x-3 -skew-x-[8deg] -bottom-[4rem] backdrop-blur-2xl
+                      absolute font-semibold rounded-2xl h-fit border border-slate-400 pb-1
+                      flex flex-nowrap flex-col
+                      md:px-4 md:left-52 md:w-fit 
+                      lg:left-[24rem] lg:w-[7.3rem]
+                      llg:left-[32rem] llg:px-5 llg:w-32 
+                      xl:left-[29rem] xl:px-3 xl:py-1 xl:w-32
+                      2xl:left-[33rem] 2xl:w-40 2xl:py-2 2xl:px-7
+                         "
+        >
+          <h2 className=" md:text-base md:font-bold xl:text-xl lg:text-base lg:font-black">
+            BID NOW!
+          </h2>
+          <p className=" text-[0.7rem] font-[500] ">Latest collection</p>
+        </div>
+        {/* <div className=" absolute z-30 xl:left-32">
           {data.map((item, index) => (
             <>
               {index === currentIndex && (
@@ -119,32 +137,19 @@ const Nbody2 = () => {
               )}
             </>
           ))}
-        </div>
+        </div> */}
         <div
           className=" z-20 ring-1 ring-slate-400 backdrop-blur-2xl -skew-x-[8deg] absolute w-fit h-16 
                       font-headerFont rounded-xl
-                      md:p-2 md:-left-[2.7rem]  md:pb-4 md:pr-4 md:text-sm md:top-[26rem]
+                      md:p-2 md:-left-[2.7rem]  md:pb-4 md:pr-4 md:text-sm md:top-[23rem]
                       lg:p-3 lg:pb-6 lg:pr-7 lg:left-[7.8rem] lg:top-[28rem]
-                      llg:left-[16rem] llg:top-[30rem]
-                      xl:top-[28.2rem] xl:p-4 xl:pb-14 xl:pr-5 xl:left-[7.5rem] xl:text-base"
+                      llg:left-[16rem] llg:top-[27.6rem]
+                      xl:top-[29.2rem] xl:p-4 xl:pb-14 xl:pr-5 xl:left-[7.5rem] xl:text-base
+                      2xl:left-[8rem]"
         >
           Auction
           <br />
           <span className=" text-xs relative bottom-2">End In</span>
-        </div>
-        <div
-          className=" z-40 child:-skew-x-3 -skew-x-[8deg] -bottom-[3rem] backdrop-blur-2xl
-                      absolute font-semibold rounded-2xl h-fit border border-slate-400 pb-1
-                      md:px-4 md:left-52 md:w-fit 
-                      lg:left-[24rem]
-                      llg:left-[32rem] llg:px-5
-                      xl:px-7 xl:left-[26rem] 
-                         "
-        >
-          <h2 className=" xl:text-lg lg:text-base lg:font-semibold xl:font-black md:text-base">
-            BID NOW!
-          </h2>
-          <p className=" text-xs ">Latest collection</p>
         </div>
         <div className=" z-30 relative w-full h-full ">
           <img
@@ -160,36 +165,42 @@ const Nbody2 = () => {
                         md:-left-4 lg:left-44 llg:left-56"
           />
           <div
-            className=" absolute font-headerFont backdrop-blur-2xl outline-slate-500 outline outline-1 
+            className=" absolute font-headerFont backdrop-blur-lg outline-slate-500 outline outline-1 
+            flex flex-nowrap items-center
                            rounded-xl -skew-x-[8deg]
-                           md:top-[27.5rem] md:left-[3rem]
+                           md:top-[23.8rem] md:left-[3rem]
                            lg:top-[29.5rem] md:p-2 lg:left-[15rem]
-                           llg:top-[31rem] llg:p-3 llg:left-[23rem]
-                           xl:p-5 xl:top-[30rem] xl:left-[15rem]"
+                           llg:top-[28.7rem] llg:p-3 llg:left-[22.5rem]
+                           xl:p-3 xl:top-[31rem] xl:left-[14rem] 
+                           2xl:left-[15.3rem] 2xl:p-5
+                           "
           >
             <h2 className=" inline-block text-center md:px-2 xl:px-4 ">
-              <span className="md:text-2xl xl:text-4xl md:font-semibold">
+              <span className="md:text-2xl xl:text-3xl 2xl:text-4xl md:font-semibold">
                 {hours}
               </span>
               <br />
               Hours
             </h2>
-            <span className=" relative bottom-3 md:text-2xl xl:text-4xl">
+            <span
+              className="  md:text-2xl xl:text-4xl 
+                              xl:px-1 2xl:px-3"
+            >
               :
             </span>
 
             <h2 className=" inline-block text-center md:px-2  xl:px-4">
-              <span className="md:text-2xl xl:text-4xl md:font-semibold">
+              <span className="md:text-2xl xl:text-3xl 2xl:text-4xl md:font-semibold">
                 {min}
               </span>
               <br />
               Minutes
             </h2>
-            <span className=" relative bottom-3 md:text-2xl xl:text-4xl">
+            <span className=" md:text-2xl xl:text-3xl 2xl:text-4xl xl:px-1 2xl:px-3">
               :
             </span>
             <h2 className=" inline-block text-center md:px-2 xl:px-4">
-              <span className="md:text-2xl xl:text-4xl md:font-semibold">
+              <span className="md:text-2xl xl:text-3xl 2xl:text-4xl md:font-semibold">
                 {sec}
               </span>
               <br />
@@ -198,26 +209,6 @@ const Nbody2 = () => {
           </div>
         </div>
       </div>
-      {/* <table className=" z-50 relative">
-        <tbody>
-          {data.map((item, index) => (
-            <tr
-              key={item.id}
-              className={index === currentIndex ? " animate-waving-hand" : " "}
-            >
-              {index === currentIndex && (
-                <>
-                  <td>{item.id}</td>
-                  <td>
-                    <img src={item.nft} alt={item.imgName} />
-                  </td>
-                  <td>{item.TotalPrice}</td>
-                </>
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table> */}
     </div>
   );
 };

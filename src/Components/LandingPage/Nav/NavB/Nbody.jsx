@@ -27,7 +27,8 @@ const Nbody = () => {
   return (
     <section
       className="lg:mt-14 mt-12 w-[89.6%] text-white 
-                         md:flex md:justify-between  md:items-middle"
+                 md:flex md:justify-between  md:items-middle
+                 xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
     >
       <section
         className="relative my-6 text-center flex flex-col items-center
@@ -39,7 +40,8 @@ const Nbody = () => {
                       mb-7 
                       md:text-[3rem]
                       lg:text-[4rem] lg:text-left 
-                      xl:text-[5.5rem] w "
+                      xl:text-[4.8rem]
+                      2xl:text-[5.5rem] "
         >
           Discover
           <br />
@@ -53,11 +55,11 @@ const Nbody = () => {
           NFTs
         </h1>
         <p
-          className=" font-poppi text-xs  text-slate-400 w-72 relative bottom-7 
+          className=" font-poppi text-base  text-slate-200 w-96 relative bottom-7 
           sm:mt-5"
         >
-          The leading NFT Marketplace on EthereumHome to the next generation of
-          digital creators.Discover the best NFT collections.
+          The leading NFT Marketplace on Ethereum Home to the next generation of
+          digital creators. Discover the best NFT collections.
         </p>
         <div
           className=" child:mx-3 md:child:p-1  md:child:py-1 md:child:font-semibold child:cursor-pointer w-screen relative flex justify-evenly
@@ -82,7 +84,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" md:w-[20rem] lg:w-fit lg:mr-0 hidden md:block">
+      <section className=" md:w-[20rem] lg:w-[45rem] lg:mr-0 hidden md:block">
         <Nbody2 />
       </section>
     </section>

@@ -5,7 +5,7 @@ import Close from "./../../../assets/Icons/close.png";
 import Shades from "./../../../assets/images/Images/NavShades.png";
 
 const Nav = () => {
-  let [resp, setresp] = useState(true );
+  let [resp, setresp] = useState(true);
   const [x, setX] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -22,7 +22,10 @@ const Nav = () => {
   }, []);
 
   return (
-    <div style={{ backgroundImage: `url(${Shades})` }} className=" w-screen flex justify-center ">
+    <div
+      style={{ backgroundImage: `url(${Shades})` }}
+      className=" w-screen flex justify-center xl:px-16"
+    >
       {x < 725 ? (
         <nav className="font-semibold text-white w-screen">
           <div className="w-screen">
@@ -68,7 +71,7 @@ const Nav = () => {
           </div>
         </nav>
       ) : (
-        <nav className=" text-white  w-11/12">
+        <nav className=" text-white  w-11/12 xl:w-[75rem] 2xl:w-11/12">
           <div className="mt-7">
             <ul
               className="flex justify-end items-center child:z-30  sm:m-3
@@ -103,7 +106,7 @@ const Nav = () => {
               >
                 Bid now
               </li>
-              <li className=" xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor w-fit rounded-full hover:bg-sky-400 transition-colors ">
+              <li className=" xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor w-fit rounded-full hover:bg-sky-400 transition-colors">
                 Connect Wallet
               </li>
             </ul>
