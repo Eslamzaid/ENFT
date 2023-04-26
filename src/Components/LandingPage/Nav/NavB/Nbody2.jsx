@@ -119,6 +119,14 @@ const Nbody2 = () => {
                         : ""
                     }
                   />
+                  <div>
+                    <div>
+                      <h3>{item.CurrentPrice}</h3>
+                      <p>Latest Bid</p>
+                    </div>
+                    <div><h3>{item.TotalPrice}</h3>
+                      <p>Latest Bid</p></div>
+                  </div>
                 </div>
               )}
             </>

@@ -22,7 +22,7 @@ const data = [
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
     CurrentPrince: "5.758 ETH",
-    TotalPrice: "$5758.31",
+    TotalPrice: "$5744.31",
     Profits: "+12.45%",
   },
   {
