@@ -81,7 +81,7 @@ const Nbody2 = () => {
                       2xl:w-[28.5rem]"
         ></div>
         <div
-          className=" z-40 child:-skew-x-3 -skew-x-[8deg] -bottom-[4rem] backdrop-blur-2xl
+          className=" z-40 child:-skew-x-3 -skew-x-[8deg] -bottom-[4rem] backdrop-blur-xl
                       absolute font-semibold rounded-2xl h-fit border border-slate-400 pb-1
                       flex flex-nowrap flex-col
                       md:px-4 md:left-52 md:w-fit 
@@ -96,7 +96,12 @@ const Nbody2 = () => {
           </h2>
           <p className=" text-[0.7rem] font-[500] ">Latest collection</p>
         </div>
-        {/* <div className=" absolute z-30 xl:left-32">
+        <div
+          className=" absolute z-30 
+                      llg:left-64 llg:top-8
+                      xl:left-40 xl:top-8
+                      2xl:left-40 2xl:top-4 w-fit"
+        >
           {data.map((item, index) => (
             <>
               {index === currentIndex && (
@@ -106,8 +111,10 @@ const Nbody2 = () => {
                     src={item.nft}
                     className={
                       index === currentIndex
-                        ? " animate-waving-hand h-[30rem] w-[23rem] object-contain -skew-x-6 "
-                        : " "
+                        ? item.id == 1
+                          ? " animate-waving-hand object-contain llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]"
+                          : " animate-waving-hand object-contain llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]  "
+                        : ""
                     }
                   />
                 </div>
@@ -115,7 +122,7 @@ const Nbody2 = () => {
             </>
           ))}
         </div>
-        <div
+        {/* <div
           className=" absolute z-10 
                          xl:left-[14rem] xl:top-3"
         >

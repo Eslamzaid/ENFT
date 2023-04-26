@@ -1,4 +1,4 @@
-import nft1 from "./../../../../assets/images/nfts/MonBan.webp";
+import nft1 from "./../../../../assets/images/nfts/Rectangle 11.webp";
 import nft1Ava from "./../../../../assets/images/Users/Verifi.png";
 
 import nft2 from "./../../../../assets/images/nfts/owl.webp";
@@ -17,7 +17,7 @@ const data = [
   {
     id: 1,
     nft: nft1,
-    alt: "A pink monkey, NFT",
+    alt: "A person with a scurf, NFT",
     imgOwner: nft1Ava,
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
