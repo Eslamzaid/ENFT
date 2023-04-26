@@ -65,11 +65,11 @@ const Nbody2 = () => {
         <div
           className=" z-20 absolute ring-1 rounded-xl
                        ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
-                         md:w-60 md:-left-7 md:-bottom-[14.2rem]
-                         lg:w-64  lg:left-[9rem] 
+                         md:w-60 md:-left-7 md:-bottom-[15.2rem]
+                         lg:w-64  lg:left-[9rem] lg:-bottom-[15.2rem]
                          llg:left-[16rem] llg:w-[18.4rem]
-                          xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
-                          2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
+                         xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
+                         2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
         ></div>
         <div
           className=" z-20 absolute top-10 ring-1 
@@ -84,7 +84,7 @@ const Nbody2 = () => {
           className=" z-40 child:-skew-x-3 -skew-x-[8deg] -bottom-[4rem] backdrop-blur-xl
                       absolute font-semibold rounded-2xl h-fit border border-slate-400 pb-1
                       flex flex-nowrap flex-col
-                      md:px-4 md:left-52 md:w-fit 
+                      md:px-3 md:left-52 md:w-fit 
                       lg:left-[24rem] lg:w-[7.3rem]
                       llg:left-[32rem] llg:px-5 llg:w-32 
                       xl:left-[29rem] xl:px-3 xl:py-1 xl:w-32
@@ -97,7 +97,9 @@ const Nbody2 = () => {
           <p className=" text-[0.7rem] font-[500] ">Latest collection</p>
         </div>
         <div
-          className=" absolute z-30 
+          className=" absolute z-10 
+                      md:-left-3 md:top-7
+                      lg:left-36 lg:top-8
                       llg:left-64 llg:top-8
                       xl:left-40 xl:top-8
                       2xl:left-40 2xl:top-4 w-fit"
@@ -112,8 +114,8 @@ const Nbody2 = () => {
                     className={
                       index === currentIndex
                         ? item.id == 1
-                          ? " animate-waving-hand object-contain llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]"
-                          : " animate-waving-hand object-contain llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]  "
+                          ? " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]"
+                          : " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]  "
                         : ""
                     }
                   />
@@ -122,29 +124,34 @@ const Nbody2 = () => {
             </>
           ))}
         </div>
-        {/* <div
-          className=" absolute z-10 
-                         xl:left-[14rem] xl:top-3"
+        <div
+          className=" absolute z-30 
+                      md:-left-3 md:top-7
+                      lg:left-36 lg:top-8
+                      llg:left-64 llg:top-8
+                      xl:left-40 xl:top-8
+                      2xl:left-40 2xl:top-4 w-fit"
         >
           {data.map((item, index) => (
             <>
               {index === currentIndex && (
-                <>
+                <div className="">
                   <img
-                    alt={item.alt}
                     key={item.id}
                     src={item.nft}
                     className={
                       index === currentIndex
-                        ? " animate-waving-hand h-[25rem] w-[17rem] "
-                        : " "
+                        ? item.id == 1
+                          ? " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]"
+                          : " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]  "
+                        : ""
                     }
                   />
-                </>
+                </div>
               )}
             </>
           ))}
-        </div> */}
+        </div>
         <div
           className=" z-20 ring-1 ring-slate-400 backdrop-blur-2xl -skew-x-[8deg] absolute w-fit h-16 
                       font-headerFont rounded-xl
@@ -154,22 +161,29 @@ const Nbody2 = () => {
                       xl:top-[29.2rem] xl:p-4 xl:pb-14 xl:pr-5 xl:left-[7.5rem] xl:text-base
                       2xl:left-[8rem]"
         >
-          Auction
+          <h3> Auction</h3>
+
           <br />
-          <span className=" text-xs relative bottom-2">End In</span>
+          <span className=" text-xs relative bottom-4">End In</span>
         </div>
         <div className=" z-30 relative w-full h-full ">
           <img
             src={Vec1}
             alt="liner gradient color"
-            className=" z-40 absolute h-[35rem] -bottom-[34rem] 
-                        md:-left-36 lg:left-0 llg:left-12"
+            className=" z-40 absolute 
+                        md:-left-64 md:-bottom-[30rem]
+                        lg:-left-40 lg:-bottom-[45rem]
+                        llg:-left-24
+                        xl:-left-44 
+                        2xl:-left-52 2xl:-bottom-[42rem]"
           />
           <img
             src={Vec2}
             alt="liner gradient color"
-            className=" bg-right absolute -right-20
-                        md:-left-4 lg:left-44 llg:left-56"
+            className=" bg-right absolute -bottom-[48rem] -right-20
+                        md:left-24 md:-bottom-[38rem] lg:-bottom-[46rem] lg:left-44 llg:left-72 
+                        xl:-bottom-[52rem]
+                        "
           />
           <div
             className=" absolute font-headerFont backdrop-blur-lg outline-slate-500 outline outline-1 
