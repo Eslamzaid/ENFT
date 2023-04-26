@@ -21,7 +21,7 @@ const data = [
     imgOwner: nft1Ava,
     imgName: "HAPE #6959",
     imgSmName: "HAPES PRIME",
-    CurrentPrince: "5.758 ETH",
+    CurrentPrice: "5.758 ETH",
     TotalPrice: "$5744.31",
     Profits: "+12.45%",
   },

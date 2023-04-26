@@ -61,9 +61,10 @@ const Nbody2 = () => {
   });
   return (
     <div>
-      <div className="bg-left w-full z-10 relative bg-red-300">
+      <div className="bg-left w-full z-10 relative">
         <div
-          className=" z-20 absolute ring-1 rounded-xl
+          className=" z-20 absolute ring-1 rounded-xl 
+          
                        ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
                          md:w-60 md:-left-7 md:-bottom-[15.2rem]
                          lg:w-64  lg:left-[9rem] lg:-bottom-[15.2rem]
@@ -71,6 +72,7 @@ const Nbody2 = () => {
                          xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
                          2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
         ></div>
+
         <div
           className=" z-20 absolute top-10 ring-1 
                       rounded-xl ring-slate-400 -skew-x-[8deg] backdrop-blur-2xl
@@ -105,9 +107,9 @@ const Nbody2 = () => {
                       2xl:left-40 2xl:top-4 w-fit"
         >
           {data.map((item, index) => (
-            <>
+            <div>
               {index === currentIndex && (
-                <div className="">
+                <div>
                   <img
                     key={item.id}
                     src={item.nft}
@@ -119,17 +121,9 @@ const Nbody2 = () => {
                         : ""
                     }
                   />
-                  <div>
-                    <div>
-                      <h3>{item.CurrentPrice}</h3>
-                      <p>Latest Bid</p>
-                    </div>
-                    <div><h3>{item.TotalPrice}</h3>
-                      <p>Latest Bid</p></div>
-                  </div>
                 </div>
               )}
-            </>
+            </div>
           ))}
         </div>
         <div
@@ -155,6 +149,23 @@ const Nbody2 = () => {
                         : ""
                     }
                   />
+                  <div
+                    className=" absolute backdrop-blur-md rounded-xl -skew-x-[8deg] font-headerFont
+                                2xl:p-5 2xl:gax-x-16 2xl:w-72 2xl:h-24  flex justify-between "
+                  >
+                    <div>
+                      <h3 className="2xl:text-xl 2xl:font-[600]">
+                        {item.CurrentPrice}
+                      </h3>
+                      <p className="text-sm">Latest Bid</p>
+                    </div>
+                    <div className=" relative bottom-1 text-right">
+                      <h3 className=" 2xl:text-lg 2xl:font-medium">
+                        {item.TotalPrice}
+                      </h3>
+                      <p className=" text-[#24FF00]">{item.Profits}</p>
+                    </div>
+                  </div>
                 </div>
               )}
             </>
