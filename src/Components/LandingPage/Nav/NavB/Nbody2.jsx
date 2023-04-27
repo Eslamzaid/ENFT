@@ -158,13 +158,13 @@ const Nbody2 = () => {
                                 2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem] "
                   >
                     <div className=" relative md:bottom-1  bottom-2">
-                      <h3 className="md:font-semibold  lg:text-base 2xl:text-xl 2xl:font-[600]">
+                      <h3 className="md:font-semibold  lg:text-base 2xl:text-xl 2xl:font-[600]" key={item.id}>
                         {item.CurrentPrice}
                       </h3>
                       <p className="text-sm">Latest Bid</p>
                     </div>
                     <div className=" relative md:bottom-2 bottom-3 text-right">
-                      <h3 className=" 2xl:text-lg font-medium">
+                      <h3 className=" 2xl:text-lg font-medium" key={item.id}>
                         {item.TotalPrice}
                       </h3>
                       <p
@@ -173,6 +173,7 @@ const Nbody2 = () => {
                             ? "text-red-500 font-medium"
                             : "text-[#24FF00] font-medium"
                         }
+                        key={item.id}
                       >
                         {item.Profits}
                       </p>
@@ -188,6 +189,7 @@ const Nbody2 = () => {
                                 2xl:w-[17rem] 2xl:p-4 2xl:bottom-[22rem]  2xl:-left-20"
                   >
                     <img
+                      key={item.id}
                       src={item.imgOwner}
                       className={
                         item.id == 1 || item.id == 2
@@ -197,10 +199,10 @@ const Nbody2 = () => {
                       alt={item.imgNameAlt}
                     />
                     <div className=" pt-2">
-                      <h2 className="lg:text-base llg:text-lg xl:text-xl 2xl:text-2xl font-semibold">
+                      <h2 className="lg:text-base llg:text-lg xl:text-xl 2xl:text-2xl font-semibold" key={item.id}>
                         {item.imgName}
                       </h2>
-                      <p className=" text-black ">{item.imgSmName}</p>
+                      <p className="text-black" key={item.id}>{item.imgSmName}</p>
                     </div>
                   </div>
                 </div>

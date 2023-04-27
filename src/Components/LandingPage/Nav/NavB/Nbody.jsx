@@ -36,7 +36,7 @@ const Nbody = () => {
                           md:text-left md:items-start
                           "
       >
-        <img src={FtextSha} className=" absolute"/>
+        <img src={FtextSha} alt="A linear gradient color" className=" absolute"/>
         <h1
           className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
                       mb-7 

@@ -1,11 +1,13 @@
 import React from 'react';
-import FPol from './../../../../assets/images/Images/FPol.png'
+import FPol from './../../../../assets/images/Images/FPol.webp'
 
 const FNBody = () => {
     return (
-        <section className=" mt-10">
-            <h1 className=" prose-xl text-white text-4xl">hasdfsdi</h1>
-            <img src={FPol} width="1940rem"/>
+        <section className=" mt-16 w-screen">
+            <img src={FPol} alt=" Some Shades for design" className=' absolute w-screen'/>
+            <div>
+
+            </div>
         </section>
     );
 };
