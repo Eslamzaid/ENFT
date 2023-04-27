@@ -286,6 +286,7 @@ const Nbody2 = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

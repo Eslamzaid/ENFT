@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import Nbody2 from "./Nbody2";
+import FtextSha from "./../../../../assets/Icons/H1TextColor.webp";
 
 function Number({ n, str }) {
   const { number } = useSpring({
@@ -35,6 +36,7 @@ const Nbody = () => {
                           md:text-left md:items-start
                           "
       >
+        <img src={FtextSha} className=" absolute"/>
         <h1
           className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
                       mb-7 
@@ -55,8 +57,8 @@ const Nbody = () => {
           NFTs
         </h1>
         <p
-          className=" font-poppi text-base  text-slate-200 w-96 relative bottom-7 
-          sm:mt-5"
+          className=" font-poppi extsm:text-base  text-slate-200 extsm:w-96 relative bottom-7 
+          sm:mt-5 text-xs w-80 extsm:px-1"
         >
           The leading NFT Marketplace on Ethereum Home to the next generation of
           digital creators. Discover the best NFT collections.
