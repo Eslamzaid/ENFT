@@ -38,7 +38,7 @@ const Nbody = () => {
         <img
           src={FtextSha}
           alt="A linear gradient color"
-          className=" absolute"
+          className=" absolute w-10 border-2 border-white "
         />
         <h1
           className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
