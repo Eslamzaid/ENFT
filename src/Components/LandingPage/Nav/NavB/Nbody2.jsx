@@ -64,7 +64,6 @@ const Nbody2 = () => {
       <div className="bg-left w-full z-10 relative">
         <div
           className=" z-20 absolute ring-1 rounded-xl 
-          
           ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
           md:w-[17.4rem] md:-left-9 md:-bottom-[15.2rem]
           lg:w-72  lg:left-[8rem] lg:-bottom-[15.2rem]
@@ -151,7 +150,7 @@ const Nbody2 = () => {
                   />
                   <div
                     className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont
-                                flex justify-between ring-1 ring-slate-400
+                                flex justify-between ring-1 ring-slate-400 z-10
                                 md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem]
                                 lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem]
                                 llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem]
@@ -180,17 +179,25 @@ const Nbody2 = () => {
                     </div>
                   </div>
                   <div
-                    className=" flex justify-between bgred-300 font-headerFont absolute
-                                child:-skew-x-6 bg-teal-600 rounded-xl
-                                2xl:gap-x-6 2xl:p-4"
+                    className=" absolute flex justify-between bgred-300 font-headerFont 
+                                child:-skew-x-6 ring-1 ring-slate-400 backdrop-blur-md rounded-xl 
+                                md:w-[12.4rem] md:p-3 md:bottom-[14rem]  md:-left-16
+                                lg:w-[13rem] lg:p-3 lg:bottom-[18rem]  lg:-left-16
+                                llg:w-[14rem] llg:p-3 llg:bottom-[18rem]  llg:-left-16
+                                xl:w-[15rem] xl:p-3 xl:bottom-[20rem]  xl:-left-16
+                                2xl:w-[17rem] 2xl:p-4 2xl:bottom-[22rem]  2xl:-left-20"
                   >
                     <img
                       src={item.imgOwner}
-                      className={item.id == 1  || item.id == 2 ? "w-25 h-25 object-contain contrast-200" : " w-20 h-20 object-contain contrast-150 -skew-x-6"}
+                      className={
+                        item.id == 1 || item.id == 2
+                          ? "md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain contrast-200"
+                          : "md:w-14 md:h-14 lg:w-16 lg:h-16 object-contain contrast-150 -skew-x-6"
+                      }
                       alt={item.imgNameAlt}
                     />
                     <div className=" pt-2">
-                      <h2 className=" text-3xl font-semibold ">
+                      <h2 className="lg:text-base llg:text-lg xl:text-xl 2xl:text-2xl font-semibold">
                         {item.imgName}
                       </h2>
                       <p className=" text-black ">{item.imgSmName}</p>
