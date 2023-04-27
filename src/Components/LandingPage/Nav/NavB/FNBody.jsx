@@ -1,4 +1,3 @@
-import React from "react";
 import FPol from "./../../../../assets/images/Images/FPol.webp";
 
 const FNBody = () => {

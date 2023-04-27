@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import TextLogo from "./../../../assets/Icons/LogoText.webp";
 import Menu from "./../../../assets/Icons/menu.webp";
 import Close from "./../../../assets/Icons/close.webp";

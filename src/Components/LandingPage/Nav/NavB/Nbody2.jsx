@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import {useState, useEffect } from "react";
 import data from "./data";
 import Vec1 from "./../../../../assets/Icons/Vector6.webp";
 import Vec2 from "./../../../../assets/Icons/Vector5.webp";
@@ -94,6 +94,7 @@ const Nbody2 = () => {
               {index === currentIndex && (
                 <div>
                   <img
+                  alt="NFT's"
                     key={item.id}
                     src={item.nft}
                     className={

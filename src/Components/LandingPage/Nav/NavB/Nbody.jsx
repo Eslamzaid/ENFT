@@ -1,4 +1,3 @@
-import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import Nbody2 from "./Nbody2";
 import FtextSha from "./../../../../assets/Icons/H1TextColor.webp";
@@ -73,15 +72,11 @@ const Nbody = () => {
         >
           <button
             className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
-                          md:rounded-full md:ml-4 shadow-sm shadow-backColor
-                          xl:p-3"
+                          md:rounded-full md:ml-4 xl:p-3 xl:px-3"
           >
             Explore
           </button>
-          <button
-            className=" hover:ring-2 hover:ring-offset-2hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl
-                              md:rounded-full shadow-sm shadow-slate-400"
-          >
+          <button className=" hover:ring-2 hover:ring-offset-2hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl md:rounded-full">
             Bid now
           </button>
         </div>
