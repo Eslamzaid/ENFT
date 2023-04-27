@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "./data";
-import Vec1 from "./../../../../assets/Icons/Vector6.png";
-import Vec2 from "./../../../../assets/Icons/Vector5.png";
+import Vec1 from "./../../../../assets/Icons/Vector6.webp";
+import Vec2 from "./../../../../assets/Icons/Vector5.webp";
 
 let ran = Math.floor(Math.random() * 50);
 const Nbody2 = () => {
@@ -65,12 +65,12 @@ const Nbody2 = () => {
         <div
           className=" z-20 absolute ring-1 rounded-xl 
           
-                       ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
-                         md:w-60 md:-left-7 md:-bottom-[15.2rem]
-                         lg:w-64  lg:left-[9rem] lg:-bottom-[15.2rem]
-                         llg:left-[16rem] llg:w-[18.4rem]
-                         xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
-                         2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
+          ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md
+          md:w-[17.4rem] md:-left-9 md:-bottom-[15.2rem]
+          lg:w-72  lg:left-[8rem] lg:-bottom-[15.2rem]
+          llg:left-[16rem] llg:w-[18.4rem]
+          xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem]
+          2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"
         ></div>
 
         <div
@@ -137,7 +137,7 @@ const Nbody2 = () => {
           {data.map((item, index) => (
             <>
               {index === currentIndex && (
-                <div className="">
+                <div>
                   <img
                     key={item.id}
                     src={item.nft}
@@ -150,20 +150,50 @@ const Nbody2 = () => {
                     }
                   />
                   <div
-                    className=" absolute backdrop-blur-md rounded-xl -skew-x-[8deg] font-headerFont
-                                2xl:p-5 2xl:gax-x-16 2xl:w-72 2xl:h-24  flex justify-between "
+                    className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont
+                                flex justify-between ring-1 ring-slate-400
+                                md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem]
+                                lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem]
+                                llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem]
+                                xl:p-4 xl:gap-x-12 xl:w-64 xl:h-20 xl:-left-16 xl:top-[20rem]
+                                2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem] "
                   >
-                    <div>
-                      <h3 className="2xl:text-xl 2xl:font-[600]">
+                    <div className=" relative md:bottom-1  bottom-2">
+                      <h3 className="md:font-semibold  lg:text-base 2xl:text-xl 2xl:font-[600]">
                         {item.CurrentPrice}
                       </h3>
                       <p className="text-sm">Latest Bid</p>
                     </div>
-                    <div className=" relative bottom-1 text-right">
-                      <h3 className=" 2xl:text-lg 2xl:font-medium">
+                    <div className=" relative md:bottom-2 bottom-3 text-right">
+                      <h3 className=" 2xl:text-lg font-medium">
                         {item.TotalPrice}
                       </h3>
-                      <p className=" text-[#24FF00]">{item.Profits}</p>
+                      <p
+                        className={
+                          item.id == 3
+                            ? "text-red-500 font-medium"
+                            : "text-[#24FF00] font-medium"
+                        }
+                      >
+                        {item.Profits}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className=" flex justify-between bgred-300 font-headerFont absolute
+                                child:-skew-x-6 bg-teal-600 rounded-xl
+                                2xl:gap-x-6 2xl:p-4"
+                  >
+                    <img
+                      src={item.imgOwner}
+                      className={item.id == 1  || item.id == 2 ? "w-25 h-25 object-contain contrast-200" : " w-20 h-20 object-contain contrast-150 -skew-x-6"}
+                      alt={item.imgNameAlt}
+                    />
+                    <div className=" pt-2">
+                      <h2 className=" text-3xl font-semibold ">
+                        {item.imgName}
+                      </h2>
+                      <p className=" text-black ">{item.imgSmName}</p>
                     </div>
                   </div>
                 </div>
@@ -189,7 +219,7 @@ const Nbody2 = () => {
           <img
             src={Vec1}
             alt="liner gradient color"
-            className=" z-40 absolute 
+            className=" z-40 absolute pointer-events-none
                         md:-left-64 md:-bottom-[30rem]
                         lg:-left-40 lg:-bottom-[45rem]
                         llg:-left-24
@@ -199,7 +229,7 @@ const Nbody2 = () => {
           <img
             src={Vec2}
             alt="liner gradient color"
-            className=" bg-right absolute -bottom-[48rem] -right-20
+            className=" bg-right absolute -bottom-[48rem] -right-20 pointer-events-none
                         md:left-24 md:-bottom-[38rem] lg:-bottom-[46rem] lg:left-44 llg:left-72 
                         xl:-bottom-[52rem]
                         "
