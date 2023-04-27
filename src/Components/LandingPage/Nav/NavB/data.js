@@ -1,17 +1,17 @@
 import nft1 from "./../../../../assets/images/nfts/Rectangle 11.webp";
-import nft1Ava from "./../../../../assets/images/Users/Verifi.png";
+import nft1Ava from "./../../../../assets/images/Users/Verifi.webp";
 
 import nft2 from "./../../../../assets/images/nfts/owl.webp";
-import nft2Ava from "./../../../../assets/images/Users/Verifi.png";
+import nft2Ava from "./../../../../assets/images/Users/Verifi.webp";
 
 import nft3 from "./../../../../assets/images/nfts/cheap.webp";
-import nft3Ava from "./../../../../assets/images/Users/ahbal.png";
+import nft3Ava from "./../../../../assets/images/Users/ahbal.webp";
 
 import nft4 from "./../../../../assets/images/nfts/Cool.webp";
-import nft4Ava from "./../../../../assets/images/Users/chanda.png";
+import nft4Ava from "./../../../../assets/images/Users/chanda.webp";
 
 import nft5 from "./../../../../assets/images/nfts/crocPi.webp";
-import nft5Ava from "./../../../../assets/images/Users/MSRT.png";
+import nft5Ava from "./../../../../assets/images/Users/MSRT.webp";
 
 const data = [
   {
