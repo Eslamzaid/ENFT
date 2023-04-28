@@ -1,4 +1,4 @@
-import {useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import data from "./data";
 import Vec1 from "./../../../../assets/Icons/Vector6.webp";
 import Vec2 from "./../../../../assets/Icons/Vector5.webp";
@@ -90,16 +90,16 @@ const Nbody2 = () => {
         </div>{" "}
         <div className=" absolute z-10  md:-left-3 md:top-7 lg:left-36 lg:top-8 llg:left-64 llg:top-8 xl:left-40 xl:top-8 2xl:left-40 2xl:top-4 w-fit">
           {data.map((item, index) => (
-            <div>
+            <div key={index}>
               {index === currentIndex && (
                 <div>
                   <img
-                  alt="NFT's"
-                    key={item.id}
+                    alt="NFT's"
+                    key={index}
                     src={item.nft}
                     className={
                       index === currentIndex
-                        ? item.id == 1
+                        ? item.id == 0
                           ? " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]"
                           : " animate-waving-hand object-contain md:w-64 lg:w-80 llg:w-80 xl:w-[22rem] 2xl:w-[25.5rem] rounded-xl -skew-x-[8deg]  "
                         : ""
@@ -112,9 +112,9 @@ const Nbody2 = () => {
         </div>
         <div className=" absolute z-30 md:-left-3 md:top-7 lg:left-36 lg:top-8 llg:left-64 llg:top-8 xl:left-40 xl:top-8 2xl:left-40 2xl:top-4 w-fit">
           {data.map((item, index) => (
-            <>
+            <div key={index}>
               {index === currentIndex && (
-                <div>
+                <div key={index}>
                   <img
                     key={item.id}
                     src={item.nft}
@@ -126,8 +126,11 @@ const Nbody2 = () => {
                         : ""
                     }
                   />
-                  <div className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont flex justify-between ring-1 ring-slate-400 z-10 md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem] lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem] llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem] xl:p-4 xl:gap-x-12 xl:w-64 xl:h-20 xl:-left-16 xl:top-[20rem] 2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem]  ">
-                    <div className=" relative md:bottom-1  bottom-2">
+                  <div className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont flex justify-between ring-1 ring-slate-400 z-10 md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem] lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem] llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem] xl:p-4 xl:gap-x-12 xl:w-64 xl:h-20 xl:-left-16 xl:top-[20rem] 2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem]  " key={item.id + 1}>
+                    <div
+                      className=" relative md:bottom-1  bottom-2"
+                      key={item.id + 2}
+                    >
                       <h3
                         className="md:font-semibold  lg:text-base 2xl:text-xl 2xl:font-[600]"
                         key={item.id}
@@ -136,8 +139,11 @@ const Nbody2 = () => {
                       </h3>
                       <p className="text-sm">Latest Bid</p>
                     </div>
-                    <div className=" relative md:bottom-2 bottom-3 text-right">
-                      <h3 className=" 2xl:text-lg font-medium" key={item.id}>
+                    <div
+                      className=" relative md:bottom-2 bottom-3 text-right"
+                      key={item.id + 5}
+                    >
+                      <h3 className=" 2xl:text-lg font-medium" key={item.id + 6}>
                         {item.TotalPrice}
                       </h3>
                       <p
@@ -146,15 +152,18 @@ const Nbody2 = () => {
                             ? "text-red-500 font-medium"
                             : "text-[#24FF00] font-medium"
                         }
-                        key={item.id}
+                        key={item.id + 7}
                       >
                         {item.Profits}
                       </p>
                     </div>
                   </div>
-                  <div className=" absolute flex justify-between bgred-300 font-headerFont  child:-skew-x-6 ring-1 ring-slate-400 backdrop-blur-md rounded-xl  md:w-[12.4rem] md:p-3 md:bottom-[14rem]  md:-left-16 lg:w-[13rem] lg:p-3 lg:bottom-[18rem]  lg:-left-16 llg:w-[14rem] llg:p-3 llg:bottom-[18rem]  llg:-left-16 xl:w-[15rem] xl:p-3 xl:bottom-[20rem]  xl:-left-16 2xl:w-[17rem] 2xl:p-4 2xl:bottom-[22rem]  2xl:-left-20">
+                  <div
+                    key={index + 8}
+                    className=" absolute flex justify-between bgred-300 font-headerFont  child:-skew-x-6 ring-1 ring-slate-400 backdrop-blur-md rounded-xl  md:w-[12.4rem] md:p-3 md:bottom-[14rem]  md:-left-16 lg:w-[13rem] lg:p-3 lg:bottom-[18rem]  lg:-left-16 llg:w-[14rem] llg:p-3 llg:bottom-[18rem]  llg:-left-16 xl:w-[15rem] xl:p-3 xl:bottom-[20rem]  xl:-left-16 2xl:w-[17rem] 2xl:p-4 2xl:bottom-[22rem]  2xl:-left-20"
+                  >
                     <img
-                      key={item.id}
+                      key={item.i + 9}
                       src={item.imgOwner}
                       className={
                         item.id == 1 || item.id == 2
@@ -163,21 +172,21 @@ const Nbody2 = () => {
                       }
                       alt={item.imgNameAlt}
                     />
-                    <div className=" pt-2">
+                    <div key={index + 10}  className=" pt-2">
                       <h2
                         className="lg:text-base llg:text-lg xl:text-xl 2xl:text-2xl font-semibold"
-                        key={item.id}
+                        key={item.id + 11}
                       >
                         {item.imgName}
                       </h2>
-                      <p className="text-black" key={item.id}>
+                      <p className="text-black" key={item.id + 12}>
                         {item.imgSmName}
                       </p>
                     </div>
                   </div>
                 </div>
               )}
-            </>
+            </div>
           ))}
         </div>
         <div className=" z-20 ring-1 ring-slate-400 backdrop-blur-2xl -skew-x-[8deg] absolute w-fit h-16  font-headerFont rounded-xl md:p-2 md:-left-[2.7rem]  md:pb-4 md:pr-4 md:text-sm md:top-[23rem] lg:p-3 lg:pb-6 lg:pr-7 lg:left-[7.8rem] lg:top-[28rem] llg:left-[16rem] llg:top-[27.6rem] xl:top-[29.2rem] xl:p-4 xl:pb-14 xl:pr-5 xl:left-[7.5rem] xl:text-base 2xl:left-[8rem]">
