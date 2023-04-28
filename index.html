@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/Icons/Logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ENFT</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/webp;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ENFT is an NFT marketplace in which you can see the trending NFT's, Bid, manage, and trade your NFT's easily" />
+  <meta property="og:title" content="ENFT" />
+  <!-- <meta property="og:url" content="" /> -->
+  <meta property="og:image" content="./LogoText copy.webp" />
+  <meta property="og:description"
+    content="ENFT is an NFT marketplace in which you can see the trending NFT's, Bid, manage, and trade your NFT's easily" />
+  <title>ENFT</title>
+  <script type="module" crossorigin src="/assets/index-2b72a6ff.js"></script>
+  <link rel="stylesheet" href="/assets/index-433333d7.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+</body>
+
 </html>

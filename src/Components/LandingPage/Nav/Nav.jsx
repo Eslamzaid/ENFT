@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import TextLogo from "./../../../assets/Icons/LogoText.png";
-import Menu from "./../../../assets/Icons/menu.png";
-import Close from "./../../../assets/Icons/close.png";
+import { useState, useEffect } from "react";
+import TextLogo from "./../../../assets/Icons/LogoText.webp";
+import Menu from "./../../../assets/Icons/menu.webp";
+import Close from "./../../../assets/Icons/close.webp";
 import Shades from "./../../../assets/images/Images/NavShades.png";
 
 const Nav = () => {
@@ -22,12 +22,10 @@ const Nav = () => {
   }, []);
 
   return (
-    <div
-      style={{ backgroundImage: `url(${Shades})` }}
-      className=" w-screen flex justify-center xl:px-16"
-    >
+    <div className=" w-screen flex justify-center xl:px-16">
       {x < 725 ? (
         <nav className="font-semibold text-white w-screen">
+          <img src={Shades} alt="Shades for design" className=" absolute" />
           <div className="w-screen">
             <img
               alt="NavBar"
@@ -72,36 +70,37 @@ const Nav = () => {
         </nav>
       ) : (
         <nav className=" text-white  w-11/12 xl:w-[75rem] 2xl:w-11/12">
+          <img src={Shades} alt="Shades for design" className=" absolute" />
           <div className="mt-7">
             <ul
               className="flex justify-end items-center child:z-30  sm:m-3
                 child:border-transparent child:border-2 child:transition-all
-                sm:text-sm  child:cursor-pointer child:font-semibold
+                sm:text-sm  child:cursor-pointer child:font-semibold 
                  "
             >
               <li className="justify-self-start mr-auto">
                 <img src={TextLogo} alt="ENFT" />
               </li>
               <li
-                className="sm:text-sm  hover:border-2 hover:border-b-white
+                className="sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
               sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
               >
                 Marketplace
               </li>
               <li
-                className="sm:text-sm hover:border-2 hover:border-b-white
+                className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
               sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
               >
                 Collection
               </li>
               <li
-                className="sm:text-sm hover:border-2 hover:border-b-white
+                className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
             sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
               >
                 Articles
               </li>
               <li
-                className="sm:text-sm hover:border-2 hover:border-b-white
+                className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
             sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
               >
                 Bid now

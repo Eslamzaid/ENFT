@@ -27,7 +27,7 @@ export default {
         },
       },
       animation: {
-        "waving-hand": "testt 0.5s linear ",
+        "waving-hand": "testt 0.7s ease-in ",
       },
       screens: {
         extsm: "342px",
