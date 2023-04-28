@@ -8,7 +8,9 @@ const FNBody = () => {
         alt=" Some Shades for design"
         className=" absolute w-screen"
       />
-      <div></div>
+      <div>
+        <h1>Hello my freind my name is eslam</h1>
+      </div>
     </section>
   );
 };
