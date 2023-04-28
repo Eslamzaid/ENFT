@@ -9,7 +9,7 @@ const FNBody = () => {
         className=" absolute w-screen"
       />
       <div>
-        <h1>Hello my freind my name is eslam</h1>
+        
       </div>
     </section>
   );
