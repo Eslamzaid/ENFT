@@ -12,12 +12,12 @@ function Number({ n, str }) {
 
   return (
     <div className=" inline-block w-fi">
-      <div className="  flex justify-center items-center text-center mx-4">
+      <div className="  flex justify-center items-center text-center extsm:mx-6 exsm:mx-4 text-4xl">
         <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
         K+
       </div>
       <div className=" flex justify-center">
-        <p className=" text-sm font-normal text-slate-200">{str}</p>
+        <p className=" text-lg font-normal text-slate-200">{str}</p>
       </div>
     </div>
   );
@@ -26,7 +26,7 @@ function Number({ n, str }) {
 const Nbody = () => {
   return (
     <section
-      className="lg:mt-14 mt-12 w-[89.6%] text-white 
+      className="lg:mt-14 mt-3 sm:mt-28 extsm:mt-7  w-[89.6%] text-white 
                  md:flex md:justify-between  md:items-middle
                  xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
     >
@@ -80,7 +80,7 @@ const Nbody = () => {
             Bid now
           </button>
         </div>
-        <div className=" font-headerFont w-full mt-8 sm:text-3xl font-semibold">
+        <div className=" font-headerFont w-full mt-8 sm:text-3xl font-semibold mb-10">
           <Number n={432} str={"collections"} />
           <Number n={200} str={"Artists"} />
           <Number n={10} str={"Community"} />

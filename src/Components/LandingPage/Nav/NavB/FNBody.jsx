@@ -11,15 +11,19 @@ const FNBody = () => {
       <img
         src={FPol}
         alt=" Some Shades for design"
-        className=" absolute w-screen h-[100rem]"
+        className="  absolute w-screen "
       />
-      <div className=" w-[80rem] relative top-44  child:poiner-events-none">
-        <div className=" flex justify-between child:object-contain px-4 relative bottom-5">
+      <div
+        className=" xl:w-[80rem] relative top-48 child:pointer-events-none
+                    w-11/12
+                    llg:bg-red-400 lg:w-[65rem] llg:w-[70rem] "
+      >
+        <div className=" flex justify-between child:object-contain md:child:px-5 lg:px-10 llg:px-4 relative bottom-5 md:child:w-60 ">
           <img src={FImg} alt="MetaMask" />
           <img src={FoImg} alt="Trust Wallet" />
           <img src={FIimg} alt="WalletConnects" />
         </div>
-        <div className=" flex justify-evenly mt-7">
+        <div className=" flex justify-evenly mt-7 md:child:w-52 md:child:px-5">
           <img src={SecImg} alt="Exodus" />
           <img src={ThiImg} alt="SafePal" />
         </div>
