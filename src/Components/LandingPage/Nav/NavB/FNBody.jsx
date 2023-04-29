@@ -1,4 +1,4 @@
-import FPol from "./../../../../assets/images/Images/FPol.webp";
+import FPol from "./../../../../assets/images/Group 170.png";
 import FImg from "./../../../../assets/images/Images/metaM.webp";
 import SecImg from "./../../../../assets/images/Images/exo.webp";
 import ThiImg from "./../../../../assets/images/Images/safeP.webp";
@@ -13,13 +13,14 @@ const FNBody = () => {
         alt=" Some Shades for design"
         className="  absolute w-screen "
       />
+
       <div
         className=" xl:w-[80rem] relative top-5 sm:top-48 child:pointer-events-none
                     w-11/12
-                    llg:bg-red-400 lg:w-[65rem] llg:w-[70rem] "
+                    lg:w-[65rem] llg:w-[70rem] "
       >
         <div
-          className=" flex-col flex items-start px-4 bg-red-400 child:py-3 msm:flex-row justify-between child:object-contain child:w-32 sm:child:w-52 sm:child:px-3  
+          className=" flex-col flex items-start pl-4 pr-2 child:py-3 esm:items-center  esm:flex-row justify-between child:object-contain child:w-32 sm:child:w-52 sm:child:px-3  
                          msm:child:px-5 msm:child:w-48 md:child:px-5 lg:px-10 llg:px-4 relative bottom-5 md:child:w-60 lg:child:w-fit"
         >
           <img src={FImg} alt="MetaMask" />
@@ -27,10 +28,10 @@ const FNBody = () => {
           <img src={FIimg} alt="WalletConnects" />
         </div>
         <div
-          className=" flex-col flex items-start px-4 child:py-3 msm:flex-row justify-evenly child:w-28 sm:child:px-5 sm:child:w-52 msm:child:px-5 
-                         msm:child:w-48 md:child:w-52 md:child:px-5 lg:child:w-fit msm:bg-green-900 sm:bg-red-400 "
+          className=" flex-col flex items-start px-4 child:py-3 esm:child:px-5 esm:child:w-44 w-full  esm:justify-center esm:items-center esm:flex-row justify-evenly child:w-28 sm:child:mx-10 sm:child:w-52 msm:child:px-5 
+                         msm:child:w-48 md:child:w-52 md:child:mx-10 lg:child:w-fit lg:child:px-12 llg:child:mx-0 xl:child:px-24"
         >
-          <img src={SecImg} className=" self-end" alt="Exodus" />
+          <img src={SecImg} className=" self-end esm:self-auto" alt="Exodus" />
           <img src={ThiImg} alt="SafePal" />
         </div>
       </div>
