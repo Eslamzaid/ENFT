@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -35,7 +35,9 @@ function App() {
           </div> */}
         {/* ))} */}
       </Slider>
-      <div className="text-9xl text-white">Hi</div>
+
+      <div className=" absolute"></div>
+      <div className="text-9xl bg-black text-white">Hi</div>
       <p>The middle index is: {middleIndex}</p>
     </div>
   );

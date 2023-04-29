@@ -1,8 +1,9 @@
 import Nav from "./Nav/Nav";
 import Nbody from "./Nav/NavB/Nbody";
-import MainP1 from "./Main/MainP1";
-
 import FNBody from "./Nav/NavB/FNBody";
+import loadable from "@loadable/component";
+
+const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 const LandingP = () => {
   return (
@@ -13,7 +14,7 @@ const LandingP = () => {
         <Nbody />
         <FNBody />
       </nav>
-      <main className=" z-20">
+      <main className=" z-50">
         <MainP1 />
       </main>
     </article>

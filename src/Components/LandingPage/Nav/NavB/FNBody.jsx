@@ -1,4 +1,4 @@
-import FPol from "./../../../../assets/images/Group 170.png";
+import FPol from "./../../../../assets/images/Images/shad.webp";
 import FImg from "./../../../../assets/images/Images/metaM.webp";
 import SecImg from "./../../../../assets/images/Images/exo.webp";
 import ThiImg from "./../../../../assets/images/Images/safeP.webp";
