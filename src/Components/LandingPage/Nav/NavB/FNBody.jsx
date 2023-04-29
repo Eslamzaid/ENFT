@@ -7,17 +7,17 @@ import FIimg from "./../../../../assets/images/Images/wallet.webp";
 
 const FNBody = () => {
   return (
-    <section className=" flex justify-center mt-8 w-screen xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
+    <section className=" flex justify-center mt-8 w-screen xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12 my-32 exsm:my-48 lg:my-0 msm:mb-72 lg:mb-96 z-50 ">
       <img
         src={FPol}
         alt=" Some Shades for design"
-        className="  absolute w-screen "
+        className="  absolute w-screen z-10"
       />
 
       <div
         className=" xl:w-[80rem] relative top-5 sm:top-48 child:pointer-events-none
                     w-11/12
-                    lg:w-[65rem] llg:w-[70rem] "
+                    lg:w-[65rem] llg:w-[70rem] z-30"
       >
         <div
           className=" flex-col flex items-start pl-4 pr-2 child:py-3 esm:items-center  esm:flex-row justify-between child:object-contain child:w-32 sm:child:w-52 sm:child:px-3  

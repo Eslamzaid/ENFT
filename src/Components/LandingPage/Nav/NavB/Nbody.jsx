@@ -31,9 +31,7 @@ const Nbody = () => {
                  xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
     >
       <section
-        className="relative my-6 text-center flex flex-col items-center
-                          md:text-left md:items-start
-                          "
+        className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start"
       >
         <img
           src={FtextSha}
