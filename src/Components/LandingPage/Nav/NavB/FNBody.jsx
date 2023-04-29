@@ -18,12 +18,12 @@ const FNBody = () => {
                     w-11/12
                     llg:bg-red-400 lg:w-[65rem] llg:w-[70rem] "
       >
-        <div className=" flex justify-between child:object-contain md:child:px-5 lg:px-10 llg:px-4 relative bottom-5 md:child:w-60 ">
+        <div className=" flex  justify-between child:object-contain sm:child:w-52 sm:child:px-3 msm:child:px-5 msm:child:w-48 md:child:px-5 lg:px-10 llg:px-4 relative bottom-5 md:child:w-60 lg:child:w-fit">
           <img src={FImg} alt="MetaMask" />
           <img src={FoImg} alt="Trust Wallet" />
           <img src={FIimg} alt="WalletConnects" />
         </div>
-        <div className=" flex justify-evenly mt-7 md:child:w-52 md:child:px-5">
+        <div className=" flex justify-evenly mt-7 sm:child:px-5 sm:child:w-52 msm:child:px-5 msm:child:w-48 md:child:w-52 md:child:px-5 lg:child:w-fit msm:bg-green-900 sm:bg-red-400 ">
           <img src={SecImg} alt="Exodus" />
           <img src={ThiImg} alt="SafePal" />
         </div>

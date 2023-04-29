@@ -32,9 +32,11 @@ export default {
       screens: {
         extsm: "342px",
         exsm: "468px",
+        msm: "640px",
+        sm: "680px",
         ssm: "845px",
         md: "900px",
-        llg:"1170px"
+        llg: "1170px",
       },
     },
     fontFamily: {
@@ -51,6 +53,5 @@ export default {
       inter: ["Inter", "sans-serif"],
       poppi: ["Poppins", "sans-serif"],
     },
-
   },
 };
