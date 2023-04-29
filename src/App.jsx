@@ -5,8 +5,6 @@ import { lazy } from "@loadable/component";
 import Sign from "./LoginSign/Sign";
 import SignUp from "./LoginSign/SignUp";
 
-import "./App.css";
-
 const LoadingComp = loadable(() => import("./loading/LoadingComp"));
 const LandingP = loadable(() => import("./Components/LandingPage/LandingP"));
 const MarketPlace = lazy(() => import("./Components/MarketPlace/MarketP"));
