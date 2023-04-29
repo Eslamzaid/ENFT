@@ -2,6 +2,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import data from "./Data2";
 
 function App() {
   const [middleIndex, setMiddleIndex] = useState(0);
@@ -25,18 +26,15 @@ function App() {
   return (
     <div>
       <Slider {...settings}>
-        {/* {data.map((item) => (
+        {data.map((item) => (
           <div key={item.id} className="item">
-            <img src={item.photo} alt={item.name} />
-            <h2>{item.name}</h2>
-            <p>Age: {item.age}</p>
+            <img src={item.nft} alt={item.NFTalt} />
+            <h2>{item.OwnerName}</h2>
             <p>ID: {item.id}</p>
-          </div> */}
-        {/* ))} */}
+          </div>
+        ))}
       </Slider>
 
-      <div className=" absolute"></div>
-      <div className="text-9xl bg-black text-white">Hi</div>
       <p>The middle index is: {middleIndex}</p>
     </div>
   );
