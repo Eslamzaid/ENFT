@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,7 +16,7 @@ function App() {
     autoplaySpeed: 3000,
     cssEase: "linear",
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: "60px",
     afterChange: (index) => {
       setMiddleIndex(index);
     },

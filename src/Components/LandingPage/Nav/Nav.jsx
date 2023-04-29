@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import TextLogo from "./../../../assets/Icons/LogoText.webp";
 import Menu from "./../../../assets/Icons/menu.webp";
 import Close from "./../../../assets/Icons/close.webp";
-import Shades from "./../../../assets/images/Images/NavShades.png";
 
 const Nav = () => {
   let [resp, setresp] = useState(true);
@@ -25,7 +24,6 @@ const Nav = () => {
     <div className=" w-screen flex justify-center xl:px-16">
       {x < 725 ? (
         <nav className="font-semibold text-white w-screen">
-          <img src={Shades} alt="Shades for design" className=" absolute" />
           <div className="w-screen">
             <img
               alt="NavBar"
@@ -70,7 +68,6 @@ const Nav = () => {
         </nav>
       ) : (
         <nav className=" text-white  w-11/12 xl:w-[75rem] 2xl:w-11/12">
-          <img src={Shades} alt="Shades for design" className=" absolute" />
           <div className="mt-7">
             <ul
               className="flex justify-end items-center child:z-30  sm:m-3
