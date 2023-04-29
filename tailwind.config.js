@@ -32,6 +32,7 @@ export default {
       screens: {
         extsm: "342px",
         exsm: "468px",
+        exm: "480px",
         msm: "640px",
         sm: "680px",
         ssm: "845px",
