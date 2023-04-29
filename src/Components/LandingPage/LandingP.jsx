@@ -4,7 +4,6 @@ import FNBody from "./Nav/NavB/FNBody";
 import loadable from "@loadable/component";
 import Shades from "./../../assets/images/Images/NavShades.png";
 import FPol from "./../../assets/images/Images/shad.webp";
-// import Shades from "./../../../assets/images/Images/NavShades.png";
 const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 const LandingP = () => {

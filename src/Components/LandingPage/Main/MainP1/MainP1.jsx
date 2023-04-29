@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "./Data2";
+import "./MP1.css"
 
 function App() {
   const [middleIndex, setMiddleIndex] = useState(0);
