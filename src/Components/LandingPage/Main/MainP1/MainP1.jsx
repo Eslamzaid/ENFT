@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "./Data2";
-import "./MP1.css";
+
 
 function App() {
   const [middleIndex, setMiddleIndex] = useState(0);
@@ -18,7 +18,7 @@ function App() {
     autoplaySpeed: 900,
     cssEase: "linear",
     centerMode: true,
-    centerPadding: "60px",
+    centerPadding: "140px",
     afterChange: (index) => {
       setMiddleIndex(index);
     },
@@ -29,7 +29,7 @@ function App() {
       <Slider {...settings}>
         {data.map((item) => (
           <div key={item.id} className="item">
-            <img width="100rem" src={item.nft} alt={item.NFTalt} />
+            <img src={item.nft} alt={item.NFTalt} className=" w-[28rem] h-[28rem] object-contain"/>
             <h2>{item.OwnerName}</h2>
             
           </div>
