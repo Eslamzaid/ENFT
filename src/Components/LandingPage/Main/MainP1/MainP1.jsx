@@ -111,7 +111,7 @@ function MainP1() {
               <button
                 className={
                   index == middleIndex
-                    ? " font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] rounded-full w-11/12 mt-8 h-14"
+                    ? " font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] rounded-full w-11/12 mt-8 h-14 hover:bg-[#287ceb] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
                     : "transition-all ease-in-out hidden"
                 }
               >
