@@ -15,14 +15,12 @@ const LandingP = () => {
       >
         <Nav />
         <Nbody />
-        <div
-          className="  w-screen bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url('${FPol}')` }}
-        >
-          <FNBody />
-        </div>
+        
       </nav>
-      <main className=" max-w-[180rem] z-50 bg-red-400 w-screen h-fit">
+      <main style={{ backgroundImage: `url('${FPol}')` }} className=" max-w-[180rem] z-50 w-screen bg-no-repeat bg-cover h-fit">
+      
+          <FNBody />
+      
         <MainP1 />
       </main>
     </article>

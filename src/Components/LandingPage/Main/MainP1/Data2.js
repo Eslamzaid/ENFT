@@ -4,7 +4,7 @@ import BGo from "./../../../../assets/images/nfts/Bgoast.webp";
 import BOld from "./../../../../assets/images/nfts/BOldMan.webp";
 import Boy from "./../../../../assets/images/nfts/Boy.webp";
 import Bpl1 from "./../../../../assets/images/nfts/Bpl1.webp";
-import OB1 from "./../../../../assets/images/Users/Verifi.webp";
+import OB1 from "./../../../../assets/images/Users/Verifi2.webp";
 import OB2 from "./../../../../assets/images/Users/chanda.webp";
 import OB3 from "./../../../../assets/images/Users/MSRT.webp";
 import OB4 from "./../../../../assets/images/Users/ahbal.webp";
