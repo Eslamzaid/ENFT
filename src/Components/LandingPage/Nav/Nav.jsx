@@ -21,7 +21,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className=" w-screen flex justify-center xl:px-16">
+    <div className="max-w-[180rem] w-screen flex justify-center xl:px-16">
       {x < 725 ? (
         <nav className="font-semibold text-white w-screen">
           <div className="w-screen">
