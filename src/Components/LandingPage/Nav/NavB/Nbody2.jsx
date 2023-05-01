@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import data from "./data";
 import Vec1 from "./../../../../assets/Icons/Vector6.webp";
 import Vec2 from "./../../../../assets/Icons/Vector5.webp";
+import { theMainCon } from "./../../LandingP";
 
 let ran = Math.floor(Math.random() * 50);
 const Nbody2 = () => {
@@ -59,6 +60,8 @@ const Nbody2 = () => {
       clearInterval(tHours);
     };
   });
+
+  const LetsSee = useContext(theMainCon);
   return (
     <div>
       <div className="bg-left w-full z-10 relative">
@@ -84,7 +87,7 @@ const Nbody2 = () => {
                          "
         >
           <h2 className=" md:text-base md:font-bold xl:text-xl lg:text-base lg:font-black">
-            BID NOW!
+            BID NOW! {LetsSee.testText}
           </h2>
           <p className=" text-[0.7rem] font-[500] ">Latest collection</p>
         </div>{" "}
@@ -127,7 +130,10 @@ const Nbody2 = () => {
                         : ""
                     }
                   />
-                  <div className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont flex justify-between ring-1 ring-slate-400 z-10 md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem] lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem] llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem] xl:p-4 xl:gap-x-12 xl:w-64 xl:h-20 xl:-left-16 xl:top-[20rem] 2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem]  " key={item.id + 1}>
+                  <div
+                    className=" absolute backdrop-blur-xl rounded-xl -skew-x-[8deg] font-headerFont flex justify-between ring-1 ring-slate-400 z-10 md:p-3 md:w-52 md:h-16 md:-left-16 md:top-[14rem] lg:p-3 lg:w-56 lg:h-16 lg:-left-16 lg:top-[18rem] llg:p-3 llg:w-56 llg:h-16 llg:-left-16 llg:top-[18rem] xl:p-4 xl:gap-x-12 xl:w-64 xl:h-20 xl:-left-16 xl:top-[20rem] 2xl:p-5 2xl:gax-x-16 2xl:w-[18.2rem] 2xl:h-20 2xl:-left-20 2xl:top-[22rem]  "
+                    key={item.id + 1}
+                  >
                     <div
                       className=" relative md:bottom-1  bottom-2"
                       key={item.id + 2}
@@ -144,7 +150,10 @@ const Nbody2 = () => {
                       className=" relative md:bottom-2 bottom-3 text-right"
                       key={item.id + 5}
                     >
-                      <h3 className=" 2xl:text-lg font-medium" key={item.id + 6}>
+                      <h3
+                        className=" 2xl:text-lg font-medium"
+                        key={item.id + 6}
+                      >
                         {item.TotalPrice}
                       </h3>
                       <p
@@ -173,7 +182,7 @@ const Nbody2 = () => {
                       }
                       alt={item.imgNameAlt}
                     />
-                    <div key={index + 10}  className=" pt-2">
+                    <div key={index + 10} className=" pt-2">
                       <h2
                         className="lg:text-base llg:text-lg xl:text-xl 2xl:text-2xl font-semibold"
                         key={item.id + 11}
