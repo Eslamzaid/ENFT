@@ -53,6 +53,7 @@ export default {
         esm: "480px",
         msm: "640px",
         sm: "680px",
+        sms: "700px",
         ssm: "845px",
         md: "900px",
         llg: "1170px",
