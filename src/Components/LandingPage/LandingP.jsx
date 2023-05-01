@@ -3,7 +3,7 @@ import Nbody from "./Nav/NavB/Nbody";
 import FNBody from "./Nav/NavB/FNBody";
 import loadable from "@loadable/component";
 import Shades from "./../../assets/images/Images/NavShades.png";
-import FPol from "./../../assets/images/Images/shad.webp";
+import FPol from "./../../assets/Icons/Mask group.png";
 const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 const LandingP = () => {

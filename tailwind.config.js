@@ -56,6 +56,7 @@ export default {
         ssm: "845px",
         md: "900px",
         llg: "1170px",
+        llgg: "1700px",
       },
     },
     fontFamily: {

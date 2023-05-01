@@ -3,7 +3,7 @@ import data from "./Data2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Anim.css";
+import BackSha from "./../../../../assets/Icons/Ellipse 8.webp";
 
 function MainP1() {
   const [middleIndex, setMiddleIndex] = useState(0);
@@ -22,13 +22,51 @@ function MainP1() {
     afterChange: (index) => {
       setMiddleIndex(index);
     },
+    responsive: [
+      {
+        breakpoint: 1750,
+        settings: {
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 1701,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          centerPadding: "10px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          centerPadding: "10px",
+        },
+      },
+    ],
   };
 
   return (
-    <div className=" bg-red-40 text-white">
-      <h2 className=" text-5xl text-center max-w-[180rem] w-screen font-semibold font-headerFont mb-14 bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block text-transparent bg-clip-text">
-        Trending NFTs
-      </h2>
+    <div className="h-[50rem] w-screen flex flex-col text-white relative top-32">
+      <div className=" flex items-center justify-center w-full ">
+        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text  text-5xl  font-bold font-headerFont mb-14">
+          Trending NFTs
+        </h2>
+      </div>
+
+      <div className=" w-72 llgg:block hidden backdrop-blur-sm h-full -left-12 absolute z-[60]"></div>
+      <div className=" w-72 llgg:block hidden backdrop-blur-sm h-full -right-12 absolute z-[60]"></div>
+      <div></div>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div
@@ -38,18 +76,22 @@ function MainP1() {
             <div
               className={
                 index == middleIndex
-                  ? " w-[24.2rem] h-[33.2rem] z-20 absolute left-[3.4rem] top-[1.9rem] inset-3 bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : " w-[24.2rem] h-[33.2rem] z-20 absolute left-[3.4rem] top-[1.9rem] inset-3 bg-gradient-to-br  from-[#8b8b8b] transition-all rounded-xl"
+                  ? " w-[24.2rem] h-[33.2rem] z-30 absolute left-[3.4rem] top-[1.9rem] inset-3 bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : " w-[24.2rem] h-[33.2rem] z-30 absolute left-[3.4rem] top-[1.9rem] inset-3 bg-gradient-to-br  from-[#8b8b8b] transition-all rounded-xl"
               }
             ></div>
             <div
               className={
                 index == middleIndex
-                  ? " w-[24.2rem] h-[33.2rem] z-10 absolute left-[3.4rem] top-[1.9rem] blur-md inset-3 bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  ? " w-[24.2rem] h-[33.2rem] z-20 absolute left-[3.4rem] top-[1.9rem] blur-md inset-3 bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
                   : " "
               }
             ></div>
-            <div className=" z-30 relative  h-[33rem] flex flex-col items-center w-96 ml-14 bg-[#3B296E] rounded-xl py-3">
+            <div
+              style={{ backgroundImage: `url('${BackSha}')` }}
+              className=" bg-no-repeat  bg-center bg-cover w-[80rem] top-32 absolute z-10 h-3/4 blur-xl opacity-30"
+            ></div>
+            <div className=" z-40 relative  h-[33rem] flex flex-col items-center w-96 ml-14 bg-[#262951] rounded-xl py-3">
               <img
                 className={
                   index == middleIndex
@@ -111,7 +153,7 @@ function MainP1() {
               <button
                 className={
                   index == middleIndex
-                    ? " font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] rounded-full w-11/12 mt-8 h-14 hover:bg-[#287ceb] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
+                    ? " font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] rounded-full w-11/12 mt-8 h-14 focus:bg-[#1869d3] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
                     : "transition-all ease-in-out hidden"
                 }
               >
@@ -122,7 +164,6 @@ function MainP1() {
         ))}
       </Slider>
       <button className=" font-poppi">See more</button>
-      <p>The middle index is: {middleIndex}</p>
     </div>
   );
 }
