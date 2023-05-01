@@ -105,9 +105,8 @@ function MainP1() {
         </h2>
       </div>
 
-      <div className="llgg:block hidden backdrop-blur-sm h-full -left-12 absolute z-[60]"></div>
-      <div className="llgg:block hidden backdrop-blur-sm h-full -right-12 absolute z-[60]"></div>
-      <div></div>
+      <div className="llgg:block  block backdrop-blur-sm h-full -left-12 absolute z-[60]"></div>
+      <div className="llgg:block block backdrop-blur-sm h-full -right-12 absolute z-[60]"></div>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div
@@ -117,14 +116,14 @@ function MainP1() {
             <div
               className={
                 index == middleIndex
-                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-30 absolute top-[1.7rem]  bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-30 absolute top-[1.7rem]  bg-gradient-to-br from-[#8b8b8b] transition-all rounded-xl"
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#8b8b8b] transition-all rounded-xl"
               }
             ></div>
             <div
               className={
                 index == middleIndex
-                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-20 absolute top-[1.9rem] blur-md  bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.5rem] z-20 absolute top-[1.8rem] blur-sm  bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
                   : ""
               }
             ></div>
@@ -211,7 +210,7 @@ function MainP1() {
         ))}
       </Slider>
       <div className=" flex justify-center ">
-        <button className="font-poppi font-semibold transition-all ease-in-out w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border">
+        <button className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border">
           See more
         </button>
       </div>
