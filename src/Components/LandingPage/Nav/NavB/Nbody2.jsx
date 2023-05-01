@@ -94,7 +94,7 @@ const Nbody2 = () => {
               {index === currentIndex && (
                 <div>
                   <img
-                    alt="NFT's"
+                    alt={`Nft ${index}`}
                     key={index}
                     src={item.nft}
                     className={
@@ -118,6 +118,7 @@ const Nbody2 = () => {
                   <img
                     key={item.id}
                     src={item.nft}
+                    alt={`NFT ${index}`}
                     className={
                       index === currentIndex
                         ? item.id == 1

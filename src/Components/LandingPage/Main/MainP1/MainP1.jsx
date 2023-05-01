@@ -13,7 +13,7 @@ function MainP1() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
     cssEase: "linear",
@@ -75,8 +75,8 @@ function MainP1() {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2,
-          centerPadding: "90px",
+          slidesToShow: 1,
+          centerPadding: "180px",
         },
       },
       {
@@ -98,8 +98,8 @@ function MainP1() {
   };
 
   return (
-    <div className="h-[50rem] w-screen flex flex-col text-white relative top-32">
-      <div className=" flex items-center justify-center w-full xl:bg-red-300 ">
+    <div className="h-[50rem] w-screen flex flex-col text-white relative top-24 ">
+      <div className=" flex items-center justify-center w-full ">
         <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-3xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
           Trending NFTs
         </h2>
@@ -112,38 +112,38 @@ function MainP1() {
         {data.map((item, index) => (
           <div
             key={item.id}
-            className=" relative flex justify-center items-center py-8  sm:bg-orange-400 sms:bg-black ssm:bg-gray-400 md:bg-yellow-500"
+            className=" relative flex justify-center items-center py-8"
           >
             <div
               className={
                 index == middleIndex
-                  ? " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-30 absolute top-[1.9rem] bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-30 absolute top-[1.9rem] bg-gradient-to-br  from-[#8b8b8b] transition-all rounded-xl"
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-30 absolute top-[1.7rem]  bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-30 absolute top-[1.7rem]  bg-gradient-to-br from-[#8b8b8b] transition-all rounded-xl"
               }
             ></div>
             <div
               className={
                 index == middleIndex
-                  ? " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-20 absolute top-[1.9rem] blur-md bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : " "
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[85%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[7.5%] inset-3 h-[34.8rem] z-20 absolute top-[1.9rem] blur-md  bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : ""
               }
             ></div>
             <div
               style={{ backgroundImage: `url('${BackSha}')` }}
               className=" bg-no-repeat  bg-center bg-cover w-[80rem] top-32 absolute z-10 h-3/4 blur-xl opacity-30"
             ></div>
-            <div className=" relative flex justify-center items-center">
-              <div className=" w-[90%] exsm:w-9/12 esm:w-8/12 msm:w-[83%] sms:w-[88%] lg:w-96 z-40 relative h-[33rem] flex flex-col items-center bg-[#262951] rounded-xl py-3">
+            <div className="relative flex justify-center items-center">
+              <div className="w-[90%] exsm:w-9/12 esm:w-[62%] msm:w-[83%] sms:w-[88%] md:w-[83%]  z-40 relative h-[34rem] flex flex-col items-center bg-[#262951] rounded-xl py-3">
                 <img
                   className={
                     index == middleIndex
-                      ? " sms:w-[18rem] llg:w-[22rem] h-[17rem] object-cover rounded-xl"
-                      : " sms:w-[18rem] llg:w-[22rem] h-[23rem] object-cover rounded-xl"
+                      ? "h-[17rem] object-cover rounded-xl w-[90%]"
+                      : "h-[23rem] object-cover rounded-xl px-4"
                   }
                   src={item.nft}
                   alt={item.NFTalt}
                 />
-                <div className=" w-full px-4 p-4 flex justify-items-start items-center child:object-contain">
+                <div className="w-full px-4 p-4 flex justify-items-start items-center child:object-contain">
                   <img
                     src={item.Owner}
                     alt={item.OwnerAlt}
@@ -153,35 +153,35 @@ function MainP1() {
                     <h3
                       className={
                         index == middleIndex
-                          ? " font-poppi sms:text-xl lg:text-2xl py-2 font-semibold text-[#6A58F1]"
-                          : " font-poppi font-semibold py-2 sms:text-xl lg:text-2xl"
+                          ? "font-poppi sms:text-xl lg:text-2xl py-2 font-semibold text-[#6A58F1]"
+                          : "font-poppi font-semibold py-2 sms:text-xl lg:text-2xl"
                       }
                     >
                       {item.OwnerName}
                     </h3>
-                    <h6 className=" text-xs font-medium text-slate-200">
+                    <h6 className="text-xs font-medium text-slate-200">
                       {item.OwnerSorName}
                     </h6>
                   </div>
-                  <img src={item.ETH} alt={item.ETHalt} className=" ml-auto" />
+                  <img src={item.ETH} alt={item.ETHalt} className="ml-auto" />
                 </div>
-                <div className=" lg:text-lg leading-6 font-semibold flex w-full h-fit justify-between items-center px-5 ">
-                  <h3 className=" font-poppi ">
+                <div className="esm:text-sm lg:text-lg leading-6 font-semibold flex w-full h-fit justify-between items-center px-5">
+                  <h3 className="font-poppi">
                     {item.LatestBid}
                     <br />
-                    <span className=" sms:text-xs lg:text-sm font-normal ">
+                    <span className="sms:text-xs lg:text-sm font-normal">
                       latest Bid
                     </span>
                   </h3>
-                  <div className=" font-poppi w-fit flex justify-between">
+                  <div className="font-poppi w-fit flex justify-between">
                     <h3>
                       {item.FromBid}
                       <br />
-                      <span className="sms:text-xs lg:text-sm font-normal ">
+                      <span className="sms:text-xs lg:text-sm font-normal">
                         from
                       </span>
                     </h3>
-                    <h3 className="font-poppi text-right ml-7">
+                    <h3 className="font-poppi text-right esm:ml-2 ml-7">
                       {item.TotalBids}
                       <br />
                       <span
@@ -199,7 +199,7 @@ function MainP1() {
                 <button
                   className={
                     index == middleIndex
-                      ? " font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:bg-[#1869d3] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
+                      ? "font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:bg-[#1869d3] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
                       : "transition-all ease-in-out hidden"
                   }
                 >
@@ -210,7 +210,11 @@ function MainP1() {
           </div>
         ))}
       </Slider>
-      <button className=" font-poppi">See more</button>
+      <div className=" flex justify-center ">
+        <button className="font-poppi font-semibold transition-all ease-in-out w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border">
+          See more
+        </button>
+      </div>
     </div>
   );
 }
