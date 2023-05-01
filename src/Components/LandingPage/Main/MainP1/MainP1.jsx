@@ -8,8 +8,6 @@ import BackSha from "./../../../../assets/Icons/Ellipse 8.webp";
 function MainP1() {
   const [middleIndex, setMiddleIndex] = useState(0);
 
-
-
   const settings = {
     dots: false,
     infinite: true,
@@ -77,19 +75,19 @@ function MainP1() {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1,
-          centerPadding: "180px",
+          slidesToShow: 2,
+          centerPadding: "90px",
         },
       },
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           centerPadding: "1px",
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           arrows: false,
           slidesToShow: 1,
@@ -114,19 +112,19 @@ function MainP1() {
         {data.map((item, index) => (
           <div
             key={item.id}
-            className=" relative flex justify-center items-center py-8 "
+            className=" relative flex justify-center items-center py-8  sm:bg-orange-400 sms:bg-black ssm:bg-gray-400 md:bg-yellow-500"
           >
             <div
               className={
                 index == middleIndex
-                  ? " w-[16.6rem] right-0 h-[33.2rem] z-30 absolute top-[1.9rem] inset-6 bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : " w-[16.6rem] h-[33.2rem] z-30 absolute top-[1.9rem] inset-3 bg-gradient-to-br  from-[#8b8b8b] transition-all rounded-xl"
+                  ? " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-30 absolute top-[1.9rem] bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-30 absolute top-[1.9rem] bg-gradient-to-br  from-[#8b8b8b] transition-all rounded-xl"
               }
             ></div>
             <div
               className={
                 index == middleIndex
-                  ? " w-[16.6rem] h-[33.2rem] z-20 absolute top-[1.9rem] blur-sm inset-3 bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  ? " w-[92.6%] exsm:w-[76%] esm:w-[68%] msm:w-[84.5%] sms:w-[89%] exsm:left-[12%] esm:left-[15.8%] msm:left-[8%] sms:left-[5.5%] inset-3 h-[33.3rem] z-20 absolute top-[1.9rem] blur-md bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
                   : " "
               }
             ></div>
@@ -135,7 +133,7 @@ function MainP1() {
               className=" bg-no-repeat  bg-center bg-cover w-[80rem] top-32 absolute z-10 h-3/4 blur-xl opacity-30"
             ></div>
             <div className=" relative flex justify-center items-center">
-              <div className=" z-40 relative h-[33rem] flex flex-col items-center w-64 esm:w-8/12 sms:w-[19.8rem] lg:w-96 bg-[#262951] rounded-xl py-3">
+              <div className=" w-[90%] exsm:w-9/12 esm:w-8/12 msm:w-[83%] sms:w-[88%] lg:w-96 z-40 relative h-[33rem] flex flex-col items-center bg-[#262951] rounded-xl py-3">
                 <img
                   className={
                     index == middleIndex
