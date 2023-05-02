@@ -28,8 +28,10 @@ function App() {
     }, 2000);
   }, []);
 
+  
+
   return (
-    <div className=" w-full h-full ">
+    <div className=" w-full h-full overflow-x-hidden">
       {here ? (
         isLoading ? (
           <LoadingComp />

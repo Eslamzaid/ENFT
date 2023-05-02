@@ -1,4 +1,4 @@
-import { useRef, createContext, useState, useEffect } from "react";
+import { useRef, createContext, useEffect } from "react";
 import Nav from "./Nav/Nav";
 import loadable from "@loadable/component";
 import FPol from "./../../assets/Icons/Mask group.png";
@@ -8,22 +8,8 @@ const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 export const theMainCon = createContext();
 
-
-
 const LandingP = () => {
-  const [height, setHeight] = useState(0)
-
-  useEffect(() => {
-    const HandleHeight = () => {
-      console.log(window.scrollY)
-    }
-    console.log(window.scrollY)
-  
-  
-    window.addEventListener('scroll', HandleHeight)
-    
-  },[window.scrollY])
-
+  // const [scrollDir] = useDetectScroll({});
   const Home = useRef(null);
   const focusInput = () => {
     Home.current.focus();
@@ -68,12 +54,9 @@ const LandingP = () => {
         fiveDir: FinalFocus,
       }}
     >
-      <article className=" bg-no-repeat bg-contain w-screen h-screen flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+      <article className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
         <Nav />
-        <main
-          style={{ backgroundImage: `url('${FPol}')` }}
-          className=" max-w-[180rem] z-50 w-screen bg-no-repeat bg-cover h-fit"
-        >
+        <main className=" mb-96 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
           <MainP1 />
         </main>
       </article>

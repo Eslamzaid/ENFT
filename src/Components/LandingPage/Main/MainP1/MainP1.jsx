@@ -98,14 +98,14 @@ function MainP1() {
   };
 
   return (
-    <div className="h-[50rem] w-screen flex flex-col text-white relative top-24 ">
-      <div className=" flex items-center justify-center w-full ">
+    <div className=" flex flex-col text-white top-24 ">
+      <div className="  flex items-center justify-center  ">
         <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-3xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
           Trending NFTs
         </h2>
       </div>
 
-      <div className="llgg:block  block backdrop-blur-sm h-full -left-12 absolute z-[60]"></div>
+      <div className="llgg:block  block backdrop-blur-sm  -left-12 absolute z-[60]"></div>
       <div className="llgg:block block backdrop-blur-sm h-full -right-12 absolute z-[60]"></div>
       <Slider {...settings}>
         {data.map((item, index) => (
@@ -142,7 +142,7 @@ function MainP1() {
                   src={item.nft}
                   alt={item.NFTalt}
                 />
-                <div className="w-full px-4 p-4 flex justify-items-start items-center child:object-contain">
+                <div className=" px-4 p-4 flex justify-items-start items-center child:object-contain">
                   <img
                     src={item.Owner}
                     alt={item.OwnerAlt}

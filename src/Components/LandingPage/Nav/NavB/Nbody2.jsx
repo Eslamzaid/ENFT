@@ -64,7 +64,7 @@ const Nbody2 = () => {
 
   return (
     <div className="bg-left w-full z-10 relative">
-      <div className=" z-20 absolute ring-1 rounded-xl   ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md md:w-[17.4rem] md:-left-9 md:-bottom-[15.2rem] lg:w-72  lg:left-[8rem] lg:-bottom-[15.2rem] llg:left-[16rem] llg:w-[18.4rem] xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem] 2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"></div>
+      <div className=" z-20 absolute ring-1 rounded-xl ring-slate-400 -skew-x-[8deg] h-60 backdrop-blur-md md:w-[17.4rem] md:-left-9 md:-bottom-[15.2rem] lg:w-72  lg:left-[8rem] lg:-bottom-[15.2rem] llg:left-[16rem] llg:w-[18.4rem] xl:left-[10rem]  xl:w-[21rem] xl:-bottom-[15rem] 2xl:left-[9rem] 2xl:w-[27rem] 2xl:-bottom-[14rem]"></div>
       <div
         className=" z-20 absolute top-10 ring-1 
                       rounded-xl ring-slate-400 -skew-x-[8deg] backdrop-blur-2xl
