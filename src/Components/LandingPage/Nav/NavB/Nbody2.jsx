@@ -10,7 +10,8 @@ const Nbody2 = () => {
   let [hours, setHours] = useState(ran);
   let [min, setMin] = useState(59);
   let [sec, setSec] = useState(59);
-
+  const LetsSee = useContext(theMainCon);
+  
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -61,7 +62,6 @@ const Nbody2 = () => {
     };
   });
 
-  const LetsSee = useContext(theMainCon);
   return (
     <div>
       <div className="bg-left w-full z-10 relative">
@@ -87,7 +87,7 @@ const Nbody2 = () => {
                          "
         >
           <h2 className=" md:text-base md:font-bold xl:text-xl lg:text-base lg:font-black">
-            BID NOW! {LetsSee.testText}
+            Bid now!
           </h2>
           <p className=" text-[0.7rem] font-[500] ">Latest collection</p>
         </div>{" "}

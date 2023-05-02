@@ -102,8 +102,8 @@ const Nav = () => {
               >
                 Bid now
               </li>
-              <li className=" xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor w-fit rounded-full hover:bg-sky-400 transition-colors">
-                Connect Wallet
+              <li className=" xl:px-5 xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 transition-colors">
+                Log in
               </li>
             </ul>
           </div>
