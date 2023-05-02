@@ -8,24 +8,25 @@ import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.png";
 
 const Nav = () => {
-  const [color, setColor] = useState(false)
+  const [x, setX] = useState(window.innerWidth);
+  let [color, setColor] = useState(false);
   let [resp, setresp] = useState(true);
 
   useEffect(() => {
     function HeightCha() {
-      if(window.scrollY > 100) {}
+      if (window.scrollY > 100) {
+        setColor(() => (color = true));
+      } else {
+        setColor(() => (color = false));
+      }
     }
+    window.addEventListener("scroll", HeightCha);
+    return () => window.removeEventListener("scroll", HeightCha);
+  }, []);
 
-    window.addEventListener("scroll", HeightCha)
-
-    return () => window.removeEventListener("scroll", HeightCha)
-  },[])
-
-  const [x, setX] = useState(window.innerWidth);
   useEffect(() => {
     setX((x) => (x = window.innerWidth));
-    function widthTracker() {
-    }
+    function widthTracker() {}
     window.addEventListener("resize", widthTracker);
     if (x > 725) {
       setresp(() => (resp = true));
@@ -40,10 +41,16 @@ const Nav = () => {
       style={{ backgroundImage: `url('${Shades}')` }}
       className="  flex flex-col items-center object-cover w-screen"
     >
-      <nav className="bg-cover sticky top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center xl:px-16 ">
+      <nav
+        className={
+          color
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center xl:px-16 bg-blue-400 transition-all"
+            : " bg-cover bg-red-900 fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center xl:px-16 transition-all"
+        }
+      >
         {x < 725 ? (
           <div className="font-semibold text-white w-screen">
-            <div className="w-screen">
+            <div className="w-full">
               <img
                 alt="NavBar"
                 className=" absolute w-10 top-8 right-5 cursor-pointer"
@@ -98,30 +105,60 @@ const Nav = () => {
                   <img src={TextLogo} alt="ENFT" />
                 </li>
                 <li
-                  className="sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
-                sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
+                  className={
+                    color
+                      ? `sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                      : `sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  }
                 >
                   Marketplace
                 </li>
                 <li
-                  className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
+                  className={
+                    color
+                      ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                      : `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  }
                 >
                   Collection
                 </li>
                 <li
-                  className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
+                  className={
+                    color
+                      ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                      : `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  }
                 >
                   Articles
                 </li>
                 <li
-                  className="sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6"
+                  className={
+                    color
+                      ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                      : `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-`
+                  }
                 >
                   Bid now
                 </li>
-                <li className=" xl:px-5 xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 transition-colors">
+                <li
+                  className={
+                    color
+                      ? ` xl:px-6 xl:p-3 lg:p-[1rem] lg:px-8 md:ml-1 sms:p-3 sms:px-6 ssm:text-sms p-14
+                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hovser:ring-4  ring-red-900 ring-offset-4 ring-offset-blue-300
+                  transition-all`
+                      : `xl:px-8 xl:p-3 lg:p-[0.8rem] lg:px-8 p-3   md:ml-1 sms:p-4 sms:px-8 ssm:text-base 
+                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-4 ring-red-900 ring-offset-4 ring-offset-blue-300
+                  transition-all`
+                  }
+                >
                   Log in
                 </li>
               </ul>

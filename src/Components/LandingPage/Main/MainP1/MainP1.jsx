@@ -198,7 +198,7 @@ function MainP1() {
                 <button
                   className={
                     index == middleIndex
-                      ? "font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:bg-[#1869d3] ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
+                      ? "font-poppi font-semibold transition-all ease-in-out visible bg-[#2F80ED] p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:bg-[#1869d3] hover:ring ring-offset-[#3B296E] focus:ring-white ring-offset-2"
                       : "transition-all ease-in-out hidden"
                   }
                 >
@@ -210,7 +210,7 @@ function MainP1() {
         ))}
       </Slider>
       <div className=" flex justify-center ">
-      <button className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border">
+      <button className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus: ring-slate-200 ring-offset-4 mb-2">
           See more
         </button>
       </div>
