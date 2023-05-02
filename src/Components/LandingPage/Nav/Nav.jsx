@@ -28,7 +28,7 @@ const Nav = () => {
       style={{ backgroundImage: `url('${Shades}')` }}
       className="  flex flex-col items-center"
     >
-      <nav className="bg-cover sticky top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111]  w-screen flex justify-center xl:px-16">
+      <nav className="bg-cover sticky top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center xl:px-16 ">
         {x < 725 ? (
           <div className="font-semibold text-white w-screen">
             <div className="w-screen">
@@ -67,7 +67,7 @@ const Nav = () => {
                     Bid now
                   </li>
                   <li className="bg-backColor w-fit rounded-full hover:bg-sky-400 hover:text-slate-400 transition-colors">
-                    Connect Wallet
+                    Log In
                   </li>
                 </div>
               </ul>
@@ -118,7 +118,7 @@ const Nav = () => {
         )}
       </nav>
       <Nbody />
-      <FNBody/>
+      <FNBody />
     </header>
   );
 };
