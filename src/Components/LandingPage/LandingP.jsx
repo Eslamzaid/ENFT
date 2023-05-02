@@ -1,14 +1,29 @@
-import { useRef, useContext, createContext } from "react";
+import { useRef, createContext, useState, useEffect } from "react";
 import Nav from "./Nav/Nav";
-import Nbody from "./Nav/NavB/Nbody";
-import FNBody from "./Nav/NavB/FNBody";
 import loadable from "@loadable/component";
 import FPol from "./../../assets/Icons/Mask group.png";
+
+
 const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 export const theMainCon = createContext();
 
+
+
 const LandingP = () => {
+  const [height, setHeight] = useState(0)
+
+  useEffect(() => {
+    const HandleHeight = () => {
+      console.log(window.scrollY)
+    }
+    console.log(window.scrollY)
+  
+  
+    window.addEventListener('scroll', HandleHeight)
+    
+  },[window.scrollY])
+
   const Home = useRef(null);
   const focusInput = () => {
     Home.current.focus();

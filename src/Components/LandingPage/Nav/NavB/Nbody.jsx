@@ -26,9 +26,9 @@ function Number({ n, str }) {
 const Nbody = () => {
   return (
     <section
-      className="lg:mt-14 mt-3 sm:mt-28 extsm:mt-7  w-[89.6%] text-white 
+      className="lg:mt-20 mt-3 sm:mt-24 extsm:mt-7  w-[89.6%] text-white 
                  md:flex md:justify-between  md:items-middle
-                 xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
+                  xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
     >
       <section
         className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start"
@@ -84,7 +84,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" md:w-[20rem] lg:w-[45rem] lg:mr-0 hidden md:block">
+      <section className=" md:w-[20rem] lg:w-11/12 lg:mr-0 hidden md:block">
         <Nbody2 />
       </section>
     </section>

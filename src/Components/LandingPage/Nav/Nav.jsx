@@ -26,9 +26,9 @@ const Nav = () => {
   return (
     <header
       style={{ backgroundImage: `url('${Shades}')` }}
-      className="  flex flex-col items-center"
+      className="  flex flex-col items-center relative"
     >
-      <nav className="bg-cover sticky top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center xl:px-16 ">
+      <nav className="bg-cover sticky top-0 bg-no-repeat max-w-[180rem] z-[11111111] w-screen flex justify-center xl:px-16 ">
         {x < 725 ? (
           <div className="font-semibold text-white w-screen">
             <div className="w-screen">
@@ -110,7 +110,7 @@ const Nav = () => {
                   Bid now
                 </li>
                 <li className=" xl:px-5 xl:p-3 lg:p-[5px] md:ml-1 sm:p-[5.5px] ssm:text-base bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 transition-colors">
-                  Log in
+                  Log In
                 </li>
               </ul>
             </div>
