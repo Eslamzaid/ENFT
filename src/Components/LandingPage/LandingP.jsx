@@ -1,31 +1,62 @@
+import { useRef, createContext } from "react";
 import Nav from "./Nav/Nav";
-import Nbody from "./Nav/NavB/Nbody";
-import FNBody from "./Nav/NavB/FNBody";
 import loadable from "@loadable/component";
-import Shades from "./../../assets/images/Images/NavShades.png";
-import FPol from "./../../assets/images/Images/shad.webp";
-const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
+const Main = loadable(() => import("./Main/Main"));
+
+export const theMainCon = createContext();
 const LandingP = () => {
+  const Home = useRef(null);
+  const focusInput = () => {
+    Home.current.focus();
+  };
+
+  const MarketPlace = useRef();
+  const focusInput2 = () => {
+    MarketPlace.current.focus();
+  };
+
+  const Collection = useRef();
+  const focusInput3 = () => {
+    Collection.current.focus();
+  };
+
+  const Articles = useRef();
+  const focusHero = () => {
+    Articles.current.focus();
+  };
+
+  const BidNow = useRef();
+  const FinalFocus = () => {
+    BidNow.current.focus();
+  };
+
   return (
-    <article className=" bg-no-repeat bg-contain w-screen h-screen flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
-      <nav
-        style={{ backgroundImage: `url('${Shades}')` }}
-        className="bg-cover bg-no-repeat w-screen flex flex-col justify-start items-center relative"
-      >
+    <theMainCon.Provider
+      value={{
+        one: Home,
+        oneDir: focusInput,
+
+        two: MarketPlace,
+        twoDir: focusInput2,
+
+        three: Collection,
+        threeDir: focusInput3,
+
+        four: Articles,
+        fourDir: focusHero,
+
+        five: BidNow,
+        fiveDir: FinalFocus,
+      }}
+    >
+      <body className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
         <Nav />
-        <Nbody />
-        <div
-          className=" w-screen bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url('${FPol}')` }}
-        >
-          <FNBody />
-        </div>
-      </nav>
-      <main className=" z-50 bg-red-400 w-screen h-fit">
-        <MainP1 />
-      </main>
-    </article>
+        <main className=" mb-96 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
+          <Main />
+        </main>
+      </body>
+    </theMainCon.Provider>
   );
 };
 

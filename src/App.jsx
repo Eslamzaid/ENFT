@@ -21,15 +21,13 @@ function App() {
       setHere(() => (here = false));
     }
   });
-
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
   }, []);
-
   return (
-    <div className=" w-full h-full ">
+    <div className=" w-full h-full overflow-x-hidden">
       {here ? (
         isLoading ? (
           <LoadingComp />

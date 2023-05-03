@@ -26,20 +26,19 @@ function Number({ n, str }) {
 const Nbody = () => {
   return (
     <section
-      className="lg:mt-14 mt-3 sm:mt-28 extsm:mt-7  w-[89.6%] text-white 
-                 md:flex md:justify-between  md:items-middle
-                 xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
+      className="lg:mt-44 mt-44 sm:mt-48 esm:mt-44 exsm:mt-36 msm:mt-48 extsm:mt-44  w-[89.6%] text-white 
+                 md:flex md:justify-between md:items-middle
+                  xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12
+                  "
     >
-      <section
-        className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start"
-      >
+      <section className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start">
         <img
           src={FtextSha}
           alt="A linear gradient color"
           className=" absolute left-24 border-white "
         />
         <h1
-          className=" relative bg-left exsm:text-6xl extsm:text-5xl text-[2.6rem] font-headerFont font-semibold
+          className=" relative bg-left text-4xl exsm:text-6xl extsm:text-5xl  font-headerFont font-semibold
                       mb-7 
                       md:text-[3rem]
                       lg:text-[4rem] lg:text-left 
@@ -58,23 +57,23 @@ const Nbody = () => {
           NFTs
         </h1>
         <p
-          className=" font-poppi extsm:text-base  text-slate-200 extsm:w-96 relative bottom-7 
-          sm:mt-5 text-xs w-80 extsm:px-1"
+          className=" font-poppi extsm:text-base  text-slate-200 extsm:w-80 exsm:w-96 relative bottom-7 
+          sm:mt-5 text-xs w-11/12 extsm:px-1 "
         >
           The leading NFT Marketplace on Ethereum Home to the next generation of
           digital creators. Discover the best NFT collections.
         </p>
         <div
           className=" child:mx-3 md:child:p-1  md:child:py-1 md:child:font-semibold child:cursor-pointer w-screen relative flex justify-evenly
-                         md:w-3/4 md:justify-start md:ml-1 md:gap-4 md:child:mx-0"
+                         md:w-3/4 md:justify-start md:ml-1 md:gap-4 md:child:mx-0 child:transition-all"
         >
           <button
-            className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-xl hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
-                          md:rounded-full md:ml-4 xl:p-3 xl:px-3"
+            className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
+                          md:ml-4 xl:p-3 xl:px-3"
           >
             Explore
           </button>
-          <button className=" hover:ring-2 hover:ring-offset-2hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-xl md:rounded-full">
+          <button className=" hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 hover:ring-offset-[#141843] border w-28 rounded-full">
             Bid now
           </button>
         </div>
@@ -84,7 +83,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className=" md:w-[20rem] lg:w-[45rem] lg:mr-0 hidden md:block">
+      <section className="  md:w-[20rem] lg:w-[40rem] llg:w-[45rem] lg:mr-0 hidden md:block">
         <Nbody2 />
       </section>
     </section>
