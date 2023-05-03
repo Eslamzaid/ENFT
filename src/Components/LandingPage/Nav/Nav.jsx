@@ -45,7 +45,7 @@ const Nav = () => {
       <nav
         className={
           color
-            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center items-center xl:px-16 bg-blue-400 transition-all"
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-xl transition-all"
             : " bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center items-center xl:px-16 transition-all"
         }
       >
