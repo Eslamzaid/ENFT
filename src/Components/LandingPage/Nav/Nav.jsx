@@ -93,7 +93,7 @@ const Nav = () => {
                     Bid now
                   </li>
                   <li
-                    className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-colors hover:ring-4 hover:ring-blue-800  focus:bg-red-400"
+                    className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-all hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300"
                     aria-label="log in button"
                   >
                     Log In
