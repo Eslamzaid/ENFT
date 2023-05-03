@@ -1,15 +1,11 @@
-import { useRef, createContext, useEffect } from "react";
+import { useRef, createContext } from "react";
 import Nav from "./Nav/Nav";
-import loadable from "@loadable/component";
-import FPol from "./../../assets/Icons/Mask group.png";
-
+import loadable from "@loadable/component"
 
 const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
 
 export const theMainCon = createContext();
-
 const LandingP = () => {
-  // const [scrollDir] = useDetectScroll({});
   const Home = useRef(null);
   const focusInput = () => {
     Home.current.focus();

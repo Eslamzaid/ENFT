@@ -48,7 +48,7 @@ export default {
         "scrollAnimPNeg": "scrollingAnimNeg 3.5s ease-out",
       },
       screens: {
-        extsm: "342px",
+        extsm: "367px",
         exsm: "468px",
         esm: "480px",
         msm: "640px",

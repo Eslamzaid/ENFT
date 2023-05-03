@@ -8,10 +8,9 @@ import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.png";
 
 const Nav = () => {
-  const [x, setX] = useState(window.innerWidth);
+  let [x, setX] = useState(window.innerWidth);
   let [color, setColor] = useState(false);
   let [resp, setresp] = useState(true);
-
   useEffect(() => {
     function HeightCha() {
       if (window.scrollY > 60) {
@@ -26,27 +25,27 @@ const Nav = () => {
 
   useEffect(() => {
     function widthTracker() {
-      setX((x) => (x = window.innerWidth));
+      setX(() => (x = window.innerWidth));
+      if (x > 725) {
+        setresp(() => (resp = true));
+      } else {
+        setresp(() => (resp = false));
+      }
     }
     window.addEventListener("resize", widthTracker);
-    if (x > 725) {
-      setresp(() => (resp = true));
-    } else {
-      setresp(() => (resp = false));
-    }
     return () => window.removeEventListener("resize", widthTracker);
   }, []);
-
   return (
     <header
       style={{ backgroundImage: `url('${Shades}')` }}
       className="  flex flex-col  items-center object-cover w-screen"
+      aria-label="navigation bar"
     >
       <nav
         className={
           color
-            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-xl transition-all"
-            : " bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[111111111111111111] w-screen flex justify-center items-center xl:px-16 transition-all"
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
+            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen flex justify-center items-center xl:px-16 transition-all"
         }
       >
         {x < 725 ? (
@@ -58,12 +57,19 @@ const Nav = () => {
                 onClick={() => setresp(() => !resp)}
                 src={resp ? Close : Menu}
               />
-
-              <ul className={resp ? " ml:4 pt-3 inline-block " : " ml:4 mb-2 pt-3 "}>
+              <ul
+                className={
+                  resp ? " ml:4 pt-3 inline-block " : " ml:4 mb-2 pt-3 "
+                }
+              >
                 <li>
                   <img
                     src={TextLogo}
-                    className={color ? "ml-7 cursor-pointer mt-5 pb-3" : " ml-7 cursor-pointer mt-5 pb-3"}
+                    className={
+                      color
+                        ? "ml-7 cursor-pointer mt-5 pb-3"
+                        : " ml-7 cursor-pointer mt-5 pb-3"
+                    }
                     alt="ENFT"
                   />
                 </li>
@@ -86,7 +92,10 @@ const Nav = () => {
                   <li className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all">
                     Bid now
                   </li>
-                  <li className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-colors hover:ring-4 hover:ring-blue-800  focus:bg-red-400">
+                  <li
+                    className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-colors hover:ring-4 hover:ring-blue-800  focus:bg-red-400"
+                    aria-label="log in button"
+                  >
                     Log In
                   </li>
                 </div>
@@ -102,8 +111,12 @@ const Nav = () => {
                 sm:text-sm child:cursor-pointer child:font-semibold 
                  "
               >
-                <li className="justify-self-start  mr-auto">
-                  <img src={TextLogo} alt="ENFT" />
+                <li className="justify-self-start  mr-auto child:transition-all">
+                  <img
+                    src={TextLogo}
+                    alt="ENFT"
+                    className={color ? " w-36 " : "  "}
+                  />
                 </li>
                 <li
                   className={
@@ -153,10 +166,10 @@ const Nav = () => {
                   className={
                     color
                       ? ` xl:px-6 xl:p-2 lg:p-[0.6rem] md:p-3 md:px-5 lg:px-6 md:ml-2 sms:p-3 sms:ml-2 sms:px-6 ssm:text-sms p-14
-                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-4  ring-red-900 ring-offset-4 ring-offset-blue-300
+                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                       : `xl:px-10 xl:p-3 lg:p-[0.7rem] lg:px-7 p-3 md:p-3 md:px-8 md:ml-1 sms:p-2 sms:ml-2 sms:px-6 ssm:text-base 
-                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-4 ring-red-900 ring-offset-4 ring-offset-blue-300
+                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                   }
                 >
