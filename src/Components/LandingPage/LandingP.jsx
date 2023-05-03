@@ -50,12 +50,12 @@ const LandingP = () => {
         fiveDir: FinalFocus,
       }}
     >
-      <body className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+      <div className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
         <Nav />
         <main className=" mb-96 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
           <Main />
         </main>
-      </body>
+      </div>
     </theMainCon.Provider>
   );
 };
