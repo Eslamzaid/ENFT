@@ -1,8 +1,8 @@
 import { useRef, createContext } from "react";
 import Nav from "./Nav/Nav";
-import loadable from "@loadable/component"
+import loadable from "@loadable/component";
 
-const MainP1 = loadable(() => import("./Main/MainP1/MainP1"));
+const Main = loadable(() => import("./Main/Main"));
 
 export const theMainCon = createContext();
 const LandingP = () => {
@@ -50,12 +50,12 @@ const LandingP = () => {
         fiveDir: FinalFocus,
       }}
     >
-      <article className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+      <body className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
         <Nav />
         <main className=" mb-96 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
-          <MainP1 />
+          <Main />
         </main>
-      </article>
+      </body>
     </theMainCon.Provider>
   );
 };
