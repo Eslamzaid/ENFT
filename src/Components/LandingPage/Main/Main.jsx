@@ -7,7 +7,9 @@ const Main = () => {
   return (
     <article>
       <MainP1 />
-      <MainP2 />
+      <div className=" flex flex-col items-center">
+        <MainP2 />
+      </div>
     </article>
   );
 };
