@@ -105,8 +105,8 @@ function MainP1() {
         </h2>
       </div>
 
-      <div className="llgg:block  block backdrop-blur-sm  -left-12 absolute z-[60]"></div>
-      <div className="llgg:block block backdrop-blur-sm h-full -right-12 absolute z-[60]"></div>
+      <div className="llgg:block hidden w-[20.1rem] h-[44rem]  backdrop-blur-sm  -left-12 absolute z-[60]"></div>
+      <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -right-12 absolute z-[60]"></div>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div
