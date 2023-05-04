@@ -6,13 +6,13 @@ import campGirl from "../../../../assets/images/nfts/campGirl.webp";
 import moneyBear from "../../../../assets/images/nfts/moneyBear.webp";
 import samori from "../../../../assets/images/nfts/samori.webp";
 import whiteBear from "../../../../assets/images/nfts/whiteBear.webp";
-import strangeObj1 from "../../../../assets/images/nfts/strange1.webp";
+import strangeObj1 from "../../../../assets/images/nfts/piDragon.webp";
 import strangeObj2 from "../../../../assets/images/nfts/strange2.webp";
 import strangeObj3 from "../../../../assets/images/nfts/strange21.webp";
 import strangeObj4 from "../../../../assets/images/nfts/strange22.webp";
 import strangeObj5 from "../../../../assets/images/nfts/image 23.webp";
-import strangeObj6 from "../../../../assets/images/nfts/image 23.webp";
-import strangeObj7 from "../../../../assets/images/nfts/piDragon.webp";
+import strangeObj6 from "../../../../assets/images/nfts/strange24.webp";
+import strangeObj7 from "../../../../assets/images/nfts/strange1.webp";
 import strangeObj8 from "../../../../assets/images/nfts/piCheap.webp";
 import land1 from "../../../../assets/images/nfts/land.webp";
 import land2 from "../../../../assets/images/nfts/land2.webp";
@@ -38,10 +38,18 @@ import more5 from "../../../../assets/images/nfts/dogy2.webp";
 import more6 from "../../../../assets/images/nfts/cowboy.webp";
 import more7 from "../../../../assets/images/nfts/cowboy5.webp";
 import more8 from "../../../../assets/images/nfts/cowboy4.webp";
+import space1 from "../../../../assets/images/nfts/space1.webp";
+import space2 from "../../../../assets/images/nfts/space2.webp";
+import space3 from "../../../../assets/images/nfts/space3.webp";
+import space4 from "../../../../assets/images/nfts/space4.webp";
+import space5 from "../../../../assets/images/nfts/space5.webp";
+import space6 from "../../../../assets/images/nfts/space6.webp";
+import space7 from "../../../../assets/images/nfts/space7.webp";
+import space8 from "../../../../assets/images/nfts/space8.webp";
 
-const data2 = [
+const artData = [
+  //? ART
   {
-
     id: 1,
     nft: purpleHair,
     NFTalt: "A purple-haired girl, NFT",
@@ -51,7 +59,7 @@ const data2 = [
     LatestBid: "2.75 ETH",
     TotalBids: "$15,345",
     Profits: "+7.42%",
-    Collection: "Cosmic Wonders",
+    Collection: "Art",
   },
   {
     id: 2,
@@ -63,7 +71,7 @@ const data2 = [
     LatestBid: "1.25 ETH",
     TotalBids: "$6,789",
     Profits: "+3.75%",
-    Collection: "Pet Portraits",
+    Collection: "Art",
   },
   {
     id: 3,
@@ -75,7 +83,7 @@ const data2 = [
     LatestBid: "15.50 ETH",
     TotalBids: "$150,000",
     Profits: "+20.00%",
-    Collection: "Mythical Creatures",
+    Collection: "Art",
   },
   {
     id: 4,
@@ -87,7 +95,7 @@ const data2 = [
     LatestBid: "2.00 ETH",
     TotalBids: "$10,000",
     Profits: "+5.00%",
-    Collection: "Outdoor Adventures",
+    Collection: "Art",
   },
   {
     id: 5,
@@ -99,7 +107,7 @@ const data2 = [
     LatestBid: "10.00 ETH",
     TotalBids: "$50,000",
     Profits: "+15.00%",
-    Collection: "Warriors of the East",
+    Collection: "Art",
   },
   {
     id: 6,
@@ -111,7 +119,7 @@ const data2 = [
     LatestBid: "3.50 ETH",
     TotalBids: "$20,000",
     Profits: "+10.00%",
-    Collection: "Arctic Wonders",
+    Collection: "Art",
   },
   {
     id: 7,
@@ -123,7 +131,7 @@ const data2 = [
     LatestBid: "5.00 ETH",
     TotalBids: "$30,000",
     Profits: "+12.50%",
-    Collection: "Gaming and Music",
+    Collection: "Art",
   },
   {
     id: 8,
@@ -135,8 +143,10 @@ const data2 = [
     LatestBid: "1.00 ETH",
     TotalBids: "$5,000",
     Profits: "+2.50%",
-    Collection: "Money Matters",
+    Collection: "Art",
   },
+];
+const collData = [
   {
     id: 9,
     nft: strangeObj1,
@@ -147,7 +157,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 10,
@@ -159,7 +169,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 11,
@@ -171,7 +181,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 12,
@@ -183,7 +193,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 13,
@@ -195,7 +205,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 14,
@@ -207,7 +217,7 @@ const data2 = [
     LatestBid: "12.00 ETH",
     TotalBids: "$100,000",
     Profits: "+25.00%",
-    Collection: "Mystical Objects",
+    Collection: "Collectibles",
   },
   {
     id: 15,
@@ -219,7 +229,7 @@ const data2 = [
     LatestBid: "5.00 ETH",
     TotalBids: "$25,000",
     Profits: "+10.00%",
-    Collection: "Strange Creatures",
+    Collection: "Collectibles",
   },
   {
     id: 16,
@@ -231,106 +241,111 @@ const data2 = [
     LatestBid: "1.00 ETH",
     TotalBids: "$2,500",
     Profits: "+5.00%",
-    Collection: "Strange Creatures",
+    Collection: "Collectibles",
   },
+];
+
+const spaceData = [
   {
     id: 17,
-    nft: land1,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #1234",
-    OwnerSorName: "LandOwner",
-    FromBid: "0.5 ETH",
-    LatestBid: "1.25 ETH",
-    TotalBids: "$10,000",
-    Profits: "+10.00%",
-    Collection: "Land Collection",
+    nft: space1,
+    NFTalt: "A space-themed NFT",
+    OwnerName: "CryptoNerd #1234",
+    OwnerSorName: "CryptoNerd",
+    FromBid: "1.25 ETH",
+    LatestBid: "2.75 ETH",
+    TotalBids: "$15,345",
+    Profits: "+7.42%",
+    Collection: "Space",
   },
   {
     id: 18,
-    nft: land2,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #5678",
-    OwnerSorName: "LandOwner",
+    nft: space2,
+    NFTalt: "Another space-themed NFT",
+    OwnerName: "CryptoGeek #5678",
+    OwnerSorName: "CryptoGeek",
     FromBid: "0.75 ETH",
-    LatestBid: "2.00 ETH",
-    TotalBids: "$20,000",
-    Profits: "+15.00%",
-    Collection: "Land Collection",
+    LatestBid: "1.50 ETH",
+    TotalBids: "$8,940",
+    Profits: "+12.87%",
+    Collection: "Space",
   },
   {
     id: 19,
-    nft: land3,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #9012",
-    OwnerSorName: "LandOwner",
-    FromBid: "1.00 ETH",
-    LatestBid: "2.50 ETH",
-    TotalBids: "$30,000",
-    Profits: "+20.00%",
-    Collection: "Land Collection",
+    nft: space3,
+    NFTalt: "Yet another space-themed NFT",
+    OwnerName: "CryptoCollector #9012",
+    OwnerSorName: "CryptoCollector",
+    FromBid: "3.50 ETH",
+    LatestBid: "4.25 ETH",
+    TotalBids: "$22,560",
+    Profits: "+5.21%",
+    Collection: "Space",
   },
   {
     id: 20,
-    nft: land4,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #3456",
-    OwnerSorName: "LandOwner",
-    FromBid: "0.25 ETH",
-    LatestBid: "1.00 ETH",
-    TotalBids: "$5,000",
-    Profits: "+5.00%",
-    Collection: "Land Collection",
+    nft: space4,
+    NFTalt: "A fourth space-themed NFT",
+    OwnerName: "CryptoInvestor #5555",
+    OwnerSorName: "CryptoInvestor",
+    FromBid: "2.00 ETH",
+    LatestBid: "3.50 ETH",
+    TotalBids: "$19,875",
+    Profits: "+8.63%",
+    Collection: "Space",
   },
   {
     id: 21,
-    nft: land5,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #7890",
-    OwnerSorName: "LandOwner",
-    FromBid: "0.50 ETH",
-    LatestBid: "1.50 ETH",
-    TotalBids: "$15,000",
-    Profits: "+12.50%",
-    Collection: "Land Collection",
+    nft: space5,
+    NFTalt: "Yet another space-themed NFT",
+    OwnerName: "CryptoTrader #2468",
+    OwnerSorName: "CryptoTrader",
+    FromBid: "1.50 ETH",
+    LatestBid: "2.75 ETH",
+    TotalBids: "$14,560",
+    Profits: "+6.21%",
+    Collection: "Space",
   },
   {
     id: 22,
-    nft: land6,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #2345",
-    OwnerSorName: "LandOwner",
-    FromBid: "0.75 ETH",
-    LatestBid: "2.25 ETH",
-    TotalBids: "$25,000",
-    Profits: "+17.50%",
-    Collection: "Land Collection",
+    nft: space6,
+    NFTalt: "A sixth space-themed NFT",
+    OwnerName: "CryptoHodler #3691",
+    OwnerSorName: "CryptoHodler",
+    FromBid: "4.00 ETH",
+    LatestBid: "5.50 ETH",
+    TotalBids: "$28,120",
+    Profits: "+9.87%",
+    Collection: "Space",
   },
   {
     id: 23,
-    nft: land7,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #6789",
-    OwnerSorName: "LandOwner",
-    FromBid: "1.00 ETH",
-    LatestBid: "3.00 ETH",
-    TotalBids: "$35,000",
-    Profits: "+25.00%",
-    Collection: "Land Collection",
+    nft: space7,
+    NFTalt: "Another space-themed NFT",
+    OwnerName: "CryptoEnthusiast #7777",
+    OwnerSorName: "CryptoEnthusiast",
+    FromBid: "0.50 ETH",
+    LatestBid: "1.00 ETH",
+    TotalBids: "$7,560",
+    Profits: "+14.87%",
+    Collection: "Space",
   },
   {
     id: 24,
-    nft: land8,
-    NFTalt: "A land NFT",
-    OwnerName: "LandOwner #1234",
-    OwnerSorName: "LandOwner",
-    FromBid: "0.25 ETH",
-    LatestBid: "0.75 ETH",
-    TotalBids: "$2,500",
-    Profits: "+2.50%",
-    Collection: "Land Collection",
+    nft: space8,
+    NFTalt: "A final space-themed NFT",
+    OwnerName: "CryptoFan #8888",
+    OwnerSorName: "CryptoFan",
+    FromBid: "3.25 ETH",
+    LatestBid: "4.50 ETH",
+    TotalBids: "$24,560",
+    Profits: "+11.21%",
+    Collection: "Space",
   },
+];
+const sportData = [
   {
-    id: 25,
+    id: 33,
     nft: sport1,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #1234",
@@ -342,7 +357,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 26,
+    id: 34,
     nft: sport2,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #5678",
@@ -354,7 +369,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 27,
+    id: 35,
     nft: sport3,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #9012",
@@ -366,7 +381,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 28,
+    id: 36,
     nft: sport4,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #3456",
@@ -378,7 +393,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 29,
+    id: 37,
     nft: sport5,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #7890",
@@ -390,7 +405,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 30,
+    id: 38,
     nft: sport6,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #2345",
@@ -402,7 +417,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 31,
+    id: 39,
     nft: sport7,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #6789",
@@ -414,7 +429,7 @@ const data2 = [
     Collection: "Sports Collection",
   },
   {
-    id: 32,
+    id: 40,
     nft: sport8,
     NFTalt: "A sport NFT",
     OwnerName: "SportOwner #1234",
@@ -425,8 +440,108 @@ const data2 = [
     Profits: "+2.50%",
     Collection: "Sports Collection",
   },
+];
+const landData = [
   {
-    id: 33,
+    id: 25,
+    nft: land1,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #1234",
+    OwnerSorName: "LandOwner",
+    FromBid: "1.25 ETH",
+    LatestBid: "2.75 ETH",
+    TotalBids: "$15,345",
+    Profits: "+7.42%",
+    Collection: "Land",
+  },
+  {
+    id: 26,
+    nft: land2,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #5678",
+    OwnerSorName: "LandOwner",
+    FromBid: "1.50 ETH",
+    LatestBid: "3.25 ETH",
+    TotalBids: "$18,345",
+    Profits: "+8.92%",
+    Collection: "Land",
+  },
+  {
+    id: 27,
+    nft: land3,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #9012",
+    OwnerSorName: "LandOwner",
+    FromBid: "2.00 ETH",
+    LatestBid: "4.50 ETH",
+    TotalBids: "$22,345",
+    Profits: "+10.43%",
+    Collection: "Land",
+  },
+  {
+    id: 28,
+    nft: land4,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #3456",
+    OwnerSorName: "LandOwner",
+    FromBid: "1.75 ETH",
+    LatestBid: "3.75 ETH",
+    TotalBids: "$19,345",
+    Profits: "+9.21%",
+    Collection: "Land",
+  },
+  {
+    id: 29,
+    nft: land5,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #7890",
+    OwnerSorName: "LandOwner",
+    FromBid: "1.95 ETH",
+    LatestBid: "4.25 ETH",
+    TotalBids: "$20,345",
+    Profits: "+9.73%",
+    Collection: "Land",
+  },
+  {
+    id: 30,
+    nft: land6,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #2345",
+    OwnerSorName: "LandOwner",
+    FromBid: "2.50 ETH",
+    LatestBid: "5.50 ETH",
+    TotalBids: "$28,345",
+    Profits: "+12.42%",
+    Collection: "Land",
+  },
+  {
+    id: 31,
+    nft: land7,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #6789",
+    OwnerSorName: "LandOwner",
+    FromBid: "2.75 ETH",
+    LatestBid: "6.25 ETH",
+    TotalBids: "$32,345",
+    Profits: "+14.23%",
+    Collection: "Land",
+  },
+  {
+    id: 32,
+    nft: land8,
+    NFTalt: "A land-themed NFT",
+    OwnerName: "LandOwner #0123",
+    OwnerSorName: "LandOwner",
+    FromBid: "2.25 ETH",
+    LatestBid: "5.00 ETH",
+    TotalBids: "$25,345",
+    Profits: "+11.64%",
+    Collection: "Land",
+  },
+];
+const moreData = [
+  {
+    id: 41,
     nft: more1,
     NFTalt: "A goast NFT",
     OwnerName: "GoastOwner #1234",
@@ -438,7 +553,7 @@ const data2 = [
     Collection: "Goast Collection",
   },
   {
-    id: 34,
+    id: 42,
     nft: more2,
     NFTalt: "A goast NFT",
     OwnerName: "GoastOwner #5678",
@@ -450,7 +565,7 @@ const data2 = [
     Collection: "Goast Collection",
   },
   {
-    id: 35,
+    id: 43,
     nft: more3,
     NFTalt: "A goast NFT",
     OwnerName: "GoastOwner #9012",
@@ -462,7 +577,7 @@ const data2 = [
     Collection: "Goast Collection",
   },
   {
-    id: 36,
+    id: 44,
     nft: more4,
     NFTalt: "A dog NFT",
     OwnerName: "DogOwner #3456",
@@ -474,7 +589,7 @@ const data2 = [
     Collection: "Dog Collection",
   },
   {
-    id: 37,
+    id: 45,
     nft: more5,
     NFTalt: "A dog NFT",
     OwnerName: "DogOwner #7890",
@@ -486,7 +601,7 @@ const data2 = [
     Collection: "Dog Collection",
   },
   {
-    id: 38,
+    id: 46,
     nft: more6,
     NFTalt: "A cowboy NFT",
     OwnerName: "CowboyOwner #2345",
@@ -498,7 +613,7 @@ const data2 = [
     Collection: "Cowboy Collection",
   },
   {
-    id: 39,
+    id: 47,
     nft: more7,
     NFTalt: "A cowboy NFT",
     OwnerName: "CowboyOwner #6789",
@@ -510,7 +625,7 @@ const data2 = [
     Collection: "Cowboy Collection",
   },
   {
-    id: 40,
+    id: 48,
     nft: more8,
     NFTalt: "A cowboy NFT",
     OwnerName: "CowboyOwner #1234",
@@ -523,4 +638,4 @@ const data2 = [
   },
 ];
 
-export default data2;
+export { artData, collData, spaceData, sportData, landData, moreData };
