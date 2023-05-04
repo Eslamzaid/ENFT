@@ -13,9 +13,10 @@ const artData = [
     NFTalt: "A purple-haired girl, NFT",
     OwnerName: "CryptoNerd #1234",
     OwnerSorName: "CryptoNerd",
-    FromBid: "1.25 ETH",
+    FromBid: "-1.25 ETH",
     TotalBids: "$15,345",
-    Profits: "+7.42%",
+    Profits: "-7.42%",
+    NEG: true,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const artData = [
     FromBid: "0.75 ETH",
     TotalBids: "$6,789",
     Profits: "+3.75%",
+    NEG: false,
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ const artData = [
     FromBid: "10.00 ETH",
     TotalBids: "$150,000",
     Profits: "+20.00%",
+    NEG: false,
   },
   {
     id: 4,
@@ -46,6 +49,7 @@ const artData = [
     FromBid: "1.50 ETH",
     TotalBids: "$10,000",
     Profits: "+5.00%",
+    NEG: false,
   },
   {
     id: 5,
@@ -56,6 +60,7 @@ const artData = [
     FromBid: "5.00 ETH",
     TotalBids: "$50,000",
     Profits: "+15.00%",
+    NEG: false,
   },
   {
     id: 6,
@@ -66,6 +71,7 @@ const artData = [
     FromBid: "2.00 ETH",
     TotalBids: "$20,000",
     Profits: "+10.00%",
+    NEG: false,
   },
   {
     id: 7,
@@ -76,6 +82,7 @@ const artData = [
     FromBid: "3.00 ETH",
     TotalBids: "$30,000",
     Profits: "+12.50%",
+    NEG: false,
   },
   {
     id: 8,
@@ -83,9 +90,10 @@ const artData = [
     NFTalt: "A bear with a dollar sign, NFT",
     OwnerName: "CryptoLover #2468",
     OwnerSorName: "CryptoLover",
-    FromBid: "0.50 ETH",
+    FromBid: "-0.50 ETH",
     TotalBids: "$5,000",
-    Profits: "+2.50%",
+    Profits: "-2.50%",
+    NEG: true,
   },
 ];
 export default artData;
