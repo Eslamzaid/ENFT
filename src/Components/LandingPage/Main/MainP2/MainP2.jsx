@@ -17,7 +17,7 @@ const MainP2 = () => {
     <section className=" mt-60 w-10/12 text-white">
       <div className="text-center">
         <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold  text-transparent bg-clip-text text-6xl">
-          Top Collections
+          Top Collections 
         </h2>
       </div>
       <div className=" py-5 my-7 transition-all child:transition-all child:font-semibold child:text-xl child:mx-2 child:border-2 child:py-4 child:rounded-full font-poppi grid grid-flow-col justify-stretch">
@@ -107,6 +107,7 @@ const MainP2 = () => {
           );
         })}
       </div>
+      <button className=" w-full mx-auto">See more</button>
     </section>
   );
 };
