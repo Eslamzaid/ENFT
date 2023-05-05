@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import data from "./Data2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -96,22 +96,22 @@ function MainP1() {
       },
     ],
   };
-
   return (
-    <div className=" flex flex-col text-white top-24 ">
+    <div className=" flex flex-col text-white top-24  ">
       <div className="  flex items-center justify-center  ">
         <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-3xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
           Trending NFTs
         </h2>
       </div>
-
-      <div className="llgg:block hidden w-[20.1rem] h-[44rem]  backdrop-blur-sm  -left-12 absolute z-[60]"></div>
+      <div className=" relative">
+      <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
       <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -right-12 absolute z-[60]"></div>
+      </div>
       <Slider {...settings}>
         {data.map((item, index) => (
           <div
-            key={item.id}
-            className=" relative flex justify-center items-center py-8"
+          key={item.id}
+          className=" relative flex justify-center items-center py-8"
           >
             <div
               className={
