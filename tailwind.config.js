@@ -26,34 +26,36 @@ export default {
           },
         },
         scrollingAnimPos: {
-          "0%" : {
-            transform: 'translateX(-50%)',
+          "0%": {
+            transform: "translateX(-50%)",
           },
-          "100%" : {
-            transform: 'translateX(0%)'
-          }
+          "100%": {
+            transform: "translateX(0%)",
+          },
         },
         scrollingAnimNeg: {
-          "0%" : {
-            transform: 'translateX(50%)'
+          "0%": {
+            transform: "translateX(50%)",
           },
-          "100%" : {
-            transform: 'translateX(0%)'
-          }
-        }
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
       },
       animation: {
         "waving-hand": "testt 0.7s ease-in ",
-        "scrollAnimPos": "scrollingAnimPos 3s ease-in-out",
-        "scrollAnimPNeg": "scrollingAnimNeg 3.5s ease-out",
+        scrollAnimPos: "scrollingAnimPos 3s ease-in-out",
+        scrollAnimPNeg: "scrollingAnimNeg 3.5s ease-out",
       },
       screens: {
         extsm: "367px",
         exsm: "468px",
         esm: "480px",
+        xlsm: "530px",
         msm: "640px",
         sm: "680px",
         sms: "701px",
+        
         ssm: "845px",
         md: "900px",
         llg: "1170px",
