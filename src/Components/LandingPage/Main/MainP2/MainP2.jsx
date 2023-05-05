@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import artData from "./artData";
 import collData from "./collData";
 import spaceData from "./spaceData";
 import landData from "./landData";
 import sportData from "./sportData";
 import moreData from "./moreData";
+import BgCol from "./../../../../assets/Icons/coll.webp";
 
 const MainP2 = () => {
   const [item, setItem] = useState(artData);
@@ -28,14 +29,19 @@ const MainP2 = () => {
     setItem(category);
   };
   return (
-    <section className=" mt-60 w-10/12 text-white">
+    <section className=" w-10/12 text-white mt-72">
       <div className="text-center">
-        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold  text-transparent bg-clip-text text-3xl esm:text-6xl">
+        <img
+          src={BgCol}
+          alt="Background Color"
+          className=" hidden md:block w-[109em] h-[63em] opacity-70 mt-56 z-[1000] absolute"
+        />
+        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-3xl esm:text-6xl">
           Top Collections
         </h2>
       </div>
       <div
-        className=" py-5 my-7 transition-all child:transition-all child:text-xs extsm:child:text-md child:font-semibold sms:child:text-sm  
+        className=" z-[10000] py-5 my-7 transition-all child:transition-all child:text-xs extsm:child:text-md child:font-semibold sms:child:text-sm  
                     llgg:child:text-xl child:mx-2 child:border-2 child:py-2 md:child:py-4 child:rounded-full font-poppi  
                     grid grid-cols-2 gap-4 place-content-start md:grid-cols-6 md:grid-flow-col md:justify-stretch"
       >
