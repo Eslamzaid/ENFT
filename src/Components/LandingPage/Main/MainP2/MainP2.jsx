@@ -204,5 +204,4 @@ const MainP2 = () => {
     </section>
   );
 };
-
 export default MainP2;

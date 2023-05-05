@@ -55,10 +55,11 @@ export default {
         msm: "640px",
         sm: "680px",
         sms: "701px",
-        
         ssm: "845px",
         md: "900px",
         llg: "1170px",
+        sty: "1043px",
+        remo: "1555px",
         llgg: "1700px",
       },
     },
