@@ -104,9 +104,8 @@ function MainP1() {
         </h2>
       </div>
       <div className=" relative">
-
-        <div className="llgg:block hidden w-80 h-[38rem] backdrop-blur-sm -left-12 top-7 absolute z-[60]"></div>
-        <div className="llgg:block hidden w-80 h-[38rem] backdrop-blur-sm -right-12 top-7 absolute z-[60]"></div>
+      <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
+      <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -right-12 absolute z-[60]"></div>
       </div>
       <Slider {...settings}>
         {data.map((item, index) => (
@@ -211,7 +210,7 @@ function MainP1() {
         ))}
       </Slider>
       <div className=" flex justify-center ">
-        <button className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus: ring-slate-200 ring-offset-4 mb-2">
+        <button className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-4 rounded-full sms:w-9/12 lg:w-11/12 mt-8 sms:h-12 lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus:ring-slate-200 ring-offset-4 mb-2">
           See more
         </button>
       </div>

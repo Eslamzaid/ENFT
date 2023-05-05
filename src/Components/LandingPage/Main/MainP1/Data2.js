@@ -2,7 +2,7 @@ import ETH from "./../../../../assets/Icons/ETHM.webp";
 import BCow from "./../../../../assets/images/nfts/pixelT.webp";
 import BGo from "./../../../../assets/images/nfts/strange23.webp";
 import BOld from "./../../../../assets/images/nfts/BOldMan.webp";
-import Boy from "./../../../../assets/images/nfts/Boy.webp";
+import Boy from "./../../../../assets/images/nfts/Cboy2.webp";
 import Bpl1 from "./../../../../assets/images/nfts/CblindMon.webp";
 import OB1 from "./../../../../assets/images/Users/Verifi2.webp";
 import OB2 from "./../../../../assets/images/Users/chanda.webp";
