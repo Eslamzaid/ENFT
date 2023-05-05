@@ -12,8 +12,7 @@ const Main = () => {
         <MainP2 />
         <MainP3 />
       </div>
-      <div>
-      </div>
+      <div></div>
     </article>
   );
 };
