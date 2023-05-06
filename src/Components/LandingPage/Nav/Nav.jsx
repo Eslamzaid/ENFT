@@ -44,7 +44,7 @@ const Nav = () => {
       className="  flex flex-col  items-center object-cover w-screen"
       aria-label="navigation bar"
     >
-      {thePrepi.currentCase ? <LoginPage /> : ""}
+      {thePrepi.open ? <LoginPage /> : ""}
       <nav
         className={
           color
@@ -166,20 +166,20 @@ const Nav = () => {
                 >
                   Articles
                 </li>
-                <li
+                <button
                   className={
                     color
                       ? ` xl:px-6 xl:p-2 lg:p-[0.6rem] md:p-3 md:px-5 lg:px-6 md:ml-2 sms:p-3 sms:ml-2 sms:px-6 ssm:text-sms p-14
-                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
+                  bg-backColor w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                       : `xl:px-10 xl:p-3 lg:p-[0.7rem] lg:px-7 p-3 md:p-3 md:px-8 md:ml-1 sms:p-2 sms:ml-2 sms:px-6 ssm:text-base 
-                  bg-backColor focus:bg-blue-900 w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
+                  bg-backColor w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                   }
-                  onClick={() => thePrepi.setOpen( thePrepi.open == false ? alert("HI") : console.log("NOP"))}
+                  onClick={() => thePrepi.setOpen(!thePrepi.open)}
                 >
                   Log in
-                </li>
+                </button>
               </ul>
             </div>
           </div>

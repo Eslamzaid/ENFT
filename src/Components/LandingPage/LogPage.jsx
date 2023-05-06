@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useContext } from "react";
+import { theMainCon } from "./LandingP";
 
 export default function MyModal() {
   let [isOpen, setIsOpen] = useState(true);
@@ -11,12 +12,22 @@ export default function MyModal() {
   function openModal() {
     setIsOpen(true);
   }
-
+  const dio = useContext(theMainCon);
   return (
     <>
       <div className="fixed inset-0 flex items-center justify-center"></div>
-      <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+      <Transition
+        onClick={() => dio.setOpen(!dio.open)}
+        appear
+        show={isOpen}
+        as={Fragment}
+      >
+        <Dialog
+          static
+          as="div"
+          className="relative z-[10000000000000000000000000]"
+          onClose={closeModal}
+        >
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -26,7 +37,10 @@ export default function MyModal() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-40" />
+            <div
+              onClick={() => dio.setOpen(!dio.open)}
+              className="fixed inset-0 bg-black bg-opacity-40"
+            />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
