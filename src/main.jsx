@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import MarketPlace from "./Components/MarketPlace/MarketP";
 import SignUp from "./LoginSign/SignUp";
+import Sign from "./LoginSign/Sign";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "signup",
     element: <SignUp/>
+  },
+  {
+    path: "login",
+    element: <Sign/>
   },
   {
     path: "marketPlace",

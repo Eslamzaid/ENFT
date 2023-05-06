@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2300);
   }, []);
   return (
     <div className=" scroll-smooth w-full h-full overflow-x-hidden">
