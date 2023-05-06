@@ -27,7 +27,7 @@ function App() {
     }, 2000);
   }, []);
   return (
-    <div className=" w-full h-full overflow-x-hidden">
+    <div className=" scroll-smooth w-full h-full overflow-x-hidden">
       {here ? (
         isLoading ? (
           <LoadingComp />

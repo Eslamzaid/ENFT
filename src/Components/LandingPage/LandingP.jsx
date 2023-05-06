@@ -1,60 +1,56 @@
-import { useRef, createContext } from "react";
+import { useRef, createContext, useState } from "react";
 import Nav from "./Nav/Nav";
 import loadable from "@loadable/component";
-
+import { lazy } from "@loadable/component";
 const Main = loadable(() => import("./Main/Main"));
+const Footer = lazy(() => import("./Footer/Footer"));
 
 export const theMainCon = createContext();
 const LandingP = () => {
-  const Home = useRef(null);
-  const focusInput = () => {
-    Home.current.focus();
+  const [open, setOpen] = useState(false)
+
+  const home = useRef(null);
+  const homeLoc = () => {
+    home.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const MarketPlace = useRef();
-  const focusInput2 = () => {
-    MarketPlace.current.focus();
+  const ref2 = useRef(null);
+  const handleClick2 = () => {
+    ref2.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const Collection = useRef();
-  const focusInput3 = () => {
-    Collection.current.focus();
-  };
+  const fin = useRef(null);
+  const finalClick = () => {
+    fin.current?.scrollIntoView({ behavior: "smooth" });
 
-  const Articles = useRef();
-  const focusHero = () => {
-    Articles.current.focus();
-  };
-
-  const BidNow = useRef();
-  const FinalFocus = () => {
-    BidNow.current.focus();
+    
   };
 
   return (
     <theMainCon.Provider
       value={{
-        one: Home,
-        oneDir: focusInput,
-
-        two: MarketPlace,
-        twoDir: focusInput2,
-
-        three: Collection,
-        threeDir: focusInput3,
-
-        four: Articles,
-        fourDir: focusHero,
-
-        five: BidNow,
-        fiveDir: FinalFocus,
+        homePage: home,
+        homePLoc: homeLoc,
+        one: ref,
+        two: handleClick,
+        three: ref2,
+        four: handleClick2,
+        seven: fin,
+        eight: finalClick,
+        open,
+        setOpen
       }}
     >
       <div className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
         <Nav />
-        <main className=" mb-96 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
+        <main className=" mb-9 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
           <Main />
         </main>
+        <Footer />
       </div>
     </theMainCon.Provider>
   );
