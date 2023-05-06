@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@loadable/component": "^5.15.3",
     "@react-spring/web": "^9.7.2",
     "@reduxjs/toolkit": "^1.9.3",
