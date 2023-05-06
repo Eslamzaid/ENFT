@@ -19,7 +19,7 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <form onSubmit={signUp}>
         <h1>Create an account</h1>
         <input

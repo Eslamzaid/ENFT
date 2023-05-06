@@ -1,12 +1,12 @@
 import { useState, useEffect, useContext } from "react";
 import TextLogo from "./../../../assets/Icons/LogoText.webp";
+import { useNavigate } from 'react-router-dom';
 import Menu from "./../../../assets/Icons/menu.webp";
 import Close from "./../../../assets/Icons/close.webp";
 import Shades from "./../../../assets/images/Images/NavShades.png";
 import Nbody from "./NavB/Nbody";
 import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.png";
-import LoginPage from "../LogPage";
 import { theMainCon } from "../LandingP";
 
 const Nav = () => {
@@ -37,6 +37,7 @@ const Nav = () => {
     window.addEventListener("resize", widthTracker);
     return () => window.removeEventListener("resize", widthTracker);
   }, []);
+  const navigate = useNavigate()
   const thePrepi = useContext(theMainCon);
   return (
     <header
@@ -106,8 +107,9 @@ const Nav = () => {
                   <li
                     className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-all hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300"
                     aria-label="log in button"
+                    onClick={() => navigate('/signUp')}
                   >
-                    Log In
+                    Sign up
                   </li>
                 </div>
               </ul>
@@ -176,9 +178,9 @@ const Nav = () => {
                   bg-backColor w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                   }
-                  onClick={() => thePrepi.setOpen(!thePrepi.open)}
+                  onClick={() => navigate('/signUp')}
                 >
-                  Log in
+                  Sign up
                 </button>
               </ul>
             </div>
