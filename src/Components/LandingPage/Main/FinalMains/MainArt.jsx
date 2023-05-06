@@ -9,21 +9,31 @@ const MainArt = () => {
         <h2 className="bg-gradient-to-r  pt-20 z-20 mb-20 relative from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-sm extsm:text-xl exsm:text-2xl sm:text-3xl md:text-5xl  llgg:text-6xl">
           Articles
         </h2>
-        <aside class=" flex gap-x-10">
-          <div className=" bg-gradient-to-tr w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 ">            
+        <aside class=" pb-10 z-20  flex flex-wrap font-poppi justify-center gap-y-16 sty:justify-around w-11/12 child:flex child:flex-col child:items-center child:justify-baseline overflow-hidden">
+          <div className=" bg-gradient-to-tr  w-full esm:w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 flex-none">
             <img className=" object-cover " src={Art1} alt="Article 1" />
-            <h3 className=" text-xl px-5 py-5">We've lowered marketplace fees on all your favorite NFTs</h3>
-            <p className=" text-sm text-[#BDBECA] px-5 mb-5">January 23, 2022</p>
+            <h3 className=" text:lg esm:text-xl px-5 py-5">
+              We've lowered marketplace fees on all your favorite NFTs
+            </h3>
+            <p className=" text-left text-[#BDBECA] px-5 mb-5">
+              January 23, 2022
+            </p>
           </div>
-          <div className=" bg-gradient-to-tr w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 ">            
+          <div className=" bg-gradient-to-tr w-full esm:w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 flex-none ">
             <img className=" object-cover " src={Art2} alt="Article 2" />
-            <h3 className=" text-xl px-5 py-5">Your Ultimate Guide to Getting Started With NFTs on Rarible</h3>
-            <p className=" text-sm text-[#BDBECA] px-5 mb-5">April 03, 2022</p>
+            <h3 className=" text:lg esm:text-xl px-5 py-5">
+              Your Ultimate Guide to Getting Started With NFTs on Rarible
+            </h3>
+            <p className=" text-left text-[#BDBECA] px-5 mb-5">
+              April 03, 2022
+            </p>
           </div>
-          <div className=" bg-gradient-to-tr w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 ">            
+          <div className=" bg-gradient-to-tr w-full esm:w-[28rem] from-[#2E3258] h-fit rounded-xl z-40 remo:flex-none">
             <img className=" object-cover" src={Art3} alt="Article 3" />
-            <h3 className=" text-xl px-5 py-5">Why Community Marketplaces are the future of NFT trading</h3>
-            <p className=" text-sm text-[#BDBECA] px-5 mb-5">July 7, 2022</p>
+            <h3 className=" text:lg esm:text-xl px-5 py-5">
+              Why Community Marketplaces are the future of NFT trading
+            </h3>
+            <p className=" text-left text-[#BDBECA] px-5 mb-5">July 7, 2022</p>
           </div>
         </aside>
       </div>

@@ -10,7 +10,7 @@ const MainP3 = () => {
         <h2 className="bg-gradient-to-r  pt-20 z-20 mb-20 relative from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-sm extsm:text-xl exsm:text-2xl sm:text-3xl md:text-5xl  llgg:text-6xl">
           Create and Sell Your NFTs
         </h2>
-        <aside className=" pb-10 z-20  flex flex-wrap font-poppi justify-center sty:justify-between w-9/12 child:flex child:flex-col child:items-center child:justify-baseline child:mx-4">
+        <aside className=" pb-10 z-20  flex flex-wrap font-poppi justify-center gap-y-16 sty:justify-between w-9/12 child:flex child:flex-col child:items-center child:justify-baseline child:mx-4">
           <div className="exsm:[&>p]:w-72 [&>p]:w-56 exsm:[&>h3]:text-xl [&>h3]:text-md [&>h3]:font-semibold [&>h3]:my-5 text-center flex-none">
             <img className=" w-12 my-2 " src={BookMark} alt="your wallet" />
             <h3>Set up your wallet</h3>
