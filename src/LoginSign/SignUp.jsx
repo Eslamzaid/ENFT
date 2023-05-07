@@ -26,6 +26,9 @@ const SignUp = () => {
           case "auth/email-already-in-use":
             alert("Email already in use");
             break;
+            case "auth/missing-email":
+              alert("Missing Email")
+              break;
           case "auth/invalid-email":
             alert("Invalid email");
             break;
@@ -128,7 +131,12 @@ const SignUp = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div> */}
-          <button type="submit">Sign Up </button>
+          <button
+            type="submit"
+            className=" bg-sky-900 px-5 py-2 rounded-sm focus: border-none text-lg"
+          >
+            Sign Up{" "}
+          </button>
         </form>
         <div className="flex justify-center text-sm mb-8">
           <p>Already logged in? </p>
