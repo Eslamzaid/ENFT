@@ -87,7 +87,7 @@ const Footer = () => {
               </div>
               <div>
                 <a
-                  href="https://www.linkedin.com/in/osamazaid/"
+                  href="https://www.linkedin.com/in/eslamzaid/"
                   target="_blank"
                 >
                   <img
@@ -145,7 +145,10 @@ const Footer = () => {
             alt="Copy write"
           />
           <p className=" text-xs exsm:text-sm whitespace-pre-wrap">
-            2023 ENFT. all Right Reserved <br/>        <span className=" text-sm underline font-semibold font-headerFont">Made by Eslam</span>
+            2023 ENFT. all Right Reserved <br />
+            <span className=" text-sm underline font-semibold font-headerFont">
+              Made by Eslam
+            </span>
           </p>
         </section>
       </div>
