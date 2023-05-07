@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import  auth  from "../firebase";
+import auth from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Sign from "./Sign";
 
+// Don't try to hack it, plz😂🙂
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate()
-  const navigate2 = useNavigate()
+  const navigate = useNavigate();
+  const navigate2 = useNavigate();
 
   const signUp = (e) => {
     // TODO: Sign in
@@ -17,7 +18,7 @@ const SignUp = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((useCredential) => {
         console.log(useCredential);
-        navigate('/marketPlace')
+        navigate("/marketPlace");
       })
       .catch((error) => {
         console.log(error);
@@ -29,7 +30,10 @@ const SignUp = () => {
       <form onSubmit={signUp}>
         <h1>Create an account</h1>
         <h2>Or just log Int </h2>
-        <button onClick={navigate2("/login")} className=" underline">Sign in</button>
+        <button onClick={() => navigate2("/login")} className=" underline">
+          Sign in
+        </button>
+        <br />
         <input
           type="email"
           placeholder="Enter your email"

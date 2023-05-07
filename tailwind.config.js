@@ -12,6 +12,19 @@ export default {
     require("@tailwindcss/aspect-ratio"),
   ],
   theme: {
+    backgroundPosition: {
+      bottom: 'bottom',
+      'bottom-4': 'center bottom 1rem',
+      center: 'center',
+      left: 'left',
+      'left-bottom': 'left bottom',
+      'left-top': 'left top',
+      right: 'right',
+      'right-bottom': 'right bottom',
+      'right-top': 'right top',
+      top: 'top',
+      'top-4': 'center top 1rem',
+    },
     extend: {
       colors: {
         backColor: "#2F80ED",
@@ -49,14 +62,17 @@ export default {
       },
       screens: {
         extsm: "367px",
+        eexx: "425px",
         exsm: "468px",
         esm: "480px",
+        eee: "500px",
         xlsm: "530px",
         msm: "640px",
         sm: "680px",
         sms: "701px",
         ssm: "845px",
         md: "900px",
+        mmd: "991px",
         llg: "1170px",
         sty: "1043px",
         remo: "1555px",
