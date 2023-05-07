@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import artData from "./artData";
 import collData from "./collData";
 import spaceData from "./spaceData";
@@ -6,11 +6,11 @@ import landData from "./landData";
 import sportData from "./sportData";
 import moreData from "./moreData";
 import BgCol from "./../../../../assets/Icons/coll.webp";
+import { theMainCon } from "../../LandingP";
 
 const MainP2 = () => {
   const [item, setItem] = useState(artData);
   let [fatherHidden, setFather] = useState(true);
-  // const [hidden, setHidden] = useState();
 
   useEffect(() => {
     const wiSize = () => {
@@ -28,8 +28,10 @@ const MainP2 = () => {
   const filterMenu = (category) => {
     setItem(category);
   };
+  const myCon = useContext(theMainCon);
   return (
-    <section className=" w-10/12 text-white mt-72">
+    <section className=" w-10/12 text-white ">
+      <button className=" mb-72" ref={myCon.three} aria-label="ref"></button>
       <div className="text-center">
         <img
           src={BgCol}

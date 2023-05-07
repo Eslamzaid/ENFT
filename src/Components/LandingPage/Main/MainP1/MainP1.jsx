@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { theMainCon } from "../../LandingP";
 import data from "./Data2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,7 +8,7 @@ import BackSha from "./../../../../assets/Icons/Ellipse 8.webp";
 
 function MainP1() {
   const [middleIndex, setMiddleIndex] = useState(0);
-
+  const myContext = useContext(theMainCon);
   const settings = {
     dots: false,
     infinite: true,
@@ -97,7 +98,8 @@ function MainP1() {
     ],
   };
   return (
-    <div className=" flex flex-col text-white top-24  ">
+    <div className=" flex flex-col text-white  ">
+      <button ref={myContext.one} className="mb-28" aria-label="ref"></button>
       <div className="  flex items-center justify-center  ">
         <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-3xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
           Trending NFTs
