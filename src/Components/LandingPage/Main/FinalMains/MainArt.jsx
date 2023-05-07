@@ -8,7 +8,7 @@ const MainArt = () => {
   const myCon = useContext(theMainCon)
   return (
     <section className=" rounded-3xl 11/12 msm:w-10/12 text-white mt-72 h-full">
-      <button ref={myCon.seven}></button>
+      <button ref={myCon.seven} aria-label="ref"></button>
       <div className=" relative flex flex-col items-center">
         <h2 className="bg-gradient-to-r  pt-20 z-20 mb-20 relative from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-sm extsm:text-xl exsm:text-2xl sm:text-3xl md:text-5xl  llgg:text-6xl">
           Articles

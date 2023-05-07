@@ -124,15 +124,15 @@ const Nav = () => {
                 sm:text-sm child:cursor-pointer child:font-semibold 
                  "
               >
-                <button className="justify-self-start  mr-auto child:transition-all">
+                <li className="justify-self-start  mr-auto child:transition-all">
                   <img
                     src={TextLogo}
                     alt="ENFT"
                     className={color ? " w-36 " : "  "}
                     onClick={thePrepi.homePLoc}
                   />
-                </button>
-                <button
+                </li>
+                <li
                   className={
                     color
                       ? `sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
@@ -143,8 +143,8 @@ const Nav = () => {
                   onClick={thePrepi.two}
                 >
                   Trending
-                </button>
-                <button
+                </li>
+                <li
                   className={
                     color
                       ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
@@ -155,7 +155,7 @@ const Nav = () => {
                   onClick={thePrepi.four}
                 >
                   Collections
-                </button>
+                </li>
                 <li
                   className={
                     color
@@ -168,7 +168,7 @@ const Nav = () => {
                 >
                   Articles
                 </li>
-                <button
+                <li
                   className={
                     color
                       ? ` xl:px-6 xl:p-2 lg:p-[0.6rem] md:p-3 md:px-5 lg:px-6 md:ml-2 sms:p-3 sms:ml-2 sms:px-6 ssm:text-sms p-14
@@ -181,7 +181,7 @@ const Nav = () => {
                   onClick={() => navigate('/signUp')}
                 >
                   Sign up
-                </button>
+                </li>
               </ul>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import {useEffect } from "react";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged,signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const MarketPlace = () => {
@@ -32,7 +32,8 @@ const MarketPlace = () => {
   return (
     <div className=" w-screen h-screen">
       <h1>This is from MarketPlace {user && user.email}</h1>
-      <button onClick={handleLogout}>Log out</button>
+      <h1>This is {user && user.displayName}</h1>
+      <button onClick={() => handleLogout()}>Log out</button>
     </div>
   );
 };
