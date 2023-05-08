@@ -31,7 +31,7 @@ const Footer = () => {
               name="email"
             />
             <button
-              className="my-3 eexx:mb-0 w-40 mx eexx:w-fit bg-backColor eexx:float-right p-4 px-10 rounded-full  mt-1 mr-1 hover:bg-blue-600 hover:ring hover:ring-blue-700 transition-all"
+              className="my-3 eexx:mb-0 w-40 mx eexx:w-fit bg-backColor eexx:float-right p-4 px-10 rounded-full  mt-1 mr-1 hover:bg-blue-600 hover:ring hover:ring-blue-400 transition-all"
               type="button"
             >
               I'm In

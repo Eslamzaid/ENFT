@@ -7,12 +7,14 @@ import {
   signInWithPopup,
   onAuthStateChanged,
 } from "firebase/auth";
+import Loading from "../loading/LoadingComp"
 
 // Don't try to hack it, plz😂🙂
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [timeOut, setIsLoading  ] = useState(true)
   const navigate = useNavigate();
   const navigate2 = useNavigate();
   const navHome = useNavigate();
@@ -52,8 +54,6 @@ const SignUp = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
         const user = result.user;
         console.log(user);
         navigate("/marketPlace");
@@ -73,8 +73,14 @@ const SignUp = () => {
     return () => unsubscribe();
   }, [navigate]);
 
-  return (
-    <div className=" font-inter w-screen flex justify-center items-center h-screen text-white bg-gradient-to-tl from-[#141845] via-[#0D1135] to-[#2A1271]">
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 600);
+  }, []);
+
+  return (<div>
+{ timeOut == true? <Loading/>:    <div className=" font-inter w-screen flex justify-center items-center h-screen text-white bg-gradient-to-tl from-[#141845] via-[#0D1135] to-[#2A1271]">
       <div className=" shadow-2xl bg-slate-800 rounded-xl">
         <h1 className=" w-8/12 relative top-10 text-3xl  font-semibold font-inter mx-auto">
           Sign Up
@@ -166,7 +172,7 @@ const SignUp = () => {
         </div>
         <button className=" text-center w-full text-xs underline" onClick={() =>navHome('/')}>Back Home</button>
       </div>
-    </div>
+    </div>}</div> 
   );
 };
 
