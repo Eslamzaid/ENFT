@@ -10,6 +10,7 @@ import {
 import Loading from "../loading/LoadingComp";
 import GoogleLoginIn from '../assets/Icons/GoogleLoginIn.webp'
 
+
 // Don't try to hack it, plz😂🙂
 
 const SignUp = () => {
