@@ -32,7 +32,7 @@ const Sign = () => {
         navigate("/marketplace");
       })
       .catch((error) => {
-        console.log("Login failed")
+        console.log("Login failed");
         setEr(() => (er = true));
         if (error.code === "auth/user-not-found") {
           notify2("Password or Email is incorrect");
