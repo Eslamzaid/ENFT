@@ -22,7 +22,6 @@ const Sign = () => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((useCredential) => {
-        console.log(useCredential);
         navigate("/marketplace");
       })
       .catch((error) => {

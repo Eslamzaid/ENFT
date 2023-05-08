@@ -25,7 +25,6 @@ const SignUp = () => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((useCredential) => {
-        console.log(useCredential);
         navigate("/marketPlace");
       })
       .catch((error) => {
@@ -57,7 +56,6 @@ const SignUp = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         navigate("/marketPlace");
       })
       .catch((error) => {
