@@ -3,7 +3,14 @@ import auth from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import Loading from "../loading/LoadingComp";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+const notify2 = (error) => {
+  toast.error(error, {
+    position: toast.POSITION.BOTTOM_RIGHT,
+  });
+};
 const Sign = () => {
   const [email, setEmail] = useState("");
   let [er, setEr] = useState(false);
@@ -25,30 +32,24 @@ const Sign = () => {
         navigate("/marketplace");
       })
       .catch((error) => {
-        console.log(error);
+        console.log("Login failed")
         setEr(() => (er = true));
-        switch (error.code) {
-          case "auth/user-not-found":
-            alert("Password or Email is incorrect");
-            break;
-          case "auth/missing-email":
-            alert("Missing Email");
-            break;
-          case "auth/invalid-password":
-            alert("Invalid password");
-            break;
-          case "auth/wrong-password":
-            alert("Password or Email is incorrect");
-            break;
-          case "auth/invalid-email":
-            alert("Email is incorrect or does not exist");
-            break;
-          case "auth/weak-password":
-            alert("Password must be a string with at least six characters.");
-            break;
-          case "auth/missing-password":
-            alert("Missing password");
-            break;
+        if (error.code === "auth/user-not-found") {
+          notify2("Password or Email is incorrect");
+        } else if (password.length == 0 && email.length == 0) {
+          notify2("Email and Password are missing");
+        } else if (error.code === "auth/missing-email") {
+          notify2("Missing Email");
+        } else if (error.code === "auth/invalid-password") {
+          notify2("Invalid password");
+        } else if (error.code === "auth/wrong-password") {
+          notify2("Password or Email is incorrect");
+        } else if (error.code === "auth/invalid-email") {
+          notify2("Email is incorrect or does not exist");
+        } else if (error.code === "auth/weak-password") {
+          notify2("Password must be a string with at least six characters.");
+        } else if (error.code === "auth/missing-password") {
+          notify2("Missing password");
         }
       });
   };
@@ -103,12 +104,14 @@ const Sign = () => {
                 </label>
               </div>
               <button
+                className=" bg-sky-900 px-5 py-2 hover:bg-sky-800 rounded-lg border-none text-lg"
                 type="submit"
-                className=" bg-sky-900 px-5 py-2 rounded-sm focus: border-none text-lg"
+                onClick={notify2}
               >
                 Login in
               </button>
             </form>
+            <ToastContainer />
             <div className="flex justify-center mx-auto w-9/12 text-sm mb-8">
               <p>Don't have an account? </p>
               <button

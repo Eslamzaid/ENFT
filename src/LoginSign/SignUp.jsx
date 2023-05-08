@@ -8,10 +8,11 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import Loading from "../loading/LoadingComp";
-import GoogleLoginIn from '../assets/Icons/GoogleLoginIn.webp'
+import GoogleLoginIn from "../assets/Icons/GoogleLoginIn.webp";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-// Don't try to hack it, plz😂🙂
+// Don't try to hack it, plz😂🙂🙂🙂
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -21,6 +22,12 @@ const SignUp = () => {
   const navigate2 = useNavigate();
   const navHome = useNavigate();
 
+  const notify = (error) => {
+    toast.error(error, {
+      position: toast.POSITION.BOTTOM_RIGHT,
+    });
+  };
+
   const signUp = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
@@ -28,26 +35,37 @@ const SignUp = () => {
         navigate("/marketPlace");
       })
       .catch((error) => {
-        console.log(error);
-        switch (error.code) {
-          case "auth/email-already-in-use":
-            alert("Email already in use");
-            break;
-          case "auth/missing-email":
-            alert("Missing Email");
-            break;
-          case "auth/invalid-password":
-            alert("Invalid password");
-            break;
-          case "auth/wrong-password":
-            alert("Password or Email is incorrect");
-            break;
-          case "auth/weak-password":
-            alert("Password must be a string with at least six characters.");
-            break;
-          case "auth/missing-password":
-            alert("Missing password");
-            break;
+        console.log("Login falied")
+        if (error == "auth/email-already-in-use") {
+          notify("Email already in use");
+        }  else if(password.length == 0 && email.length == 0) {
+          notify("Email and Password are missing")
+        }
+        else if (
+          /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(
+            email
+          ) == false
+        ) {
+          notify("Invalid email");
+        } else if (error == "auth/missing-email") {
+          notify("Missing Email");
+        } else if (error == "auth/invalid-password") {
+          notify("Invalid password");
+        } else if (error == "auth/wrong-password") {
+          notify("Password or Email is incorrect");
+        } else if (error == "auth/weak-password") {
+          notify(
+            <div>
+              <h1>Your password is weak.</h1>
+              <ul>
+                <li className=" text-xs">
+                  Minimum length of the password should be 6
+                </li>
+              </ul>
+            </div>
+          );
+        } else if (error.code === "auth/missing-password") {
+          notify("Password is missing");
         }
       });
   };
@@ -60,7 +78,7 @@ const SignUp = () => {
       })
       .catch((error) => {
         console.log(error);
-        setError("An error occurred while signing in with Google");
+        notify("Sing up failed");
       });
   };
 
@@ -86,7 +104,7 @@ const SignUp = () => {
       ) : (
         <div className=" font-inter w-screen flex justify-center items-center h-screen text-white bg-gradient-to-tr from-[#141845] via-[#0D1135] to-[#2A1271]">
           <div className=" shadow-2xl bg-slate-800 w-full eexx:w-96 msm:w-fit rounded-xl">
-            <h1 className=" w-8/12 relative top-10 text-3xl font-semibold font-inter mx-auto">
+            <h1 className=" w-8/12 relative top-10 mb-10 text-3xl font-semibold font-inter mx-auto">
               Sign Up
             </h1>
             <form
@@ -113,13 +131,7 @@ const SignUp = () => {
                 <label
                   htmlFor="email"
                   className="  transition-all absolute left-[20%] eexx:left-[4.75rem] -top-7 text-sm w-fit py-2
-              peer-placeholder-shown:text-base
-              peer-placeholder-shown:-top-0
-              peer-placeholder-shown:text-[#6B7280]
-              peer-focus:-top-7
-              peer-focus:text-sm
-              peer-focus:text-white
-              "
+              peer-placeholder-shown:text-base peer-placeholder-shown:-top-0 peer-placeholder-shown:text-[#6B7280] peer-focus:-top-7 peer-focus:text-sm peer-focus:text-white"
                 >
                   Email
                 </label>
@@ -158,15 +170,22 @@ const SignUp = () => {
                 </label>
               </div>
               <button onClick={googleSignIn}>
-                <p className="flex items-center w-36 px- justify-between bg-[#4285F4]"><img src={ GoogleLoginIn} alt="Google log in" /><span className="w-full font-semibold text-lg mr-2">Google</span></p>
-                </button>
+                <p className="flex items-center w-36 px- justify-between hover:bg-blue-600 rounded-sm transition-all bg-[#4285F4]">
+                  <img src={GoogleLoginIn} alt="Google log in" />
+                  <span className="w-full font-semibold text-lg mr-2">
+                    Google
+                  </span>
+                </p>
+              </button>
               <button
                 type="submit"
-                className=" hover:bg-sky-900 bg-sky-800 px-5 py-2 rounded-sm focus: border-none text-lg"
+                className="  hover:bg-sky-900 bg-sky-800 px-5 py-2 rounded-lg focus: border-none text-lg"
+                onClick={notify}
               >
-                Sign Up{" "}
+                Sign up
               </button>
             </form>
+            <ToastContainer />
             <div className="flex justify-center mx-auto w-9/12 text-sm mb-">
               <p>Already logged in? </p>
               <button
