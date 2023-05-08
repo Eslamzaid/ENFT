@@ -1,11 +1,13 @@
-import { useContext } from 'react'
+import { useContext } from "react";
 import Art1 from "./../../../../assets/images/Images/Articel1.webp";
 import Art2 from "./../../../../assets/images/Images/Article2.webp";
 import Art3 from "./../../../../assets/images/Images/Artilce3.webp";
-import { theMainCon } from '../../LandingP'
+import { theMainCon } from "../../LandingP";
+import { useNavigate } from "react-router-dom";
 
 const MainArt = () => {
-  const myCon = useContext(theMainCon)
+  const myCon = useContext(theMainCon);
+  const navigate = useNavigate();
   return (
     <section className=" rounded-3xl 11/12 msm:w-10/12 text-white mt-72 h-full relative ">
       <button ref={myCon.seven} aria-label="ref"></button>
@@ -45,6 +47,7 @@ const MainArt = () => {
         <button
           type="button"
           className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-3 rounded-full sms:w-9/12 lg:w-11/12 mt- lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus:ring-slate-200 ring-offset-4 mb-2"
+          onClick={() => navigate("/signUp")}
         >
           See more
         </button>
