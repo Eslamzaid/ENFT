@@ -35,7 +35,7 @@ const SignUp = () => {
         navigate("/marketPlace");
       })
       .catch((error) => {
-        console.log("Login falied")
+        console.log("Login failed")
         if (error == "auth/email-already-in-use") {
           notify("Email already in use");
         }  else if(password.length == 0 && email.length == 0) {
