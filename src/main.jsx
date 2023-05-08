@@ -6,19 +6,24 @@ import App from "./App";
 import MarketPlace from "./Components/MarketPlace/MarketP";
 import SignUp from "./LoginSign/SignUp";
 import Sign from "./LoginSign/Sign";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([
+  {
+    path: "*",
+    element: <ErrorPage/>,
+  },
   {
     path: "/",
     element: <App />,
   },
   {
     path: "signup",
-    element: <SignUp/>
+    element: <SignUp />,
   },
   {
     path: "login",
-    element: <Sign/>
+    element: <Sign />,
   },
   {
     path: "marketPlace",

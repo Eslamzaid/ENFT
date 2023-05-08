@@ -7,11 +7,12 @@ import sportData from "./sportData";
 import moreData from "./moreData";
 import BgCol from "./../../../../assets/Icons/coll.webp";
 import { theMainCon } from "../../LandingP";
+import { useNavigate } from "react-router-dom";
 
 const MainP2 = () => {
   const [item, setItem] = useState(artData);
   let [fatherHidden, setFather] = useState(true);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const wiSize = () => {
       if (window.innerWidth <= 1279) {
@@ -198,6 +199,7 @@ const MainP2 = () => {
       <div className="text-center w-full mt-6  mx-auto">
         <button
           type="button"
+          onClick={() => navigate('/signUp')}
           className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-3 rounded-full sms:w-9/12 lg:w-11/12 mt-8 lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus:ring-slate-200 ring-offset-4 mb-2"
         >
           See more

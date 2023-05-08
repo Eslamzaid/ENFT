@@ -14,7 +14,7 @@ function Number({ n, str }) {
 
   return (
     <div className=" inline-block w-fi">
-      <div className="  flex justify-center items-center text-center extsm:mx-6 exsm:mx-4 text-4xl">
+      <div className="  flex justify-center items-center text-center extsm:mx-6 exsm:mx-4 mx-6 text-2xl exsm:text-4xl ">
         <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
         K+
       </div>
@@ -30,10 +30,14 @@ const Nbody = () => {
 
   return (
     <section
-      className=" lg:mt-44 mt-44 sm:mt-48 esm:mt-44 exsm:mt-36 msm:mt-48 extsm:mt-44 w-[89.6%] text-white md:flex md:justify-between md:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12
+      className=" lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36 msm:mt-48 extsm:mt-44 w-[89.6%] text-white md:flex md:justify-between md:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12
                   "
     >
-      <button ref={myCon.homePage} className="absolute top-0" aria-label="ref"></button>
+      <button
+        ref={myCon.homePage}
+        className="absolute top-0"
+        aria-label="ref"
+      ></button>
       <section className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start">
         <img
           src={FtextSha}
@@ -80,7 +84,7 @@ const Nbody = () => {
             Bid now
           </button>
         </div>
-        <div className=" font-headerFont w-full mt-8 sm:text-3xl font-semibold mb-10">
+        <div className=" font-headerFont w-full  mt-8 font-semibold mb-10">
           <Number n={432} str={"collections"} />
           <Number n={200} str={"Artists"} />
           <Number n={10} str={"Community"} />
