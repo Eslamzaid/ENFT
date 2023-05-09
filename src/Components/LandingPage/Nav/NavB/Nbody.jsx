@@ -64,7 +64,7 @@ const Nbody = () => {
           NFTs
         </h1>
         <p
-          className=" font-poppi extsm:text-base  text-slate-200 extsm:w-80 exsm:w-96 relative bottom-7 
+          className=" font-poppi extsm:text-base text-slate-200 extsm:w-80 exsm:w-96 relative bottom-7 
           sm:mt-5 text-xs w-11/12 extsm:px-1 "
         >
           The leading NFT Marketplace on Ethereum Home to the next generation of
