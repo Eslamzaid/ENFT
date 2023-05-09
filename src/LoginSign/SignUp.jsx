@@ -35,13 +35,12 @@ const SignUp = () => {
         navigate("/marketPlace");
       })
       .catch((error) => {
-        console.log("Login failed")
+        console.log("Login failed");
         if (error == "auth/email-already-in-use") {
           notify("Email already in use");
-        }  else if(password.length == 0 && email.length == 0) {
-          notify("Email and Password are missing")
-        }
-        else if (
+        } else if (password.length == 0 && email.length == 0) {
+          notify("Email and Password are missing");
+        } else if (
           /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(
             email
           ) == false
@@ -96,6 +95,50 @@ const SignUp = () => {
       setIsLoading(false);
     }, 600);
   }, []);
+
+  /**
+   * PurgeCSS:
+   *peer 
+   *shadow-md
+   *focus:outline-blue-900
+   *focus:outline-offset-4
+   *focus:ring-none
+   *placeholder-transparent
+   *border-none 
+   *bg-slate-700
+   *focus:ring-0 
+   *ring-red-400
+   *mb-5 w-8/12 
+   *rounded-lg
+   *shadow-2xl
+   *bg-slate-800
+   *w-full
+   *eexx:w-96
+   *msm:w-fit
+   *rounded-xl
+   *w-8/12 
+   *relative 
+   *top-10 
+   *mb-10 
+   *text-3xl 
+   *font-semibold 
+   *font-inter 
+   *mx-auto  
+   *transition-all 
+   *absolute 
+   *left-[20%] 
+   *eexx:left-[4.75rem] 
+   *-top-7 
+   *text-sm 
+   *w-fit 
+   *py-2        
+   *peer-placeholder-shown:text-base 
+   *peer-placeholder-shown:-top-0 peer-placeholder-shown:text-[#6B7280] 
+   *peer-focus:-top-7 
+   *peer-focus:text-sm 
+   *peer-focus:text-white
+  
+   */
 
   return (
     <div className=" overflow-hidden">
