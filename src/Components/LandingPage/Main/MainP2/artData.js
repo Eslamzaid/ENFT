@@ -1,6 +1,6 @@
 import purpleHair from "../../../../assets/images/nfts/purpleHair.webp";
 import Boy from "../../../../assets/images/nfts/Boy.webp";
-import Cboy2Goast from "../../../../assets/images/nfts/CBoy4.webp";
+import Cboy2Goast from "../../../../assets/images/nfts/Cboy4.webp";
 import Cboy3 from "../../../../assets/images/nfts/Cboy3.webp";
 import campGirl from "../../../../assets/images/nfts/campGirl.webp";
 import moneyBear from "../../../../assets/images/nfts/moneyBear.webp";
