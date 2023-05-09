@@ -12,7 +12,7 @@ import { theMainCon } from "../LandingP";
 const Nav = () => {
   let [x, setX] = useState(window.innerWidth);
   let [color, setColor] = useState(false);
-  let [resp, setresp] = useState(true);
+  let [resp, setresp] = useState(false);
   useEffect(() => {
     function HeightCha() {
       if (window.scrollY > 60) {
@@ -87,22 +87,23 @@ const Nav = () => {
                   }
                 >
                   <li
-                    onClick={thePrepi.two}
-                    className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all"
+                    onClick={thePrepi.two }
+                    className=" hover:border-b-2   text-left bg-green-400 w-32 hover:border-b-white transition-all"
                   >
-                    Trending
+                    
+                    <span className="w-32 bg-red-400" onClick={() =>setresp(() => !resp)}>Trending</span>
                   </li>
                   <li
                     onClick={thePrepi.four}
                     className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all"
                   >
-                    Collections
+                    <span className="w-32" onClick={() =>setresp(() => !resp)}>Collections</span>
                   </li>
                   <li
                     onClick={thePrepi.eight}
                     className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all"
                   >
-                    Articles
+                    <span className="w-32" onClick={() =>setresp(() => !resp)}>Articles</span>
                   </li>
                   <li
                     className="bg-backColor w-28 text-center rounded-full hover:bg-sky-600 hover:text-slate-400 transition-all hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300"
