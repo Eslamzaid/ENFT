@@ -1,6 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  purge: {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    safelist: [
+      "bg-blue-500",
+      "text-center",
+      "hover:opacity-100",
+      "w-8/12",
+      "lg:text-right",
+      'eexx:left-[4.75rem]',
+      '-top-7',
+      'left-[20%]',
+      'peer-focus:-top-7',
+      'peer-placeholder-shown:-top-0',
+      'absolute'
+    ],
+    /* 
+    
+transition-all absolute left-[20%] eexx:left-[4.75rem] -top-7 text-sm w-fit py-2
+      peer-placeholder-shown:text-base peer-placeholder-shown:-top-0 
+      peer-placeholder-shown:text-[#6B7280] 
+      peer-focus:-top-7 peer-focus:text-sm peer-focus:text-white
+    */
+  },
   plugins: [
     function ({ addVariant }) {
       addVariant("child", "& > *");
