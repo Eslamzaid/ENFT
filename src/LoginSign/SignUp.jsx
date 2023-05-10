@@ -12,7 +12,6 @@ import GoogleLoginIn from "../assets/Icons/GoogleLoginIn.webp";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -94,7 +93,7 @@ const SignUp = () => {
       setIsLoading(false);
     }, 500);
   }, []);
-  
+
   return (
     <div className=" overflow-hidden">
       {timeOut == true ? (

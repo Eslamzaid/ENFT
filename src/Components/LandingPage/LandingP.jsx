@@ -46,9 +46,9 @@ const LandingP = () => {
       >
         <Nav />
         <main className=" mb-9 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
-          {/* <Main /> */}
+          <Main />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </theMainCon.Provider>
     </div>
   );

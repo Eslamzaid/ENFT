@@ -108,7 +108,7 @@ function MainP1() {
         </h2>
       </div>
       <div className=" relative">
-        <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
+        <div className="remo:block baseM:hidden  hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
         <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -right-12 absolute z-[60]"></div>
       </div>
       <Slider {...settings}>

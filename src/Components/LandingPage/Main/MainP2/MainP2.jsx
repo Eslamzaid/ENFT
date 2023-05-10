@@ -13,9 +13,10 @@ const MainP2 = () => {
   const [item, setItem] = useState(artData);
   let [fatherHidden, setFather] = useState(true);
   const navigate = useNavigate();
+  const currW = window.innerWidth;
   useEffect(() => {
     const wiSize = () => {
-      if (window.innerWidth <= 1279) {
+      if (window.innerWidth <= 1279 || currW <= 1279) {
         setFather(() => (fatherHidden = false));
       } else {
         setFather(() => (fatherHidden = true));

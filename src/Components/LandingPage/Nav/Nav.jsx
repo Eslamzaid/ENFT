@@ -9,19 +9,6 @@ import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.webp";
 import { theMainCon } from "../LandingP";
 
-/**
-   * PurgeCSS:
-   * max-w-[180rem]
-   * xl:w-[75rem]
-   * 2xl:w-[92.7%]
-   * child:border-transparent
-   * child:border-2
-   * child:transition-all
-   * child:z-30
-   * 
-
-   */
-
 const Nav = () => {
   let [x, setX] = useState(window.innerWidth);
   let [color, setColor] = useState(false);
@@ -55,7 +42,7 @@ const Nav = () => {
   return (
     <header
       style={{ backgroundImage: `url('${Shades}')` }}
-      className=" bg-no-repeat  flex flex-col  items-center object-cover w-full"
+      className=" bg-no-repeat  flex flex-col  items-center object-cover w-screen"
       aria-label="navigation bar"
     >
       {thePrepi.open ? <LoginPage /> : ""}
