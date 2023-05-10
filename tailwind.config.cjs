@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
   plugins: [
     function ({ addVariant }) {
       addVariant("child", "& > *");
@@ -65,14 +66,17 @@ export default {
         esm: "480px",
         eee: "500px",
         xlsm: "530px",
-        msm: "640px", 
+        msm: "640px",
         sm: "680px",
         sms: "701px",
         ssm: "845px",
         md: "900px",
         mmd: "991px",
+        lg: "1024px",
         llg: "1170px",
         sty: "1043px",
+        xl: "1280px",
+        "2xl": "1536px",
         remo: "1555px",
         llgg: "1700px",
       },

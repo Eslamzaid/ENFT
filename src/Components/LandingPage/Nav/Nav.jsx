@@ -9,6 +9,19 @@ import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.webp";
 import { theMainCon } from "../LandingP";
 
+  /**
+   * PurgeCSS:
+   * max-w-[180rem]
+   * xl:w-[75rem]
+   * 2xl:w-[92.7%]
+   * child:border-transparent
+   * child:border-2
+   * child:transition-all
+   * child:z-30
+   * 
+
+   */
+
 const Nav = () => {
   let [x, setX] = useState(window.innerWidth);
   let [color, setColor] = useState(false);
@@ -49,8 +62,8 @@ const Nav = () => {
       <nav
         className={
           color
-            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
-            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen flex justify-center items-center xl:px-16 transition-all"
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen xl:w-screen  llgg:w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
+            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen xl:w-screen  llgg:w-screen flex justify-center items-center xl:px-16 transition-all"
         }
       >
         {x < 725 ? (
@@ -99,7 +112,7 @@ const Nav = () => {
                   </li>
                   <li
                     onClick={thePrepi.four}
-                    className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all"
+                    className=" hover:border-b-2 text-left w-32 hover:border-b-white transition-all"
                   >
                     <span className="w-32" onClick={() => setresp(() => !resp)}>
                       Collections
@@ -107,7 +120,7 @@ const Nav = () => {
                   </li>
                   <li
                     onClick={thePrepi.eight}
-                    className=" hover:border-b-2   text-left w-32 hover:border-b-white transition-all"
+                    className=" hover:border-b-2 text-left w-32 hover:border-b-white transition-all"
                   >
                     <span className="w-32" onClick={() => setresp(() => !resp)}>
                       Articles
