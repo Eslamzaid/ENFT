@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <div className=" z-40 bg-[#0D1135] bg-no-repeat bg-cover  mt-96 bg-top w-full text-white flex flex-col items-center justify-center py-5">
         <section className=" relative z-50 transition-all child:transition-all border-b border-[#676A81] w-full  msm:w-10/12 pb-20  ">
-          <h2 className=" font-headerFont text-3xl exsm:text-4xl text-center font-semibold mt-20">
+          <h2 className=" font-headerFont text-2xl exsm:text-4xl text-center font-semibold mt-20">
             Get More Updates
           </h2>
           <p className=" py-10 font-poppi text-center px-4">
@@ -38,7 +38,7 @@ const Footer = () => {
             </button>
           </div>
         </section>
-        <section className=" relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mmd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
+        <section className=" relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mimd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
           <div className=" flex-none">
             <img
               src={logoText}
@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
           <div className=" flex-none">
             <ul className="w-fit font-poppi child:transition-all font-light child:w-fit text-sm leading-9">
-              <li className=" text-2xl mmd:text-4xl  font-semibold mb-4">
+              <li className=" text-2xl mimd:text-4xl  font-semibold mb-4">
                 Marketplace
               </li>
               <li className=" cursor-pointer border-transparent border-b hover:border-white">
@@ -118,9 +118,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className=" md:flex-grow-0 flex-grow eee:flex eee:justify-center mmd:block text-center">
+          <div className=" imd:flex-grow-0 flex-grow eee:flex eee:justify-center mimd:block text-center">
             <ul className="w-44 font-poppi child:transition-all font-light child:w-fit text-sm leading-9">
-              <li className=" text-2xl mmd:text-4xl  font-semibold mb-4">
+              <li className=" text-2xl mimd:text-4xl  font-semibold mb-4">
                 Links
               </li>
               <li className=" cursor-pointer border-transparent border-b hover:border-white">

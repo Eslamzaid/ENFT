@@ -9,7 +9,7 @@ import FNBody from "./NavB/FNBody";
 import FPol from "./../../../assets/Icons/Mask group.webp";
 import { theMainCon } from "../LandingP";
 
-  /**
+/**
    * PurgeCSS:
    * max-w-[180rem]
    * xl:w-[75rem]
@@ -55,15 +55,15 @@ const Nav = () => {
   return (
     <header
       style={{ backgroundImage: `url('${Shades}')` }}
-      className=" bg-no-repeat  flex flex-col  items-center object-cover w-screen"
+      className=" bg-no-repeat  flex flex-col  items-center object-cover w-full"
       aria-label="navigation bar"
     >
       {thePrepi.open ? <LoginPage /> : ""}
       <nav
         className={
           color
-            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen xl:w-screen  llgg:w-screen flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
-            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen xl:w-screen  llgg:w-screen flex justify-center items-center xl:px-16 transition-all"
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-full  flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
+            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-full  flex justify-center items-center xl:px-16 transition-all"
         }
       >
         {x < 725 ? (
@@ -103,10 +103,7 @@ const Nav = () => {
                     onClick={thePrepi.two}
                     className=" hover:border-b-2 text-left w-32 hover:border-b-white transition-all"
                   >
-                    <span
-                      className="w-32"
-                      onClick={() => setresp(() => !resp)}
-                    >
+                    <span className="w-32" onClick={() => setresp(() => !resp)}>
                       Trending
                     </span>
                   </li>
@@ -138,7 +135,7 @@ const Nav = () => {
             </div>
           </div>
         ) : (
-          <div className=" text-white  w-11/12 xl:w-[75rem] 2xl:w-[92.7%] 2xl:pr-8">
+          <div className=" text-white  w-11/12 xl:w-[75rem] 2xl:w-11/12 2xl:pr-8">
             <div className="mt-7">
               <ul
                 className="flex justify-end items-center child:z-30  sm:m-3
@@ -158,9 +155,9 @@ const Nav = () => {
                   className={
                     color
                       ? `sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-imd lg:mx-6`
                       : `sm:text-sm hover:text-slate-200 hover:border-2 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-lg lg:mx-6`
                   }
                   onClick={thePrepi.two}
                 >
@@ -170,9 +167,9 @@ const Nav = () => {
                   className={
                     color
                       ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-imd lg:mx-6`
                       : `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-lg lg:mx-6`
                   }
                   onClick={thePrepi.four}
                 >
@@ -182,9 +179,9 @@ const Nav = () => {
                   className={
                     color
                       ? `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-md lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-imd lg:mx-6`
                       : `sm:text-sm hover:border-2 hover:text-slate-200 hover:border-b-white
-                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] md:mx-4 md:text-lg lg:mx-6`
+                  sm:mx-[0.4rem] ssm:text-base ssm:mx-[0.4rem] imd:mx-4 imd:text-lg lg:mx-6`
                   }
                   onClick={thePrepi.eight}
                 >
@@ -193,10 +190,10 @@ const Nav = () => {
                 <li
                   className={
                     color
-                      ? ` xl:px-6 xl:p-2 lg:p-[0.6rem] md:p-3 md:px-5 lg:px-6 md:ml-2 sms:p-3 sms:ml-2 sms:px-6 ssm:text-sms p-14
+                      ? ` xl:px-6 xl:py-2 lg:p-[0.6rem] imd:py-3 imd:px-5 lg:px-6 imd:ml-2 sms:p-3 sms:ml-2 sms:px-6 ssm:text-sms p-14
                   bg-backColor w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
-                      : `xl:px-10 xl:p-3 lg:p-[0.7rem] lg:px-7 p-3 md:p-3 md:px-8 md:ml-1 sms:p-2 sms:ml-2 sms:px-6 ssm:text-base 
+                      : `xl:px-10 xl:py-3 lg:py-[0.7rem] lg:px-7 p-3 imd:py-3 imd:px-10 imd:ml-1 sms:p-2 sms:ml-2 sms:px-6 ssm:text-base 
                   bg-backColor w-fit rounded-full hover:bg-blue-600 hover:ring-2 ring-white ring-offset-2 ring-offset-blue-300
                   transition-all`
                   }

@@ -25,26 +25,17 @@ function Number({ n, str }) {
   );
 }
 
-/**
- * ParceCss()
- * extsm:w-80 
- * exsm:w-96
-
-*/
-
 const Nbody = () => {
   const myCon = useContext(theMainCon);
 
   return (
-    <section
-      className=" lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36 msm:mt-48 extsm:mt-44 w-[89.6%] text-white md:flex md:justify-between md:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12"
-    >
+    <section className=" lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36  extsm:mt-44 w-[89.6%] text-white imd:flex imd:justify-between imd:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
       <button
         ref={myCon.homePage}
         className="absolute top-0"
         aria-label="ref"
       ></button>
-      <section className="relative my-6 text-center flex flex-col items-center md:text-left md:items-start">
+      <section className="relative my-6 text-center flex flex-col  items-center imd:text-left imd:items-start">
         <img
           src={FtextSha}
           alt="A linear gradient color"
@@ -53,7 +44,7 @@ const Nbody = () => {
         <h1
           className=" relative bg-left text-4xl exsm:text-6xl extsm:text-5xl  font-headerFont font-semibold
                       mb-7 
-                      md:text-[3rem]
+                      imd:text-[3rem]
                       lg:text-[4rem] lg:text-left 
                       xl:text-[4.8rem]
                       2xl:text-[5.5rem] "
@@ -71,18 +62,18 @@ const Nbody = () => {
         </h1>
         <p
           className=" font-poppi extsm:text-base text-slate-200 extsm:w-80 exsm:w-96 relative bottom-7 
-          sm:mt-5 text-xs w-11/12 extsm:px-1 "
+          sm:mt-5 text-xs extsm:px-1 "
         >
           The leading NFT Marketplace on Ethereum Home to the next generation of
           digital creators. Discover the best NFT collections.
         </p>
         <div
-          className=" child:mx-3 md:child:p-1  md:child:py-1 md:child:font-semibold child:cursor-pointer w-screen relative flex justify-evenly
-                         md:w-3/4 md:justify-start md:ml-1 md:gap-4 md:child:mx-0 child:transition-all"
+          className=" child:mx-3 imd:child:p-1  imd:child:py-1 imd:child:font-semibold child:cursor-pointer w-screen relative flex justify-evenly
+                         imd:w-3/4 imd:justify-start imd:ml-1 imd:gap-4 imd:child:mx-0 child:transition-all"
         >
           <button
             className=" bg-backColor p-1 h-fit w-28 focus:bg-sky-600 rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-offset-[#141843] hover:ring-sky-300
-                          md:ml-4 xl:p-3 xl:px-3"
+                          imd:ml-4 xl:p-3 xl:px-3"
           >
             Explore
           </button>
@@ -96,7 +87,7 @@ const Nbody = () => {
           <Number n={10} str={"Community"} />
         </div>
       </section>
-      <section className="  md:w-[20rem] lg:w-[40rem] llg:w-[45rem] lg:mr-0 hidden md:block">
+      <section className="  w-72 md:80 lg:w-[40rem] llg:w-[45rem] lg:mr-0 hidden imd:block">
         <Nbody2 />
       </section>
     </section>

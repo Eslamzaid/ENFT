@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   mode: "jit",
@@ -8,7 +9,6 @@ export default {
       addVariant("child-hover", "& > *:hover");
     },
     require("@tailwindcss/typography"),
-    require("@tailwindcss/forms"),
   ],
   theme: {
     backgroundPosition: {
@@ -60,6 +60,7 @@ export default {
         scrollAnimPNeg: "scrollingAnimNeg 3.5s ease-out",
       },
       screens: {
+        baseM: "200px",
         extsm: "367px",
         eexx: "425px",
         exsm: "468px",
@@ -67,18 +68,15 @@ export default {
         eee: "500px",
         xlsm: "530px",
         msm: "640px",
-        sm: "680px",
         sms: "701px",
         ssm: "845px",
-        md: "900px",
+        imd: "900px",
         mmd: "991px",
-        lg: "1024px",
         llg: "1170px",
         sty: "1043px",
-        xl: "1280px",
-        "2xl": "1536px",
         remo: "1555px",
         llgg: "1700px",
+        ...defaultTheme.screens,
       },
     },
     fontFamily: {

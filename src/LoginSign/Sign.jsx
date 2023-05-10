@@ -60,8 +60,8 @@ const Sign = () => {
         <Loading />
       ) : (
         <div className=" font-inter w-screen flex justify-center items-center h-screen text-white bg-gradient-to-tl from-[#141845] via-[#0D1135] to-[#2A1271]">
-          <div className="shadow-2xl bg-slate-800 w-full eexx:w-96 msm:w-fit rounded-xl">
-            <h1 className=" w-8/12 relative top-10 text-3xl  font-semibold font-inter mx-auto">
+          <div className="shadow-2xl bg-slate-800 baseM:w-full eexx:w-96 rounded-xl">
+            <h1 className=" w-8/12 relative top-10 text-2xl  font-semibold font-inter mx-auto">
               Log in
             </h1>
             <form
@@ -122,7 +122,7 @@ const Sign = () => {
               </button>
             </div>
             <button
-              className=" text-center w-full text-xs underline"
+              className=" text-center w-full text-xs mb-2 underline"
               onClick={() => navHome("/")}
             >
               Back Home

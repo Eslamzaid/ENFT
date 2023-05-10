@@ -12,7 +12,6 @@ import GoogleLoginIn from "../assets/Icons/GoogleLoginIn.webp";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Don't try to hack it, plz😂🙂🙂🙂
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -93,61 +92,17 @@ const SignUp = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 600);
+    }, 500);
   }, []);
-
-  /**
-   * PurgeCSS:
-   *peer 
-   *shadow-md
-   *focus:outline-blue-900
-   *focus:outline-offset-4
-   *focus:ring-none
-   *placeholder-transparent
-   *border-none 
-   *bg-slate-700
-   *focus:ring-0 
-   *ring-red-400
-   *mb-5 w-8/12 
-   *rounded-lg
-   *shadow-2xl
-   *bg-slate-800
-   *w-full
-   *eexx:w-96
-   *msm:w-fit
-   *rounded-xl
-   *w-8/12 
-   *relative 
-   *top-10 
-   *mb-10 
-   *text-3xl 
-   *font-semibold 
-   *font-inter 
-   *mx-auto  
-   *transition-all 
-   *absolute 
-   *left-[20%] 
-   *eexx:left-[4.75rem] 
-   *-top-7 
-   *text-sm 
-   *w-fit 
-   *py-2        
-   *peer-placeholder-shown:text-base 
-   *peer-placeholder-shown:-top-0 peer-placeholder-shown:text-[#6B7280] 
-   *peer-focus:-top-7 
-   *peer-focus:text-sm 
-   *peer-focus:text-white
   
-   */
-
   return (
     <div className=" overflow-hidden">
       {timeOut == true ? (
         <Loading />
       ) : (
         <div className=" font-inter w-screen flex justify-center items-center h-screen text-white bg-gradient-to-tr from-[#141845] via-[#0D1135] to-[#2A1271]">
-          <div className=" shadow-2xl bg-slate-800 w-full eexx:w-96 msm:w-fit rounded-xl">
-            <h1 className=" w-8/12 relative top-10 mb-10 text-3xl font-semibold font-inter mx-auto">
+          <div className=" shadow-2xl bg-slate-800 baseM:w-full eexx:w-96 rounded-xl">
+            <h1 className=" w-8/12 relative top-10 mb-10 text-2xl font-semibold font-inter mx-auto">
               Sign Up
             </h1>
             <form
@@ -160,14 +115,7 @@ const SignUp = () => {
                   id="email"
                   name="email"
                   placeholder="Email"
-                  className="peer shadow-md
-              focus:outline-blue-900
-              focus:outline-offset-4
-              focus:ring-none
-              placeholder-transparent
-              border-none bg-slate-700
-              focus:ring-0 ring-red-400
-              mb-5 w-8/12 rounded-lg "
+                  className="peer shadow-md focus:outline-blue-900 focus:outline-offset-4 placeholder-transparent border-none bg-slate-700 focus:ring-0  mb-5 w-8/12 rounded-lg "
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />

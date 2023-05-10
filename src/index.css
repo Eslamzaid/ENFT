@@ -25,3 +25,7 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
   color: white;
 }
+
+[type=email] [type=password] {
+  background-color: #253341;
+}
