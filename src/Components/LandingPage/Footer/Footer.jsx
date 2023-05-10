@@ -22,7 +22,7 @@ const Footer = () => {
             Join our mailing list to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks{" "}
           </p>
-          <div className=" flex flex-col justify-center items-center hidden eexx:block  bg-white eexx:rounded-full w-full eexx:w-11/12 msm:w-[30rem] mx-auto my-5">
+          <div className=" eee:flex flex-col justify-center items-center hidden eexx:block  bg-white eexx:rounded-full w-full eexx:w-11/12 msm:w-[30rem] mx-auto my-5">
             <input
               className=" msm:ml-16 my-4 eexx:my-0 text-ellipsis  p-5 invalid:text-rose-400 rounded-full msm:rounded-none  placeholder-[#828282] caret-[#141845] w-8/12 msm:w-72 eexx:border-transparent focus:border-transparent focus:ring-0 text-black font-poppi border-2 border-slate-300 bg-slate-200 eexx:bg-transparent   eexx:border-none"
               placeholder="Your email..."
@@ -55,7 +55,7 @@ const Footer = () => {
             <div className=" flex bg-red child:flex-wrap w-fit child:object-contain justify-between items-center gap-x-3">
               <a href="#">
                 <img
-                  className=" hidden exsm:block hover:opacity-80 transition-opacity"
+                  className="  exsm:block hidden hover:opacity-80 transition-opacity"
                   src={dis}
                   alt="social media - discord"
                 />

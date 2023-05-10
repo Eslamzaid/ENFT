@@ -67,7 +67,7 @@ const Nav = () => {
                   resp ? " ml:4 pt-3 inline-block " : " ml:4 mb-2 pt-3 "
                 }
               >
-                <li>
+                <li onClick={thePrepi.homePLoc}>
                   <img
                     src={TextLogo}
                     className={
@@ -75,8 +75,8 @@ const Nav = () => {
                         ? "ml-7 cursor-pointer mt-5 pb-3"
                         : " ml-7 cursor-pointer mt-5 pb-3"
                     }
-                    onClick={thePrepi.homePLoc}
                     alt="ENFT"
+                    onClick={() => setresp(() => !resp)}
                   />
                 </li>
                 <div
