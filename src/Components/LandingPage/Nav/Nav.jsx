@@ -49,8 +49,8 @@ const Nav = () => {
       <nav
         className={
           color
-            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-full  flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
-            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-full  flex justify-center items-center xl:px-16 transition-all"
+            ? "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen  flex justify-center items-center xl:px-16 bg-[#141845] shadow-2xl"
+            : "bg-cover fixed top-0 bg-no-repeat max-w-[180rem] z-[1111111111] w-screen  flex justify-center items-center xl:px-16 transition-all"
         }
       >
         {x < 725 ? (
