@@ -19,24 +19,9 @@ const Footer = () => {
             Get More Updates
           </h2>
           <p className=" py-10 font-poppi text-center px-4">
-            Join our mailing list to stay in the loop with our newest feature
+            Join our mailing list by logging in to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks{" "}
           </p>
-          <div className=" eee:flex flex-col justify-center items-center hidden eexx:block  bg-white eexx:rounded-full w-full eexx:w-11/12 msm:w-[30rem] mx-auto my-5">
-            <input
-              className=" msm:ml-16 my-4 eexx:my-0 text-ellipsis  p-5 invalid:text-rose-400 rounded-full msm:rounded-none  placeholder-[#828282] caret-[#141845] w-8/12 msm:w-72 eexx:border-transparent focus:border-transparent focus:ring-0 text-black font-poppi border-2 border-slate-300 bg-slate-200 eexx:bg-transparent   eexx:border-none"
-              placeholder="Your email..."
-              type="email"
-              id="email"
-              name="email"
-            />
-            <button
-              className="my-3 eexx:mb-0 w-40 mx eexx:w-fit bg-backColor eexx:float-right p-4 px-10 rounded-full  mt-1 mr-1 hover:bg-blue-600 hover:ring hover:ring-blue-400 transition-all"
-              type="button"
-            >
-              I'm In
-            </button>
-          </div>
         </section>
         <section className=" relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mimd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
           <div className=" flex-none">

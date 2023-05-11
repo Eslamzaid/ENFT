@@ -12,7 +12,7 @@ const MainArt = () => {
     <section className=" rounded-2xl 11/12 msm:w-10/12 text-white mt-72 h-full relative ">
       <button ref={myCon.seven} aria-label="ref"></button>
       <div className=" relative flex flex-col items-center">
-        <h2 className="bg-gradient-to-r  pt-20 z-20 mb-20 relative from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-lg extsm:text-xl exsm:text-2xl sm:text-2xl imd:text-5xl  llgg:text-6xl">
+        <h2 className="bg-gradient-to-r  pt-20 z-20 mb-20 relative from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-lg extsm:text-2xl exsm:text-3xl sm:text-2xl imd:text-5xl  llgg:text-6xl">
           Articles
         </h2>
         <aside className=" pb-10 z-20  flex flex-wrap font-poppi justify-center gap-y-16 gap-x-10 sty:justify-around w-11/12 child:flex child:flex-col child:items-center child:justify-baseline overflow-hidden">

@@ -14,7 +14,7 @@ function Number({ n, str }) {
 
   return (
     <div className=" inline-block w-fi">
-      <div className="  flex justify-center items-center text-center extsm:mx-6 exsm:mx-4 mx-6 text-2xl exsm:text-4xl ">
+      <div className="  flex justify-center items-center text-center extsm:mx-6 exsm:mx-4 mx-6 text-md baseM:text-lg exsm:text-3xl ">
         <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>
         K+
       </div>
@@ -29,7 +29,7 @@ const Nbody = () => {
   const myCon = useContext(theMainCon);
 
   return (
-    <section className=" lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36  extsm:mt-44 w-[89.6%] text-white imd:flex imd:justify-between imd:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
+    <section className="baseM:mt-36  lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36  extsm:mt-44 w-[89.6%] text-white imd:flex imd:justify-between imd:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
       <button
         ref={myCon.homePage}
         className="absolute top-0"
