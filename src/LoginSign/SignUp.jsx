@@ -36,6 +36,8 @@ const SignUp = () => {
         console.log("Login failed");
         if (error == "auth/email-already-in-use") {
           notify("Email already in use");
+        } else if (password.length == 0 && email.length == 0) {
+          notify("Email and Password are missing");
         } else if (
           /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(
             email
@@ -61,8 +63,6 @@ const SignUp = () => {
           );
         } else if (error.code === "auth/missing-password") {
           notify("Password is missing");
-        } else if (password.length == 0 && email.length == 0) {
-          notify("Email and Password are missing");
         }
       });
   };

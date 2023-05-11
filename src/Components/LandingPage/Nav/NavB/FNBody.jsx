@@ -13,8 +13,8 @@ const FNBody = () => {
                     lg:w-[65rem] llg:w-[70rem] z-30"
       >
         <div
-          className="  flex flex-wrap baseM:flex-nowrap baseM:flex-col baseM:items-start pl-4 pr-2 child:py-3 esm:flex-row justify-between esm:items-center child:object-contain child:w-32 sm:child:w-52 sm:child:px-3  
-                      imd:child:px-5 lg:px-10 llg:px-4 relative bottom-5 imd:child:w-60 lg:child:w-fit"
+          className="  flex flex-wrap baseM:flex-nowrap baseM:flex-col baseM:items-start pl-4 pr-2 child:py-3 esm:flex-row justify-between esm:items-center child:object-contain child:w-28 sm:child:w-48 sm:child:px-3  
+                      imd:child:px-5 lg:px-10 llg:px-4 relative bottom-5 imd:child:w-56 lg:child:w-fit"
         >
           <img src={FImg} alt="MetaMask" />
           <img src={FoImg} className=" self-end" alt="Trust Wallet" />
@@ -22,7 +22,7 @@ const FNBody = () => {
         </div>
         <div
           className=" flex flex-wrap baseM:flex-nowrap baseM:flex-col baseM:items-start px-4 child:py-3 esm:child:px-5 esm:child:w-44 w-full  esm:justify-center esm:items-center esm:flex-row justify-evenly child:w-28 sm:child:mx-10 msm:child:px-5 
-                         msm:child:w-48 imd:child:w-52 imd:child:mx-10 lg:child:w-fit lg:child:px-12 llg:child:mx-0 xl:child:px-24"
+                         msm:child:w-44 imd:child:w-48 imd:child:mx-10 lg:child:w-fit lg:child:px-12 llg:child:mx-0 xl:child:px-24"
         >
           <img src={SecImg} className=" self-end esm:self-auto" alt="Exodus" />
           <img src={ThiImg} alt="SafePal" />
