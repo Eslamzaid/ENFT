@@ -103,12 +103,12 @@ function MainP1() {
     <div className=" flex flex-col text-white  ">
       <button ref={myContext.one} className="mb-28" aria-label="ref"></button>
       <div className="  flex items-center justify-center  ">
-        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-3xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
+        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] text-transparent bg-clip-text text-2xl  esm:text-5xl  font-bold font-headerFont esm:mb-12">
           Trending NFTs
         </h2>
       </div>
       <div className=" relative">
-        <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
+        <div className="remo:block baseM:hidden  hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -left-12 absolute z-[60]"></div>
         <div className="llgg:block hidden w-[20.1rem] h-[44rem] backdrop-blur-sm  -right-12 absolute z-[60]"></div>
       </div>
       <Slider {...settings}>
@@ -120,14 +120,14 @@ function MainP1() {
             <div
               className={
                 index == middleIndex
-                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
-                  : "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#8b8b8b] transition-all rounded-xl"
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] imd:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] imd:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  : "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] imd:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] imd:left-[8%] lg:left-[8%] inset-3 h-[34.3rem] z-30 absolute top-[1.8rem]  bg-gradient-to-br from-[#8b8b8b] transition-all rounded-xl"
               }
             ></div>
             <div
               className={
                 index == middleIndex
-                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] md:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] md:left-[8%] lg:left-[8%] inset-3 h-[34.5rem] z-20 absolute top-[1.8rem] blur-sm  bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
+                  ? "w-[92.6%] exsm:w-[76%] esm:w-[63.9%] msm:w-[84%] sms:w-[89%] imd:w-[83.8%] lg:w-[83.8%] exsm:left-[12%] esm:left-[18%] msm:left-[8%] sms:left-[5.5%] imd:left-[8%] lg:left-[8%] inset-3 h-[34.5rem] z-20 absolute top-[1.8rem] blur-sm  bg-gradient-to-tl from-[#69EACB] via-[#EACCF8] to-[#6654F1] transition-all rounded-xl"
                   : ""
               }
             ></div>
@@ -136,7 +136,7 @@ function MainP1() {
               className=" bg-no-repeat  bg-center bg-cover w-[80rem] top-32 absolute z-10 h-3/4 blur-xl opacity-30"
             ></div>
             <div className="relative flex justify-center items-center">
-              <div className="w-[90%] exsm:w-9/12 esm:w-[62%] msm:w-[83%] sms:w-[88%] md:w-[83%]  z-40 relative h-[34rem] flex flex-col items-center bg-[#262951] rounded-xl py-3">
+              <div className="w-[90%] exsm:w-9/12 esm:w-[62%] msm:w-[83%] sms:w-[88%] imd:w-[83%]  z-40 relative h-[34rem] flex flex-col items-center bg-[#262951] rounded-xl py-3">
                 <img
                   className={
                     index == middleIndex

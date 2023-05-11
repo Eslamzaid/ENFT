@@ -13,9 +13,10 @@ const MainP2 = () => {
   const [item, setItem] = useState(artData);
   let [fatherHidden, setFather] = useState(true);
   const navigate = useNavigate();
+  const currW = window.innerWidth;
   useEffect(() => {
     const wiSize = () => {
-      if (window.innerWidth <= 1279) {
+      if (window.innerWidth <= 1279 || currW <= 1279) {
         setFather(() => (fatherHidden = false));
       } else {
         setFather(() => (fatherHidden = true));
@@ -37,16 +38,16 @@ const MainP2 = () => {
         <img
           src={BgCol}
           alt="Background Color"
-          className=" hidden md:block w-[109em] h-[63em] opacity-70 mt-56 z-[1000] absolute"
+          className=" hidden imd:block w-[109em] h-[63em] opacity-70 mt-56 z-[1000] absolute"
         />
-        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-3xl esm:text-6xl">
+        <h2 className="bg-gradient-to-r from-[#69EACB] via-[#EACCF8] to-[#6654F1] inline-block font-headerFont font-semibold text-transparent bg-clip-text text-2xl esm:text-6xl">
           Top Collections
         </h2>
       </div>
       <div
-        className=" z-[10000] py-5 my-7 transition-all child:transition-all child:text-xs extsm:child:text-md child:font-semibold sms:child:text-sm  
-                    llgg:child:text-xl child:mx-2 child:border-2 child:py-2 md:child:py-4 child:rounded-full font-poppi  
-                    grid grid-cols-2 gap-4 place-content-start md:grid-cols-6 md:grid-flow-col md:justify-stretch"
+        className=" z-[10000] py-5 my-7 transition-all child:transition-all child:text-xs extsm:child:text-imd child:font-semibold sms:child:text-sm  
+                    llgg:child:text-xl child:mx-2 child:border-2 child:py-2 imd:child:py-4 child:rounded-full font-poppi  
+                    grid grid-cols-2 gap-4 place-content-start imd:grid-cols-6 imd:grid-flow-col imd:justify-stretch"
       >
         <button
           onClick={() => filterMenu(artData)}
@@ -88,7 +89,7 @@ const MainP2 = () => {
       <div>
         {fatherHidden ? (
           <div>
-            <div className=" grid md:grid-cols-3 xl:grid-cols-4 gap-x-7 gap-y-5 grid-rows-1 w-full min-h-min">
+            <div className=" grid imd:grid-cols-3 xl:grid-cols-4 gap-x-7 gap-y-5 grid-rows-1 w-full min-h-min">
               {item.map((item) => {
                 return (
                   <div key={item.id}>
@@ -141,7 +142,7 @@ const MainP2 = () => {
             </button>
           </div>
         ) : (
-          <div className=" grid msm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-7 gap-y-5 grid-rows-1 w-full min-h-min">
+          <div className=" grid msm:grid-cols-2 imd:grid-cols-3 xl:grid-cols-4 gap-x-7 gap-y-5 grid-rows-1 w-full min-h-min">
             {item.slice(0, 6).map((item) => {
               return (
                 <div key={item.id}>
@@ -199,7 +200,7 @@ const MainP2 = () => {
       <div className="text-center w-full mt-6  mx-auto">
         <button
           type="button"
-          onClick={() => navigate('/signUp')}
+          onClick={() => navigate("/signUp")}
           className="font-poppi font-semibold transition-all ease-in-out max-w-[10rem] w-8/12 bg-transparent p-3 rounded-full sms:w-9/12 lg:w-11/12 mt-8 lg:h-14 focus:text-slate-300 border hover:ring ring-offset-[#141845] focus:ring-slate-200 ring-offset-4 mb-2"
         >
           See more

@@ -7,7 +7,7 @@ const Footer = lazy(() => import("./Footer/Footer"));
 
 export const theMainCon = createContext();
 const LandingP = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const home = useRef(null);
   const homeLoc = () => {
@@ -26,33 +26,31 @@ const LandingP = () => {
   const fin = useRef(null);
   const finalClick = () => {
     fin.current?.scrollIntoView({ behavior: "smooth" });
-
-    
   };
 
   return (
-    <theMainCon.Provider
-      value={{
-        homePage: home,
-        homePLoc: homeLoc,
-        one: ref,
-        two: handleClick,
-        three: ref2,
-        four: handleClick2,
-        seven: fin,
-        eight: finalClick,
-        open,
-        setOpen
-      }}
-    >
-      <div className=" bg-no-repeat bg-contain w-full h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+    <div className=" bg-no-repeat bg-contain w-screen h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+      <theMainCon.Provider
+        value={{
+          homePage: home,
+          homePLoc: homeLoc,
+          one: ref,
+          two: handleClick,
+          three: ref2,
+          four: handleClick2,
+          seven: fin,
+          eight: finalClick,
+          open,
+          setOpen,
+        }}
+      >
         <Nav />
         <main className=" mb-9 max-w-[180rem] z-50 w-full h-full bg-no-repeat bg-top bg-cover overflow-x-hidden">
           <Main />
         </main>
         <Footer />
-      </div>
-    </theMainCon.Provider>
+      </theMainCon.Provider>
+    </div>
   );
 };
 

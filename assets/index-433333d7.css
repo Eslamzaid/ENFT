@@ -1236,7 +1236,7 @@ select {
         padding: 5.5px
     }
 
-    .sm\:text-3xl {
+    .sm\:text-2xl {
         font-size: 1.875rem;
         line-height: 2.25rem
     }
@@ -1260,249 +1260,249 @@ select {
 }
 
 @media (min-width: 900px) {
-    .md\:-bottom-\[15\.2rem\] {
+    .imd\:-bottom-\[15\.2rem\] {
         bottom: -15.2rem
     }
 
-    .md\:-bottom-\[30rem\] {
+    .imd\:-bottom-\[30rem\] {
         bottom: -30rem
     }
 
-    .md\:-bottom-\[38rem\] {
+    .imd\:-bottom-\[38rem\] {
         bottom: -38rem
     }
 
-    .md\:-left-16 {
+    .imd\:-left-16 {
         left: -4rem
     }
 
-    .md\:-left-3 {
+    .imd\:-left-3 {
         left: -.75rem
     }
 
-    .md\:-left-64 {
+    .imd\:-left-64 {
         left: -16rem
     }
 
-    .md\:-left-9 {
+    .imd\:-left-9 {
         left: -2.25rem
     }
 
-    .md\:-left-\[2\.7rem\] {
+    .imd\:-left-\[2\.7rem\] {
         left: -2.7rem
     }
 
-    .md\:bottom-1 {
+    .imd\:bottom-1 {
         bottom: .25rem
     }
 
-    .md\:bottom-2 {
+    .imd\:bottom-2 {
         bottom: .5rem
     }
 
-    .md\:bottom-\[14rem\] {
+    .imd\:bottom-\[14rem\] {
         bottom: 14rem
     }
 
-    .md\:left-0 {
+    .imd\:left-0 {
         left: 0px
     }
 
-    .md\:left-24 {
+    .imd\:left-24 {
         left: 6rem
     }
 
-    .md\:left-52 {
+    .imd\:left-52 {
         left: 13rem
     }
 
-    .md\:left-\[3rem\] {
+    .imd\:left-\[3rem\] {
         left: 3rem
     }
 
-    .md\:top-7 {
+    .imd\:top-7 {
         top: 1.75rem
     }
 
-    .md\:top-\[14rem\] {
+    .imd\:top-\[14rem\] {
         top: 14rem
     }
 
-    .md\:top-\[23\.8rem\] {
+    .imd\:top-\[23\.8rem\] {
         top: 23.8rem
     }
 
-    .md\:top-\[23rem\] {
+    .imd\:top-\[23rem\] {
         top: 23rem
     }
 
-    .md\:mx-4 {
+    .imd\:mx-4 {
         margin-left: 1rem;
         margin-right: 1rem
     }
 
-    .md\:ml-1 {
+    .imd\:ml-1 {
         margin-left: .25rem
     }
 
-    .md\:ml-4 {
+    .imd\:ml-4 {
         margin-left: 1rem
     }
 
-    .md\:block {
+    .imd\:block {
         display: block
     }
 
-    .md\:flex {
+    .imd\:flex {
         display: flex
     }
 
-    .md\:h-14 {
+    .imd\:h-14 {
         height: 3.5rem
     }
 
-    .md\:h-16 {
+    .imd\:h-16 {
         height: 4rem
     }
 
-    .md\:h-\[23rem\] {
+    .imd\:h-\[23rem\] {
         height: 23rem
     }
 
-    .md\:w-14 {
+    .imd\:w-14 {
         width: 3.5rem
     }
 
-    .md\:w-3\/4 {
+    .imd\:w-3\/4 {
         width: 75%
     }
 
-    .md\:w-52 {
+    .imd\:w-52 {
         width: 13rem
     }
 
-    .md\:w-64 {
+    .imd\:w-64 {
         width: 16rem
     }
 
-    .md\:w-72 {
+    .imd\:w-72 {
         width: 18rem
     }
 
-    .md\:w-\[12\.4rem\] {
+    .imd\:w-\[12\.4rem\] {
         width: 12.4rem
     }
 
-    .md\:w-\[17\.4rem\] {
+    .imd\:w-\[17\.4rem\] {
         width: 17.4rem
     }
 
-    .md\:w-\[20rem\] {
+    .imd\:w-\[20rem\] {
         width: 20rem
     }
 
-    .md\:w-fit {
+    .imd\:w-fit {
         width: -moz-fit-content;
         width: fit-content
     }
 
-    .md\:s-start {
+    .imd\:s-start {
         align-s: flex-start
     }
 
-    .md\:justify-start {
+    .imd\:justify-start {
         justify-content: flex-start
     }
 
-    .md\:justify-between {
+    .imd\:justify-between {
         justify-content: space-between
     }
 
-    .md\:gap-4 {
+    .imd\:gap-4 {
         gap: 1rem
     }
 
-    .md\:rounded-full {
+    .imd\:rounded-full {
         border-radius: 9999px
     }
 
-    .md\:p-2 {
+    .imd\:p-2 {
         padding: .5rem
     }
 
-    .md\:p-3 {
+    .imd\:p-3 {
         padding: .75rem
     }
 
-    .md\:px-2 {
+    .imd\:px-2 {
         padding-left: .5rem;
         padding-right: .5rem
     }
 
-    .md\:px-3 {
+    .imd\:px-3 {
         padding-left: .75rem;
         padding-right: .75rem
     }
 
-    .md\:pb-4 {
+    .imd\:pb-4 {
         padding-bottom: 1rem
     }
 
-    .md\:pr-4 {
+    .imd\:pr-4 {
         padding-right: 1rem
     }
 
-    .md\:text-left {
+    .imd\:text-left {
         text-align: left
     }
 
-    .md\:text-2xl {
+    .imd\:text-2xl {
         font-size: 1.5rem;
         line-height: 2rem
     }
 
-    .md\:text-\[3rem\] {
+    .imd\:text-\[3rem\] {
         font-size: 3rem
     }
 
-    .md\:text-base {
+    .imd\:text-base {
         font-size: 1rem;
         line-height: 1.5rem
     }
 
-    .md\:text-lg {
+    .imd\:text-lg {
         font-size: 1.125rem;
         line-height: 1.75rem
     }
 
-    .md\:text-sm {
+    .imd\:text-sm {
         font-size: .875rem;
         line-height: 1.25rem
     }
 
-    .md\:font-bold {
+    .imd\:font-bold {
         font-weight: 700
     }
 
-    .md\:font-semibold {
+    .imd\:font-semibold {
         font-weight: 600
     }
 
-    .md\:child\:mx-0>* {
+    .imd\:child\:mx-0>* {
         margin-left: 0;
         margin-right: 0
     }
 
-    .md\:child\:p-1>* {
+    .imd\:child\:p-1>* {
         padding: .25rem
     }
 
-    .md\:child\:py-1>* {
+    .imd\:child\:py-1>* {
         padding-top: .25rem;
         padding-bottom: .25rem
     }
 
-    .md\:child\:font-semibold>* {
+    .imd\:child\:font-semibold>* {
         font-weight: 600
     }
 }
@@ -1894,7 +1894,7 @@ select {
         padding-right: 1.25rem
     }
 
-    .xl\:text-3xl {
+    .xl\:text-2xl {
         font-size: 1.875rem;
         line-height: 2.25rem
     }
