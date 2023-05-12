@@ -6,6 +6,7 @@ import youtu from "./../../../assets/Icons/yout.webp";
 import linkedin from "./../../../assets/Icons/linkedin.webp";
 import copyWrite from "./../../../assets/Icons/copyWrith.webp";
 import blueBgSHa from "./../../../assets/images/Images/blueBgSHa.webp";
+import github from "./../../../assets/Icons/github.webp";
 
 const Footer = () => {
   return (
@@ -19,8 +20,8 @@ const Footer = () => {
             Get More Updates
           </h2>
           <p className=" py-10 font-poppi text-center px-4">
-            Join our mailing list by logging in to stay in the loop with our newest feature
-            releases, NFT drops, and tips and tricks{" "}
+            Join our mailing list by logging in to stay in the loop with our
+            newest feature releases, NFT drops, and tips and tricks{" "}
           </p>
         </section>
         <section className=" relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mimd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
@@ -38,13 +39,6 @@ const Footer = () => {
               Discover the best NFT collections.
             </p>
             <div className=" flex bg-red child:flex-wrap w-fit child:object-contain justify-between items-center gap-x-3">
-              <a href="#">
-                <img
-                  className="  exsm:block hidden hover:opacity-80 transition-opacity"
-                  src={dis}
-                  alt="social media - discord"
-                />
-              </a>
               <a href="https://twitter.com/SrEslamzaid" target="_blank">
                 <img
                   className=" hover:opacity-80 transition-opacity"
@@ -53,20 +47,11 @@ const Footer = () => {
                 />
               </a>
               <div>
-                <a href="#">
+                <a href="https://github.com/Eslamzaid" target="_blank">
                   <img
-                    className=" hidden exsm:block hover:opacity-80 transition-opacity"
-                    src={insta}
-                    alt="social media - instagram"
-                  />
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img
-                    className=" hidden exsm:block hover:opacity-80 transition-opacity"
-                    src={youtu}
-                    alt="social media - youtube"
+                    className=" hover:opacity-80 transition-opacity"
+                    src={github}
+                    alt="social media - linkedin"
                   />
                 </a>
               </div>
