@@ -1,4 +1,3 @@
-import React from "react";
 import page404 from "../src/assets/Icons/page404.webp";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const ErrorPage = () => {
         <img src={page404} alt="404 page error" />
         <button
           onClick={() => navigate(-1)}
-          className=" bg-blue-200 p-5 rounded-xl hover:ring-2 ring-blue-300 transition-all"
+          className=" bg-blue-200 font-bold p-5 rounded-xl hover:ring-2 ring-blue-300 transition-all"
         >
           Go back
         </button>
