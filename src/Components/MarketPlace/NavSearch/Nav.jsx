@@ -6,12 +6,12 @@ import DashBoardCurrent from "../../../assets/Icons/DashBoard.webp";
 import DashBoard from "../../../assets/Icons/DashBoard.png";
 
 import Bids from "../../../assets/Icons/bid.webp";
-import favorite from "../../../assets/Icons/heart.webp";
+import favorite from "../../../assets/Icons/heart.png";
 import collection from "../../../assets/Icons/Collection.webp";
 import profile from "../../../assets/Icons/Profile.webp";
 import settings from "../../../assets/Icons/setting.webp";
 import BinIn from "../../../assets/Icons/bid-active.webp";
-import favoriteIn from "../../../assets/Icons/heartIn.webp";
+import favoriteIn from "../../../assets/Icons/heartIn.png";
 import collectionIn from "../../../assets/Icons/CollectionIn.webp";
 import profileIn from "../../../assets/Icons/ProfileIn.webp";
 import SettingIn from "../../../assets/Icons/settingsIn.webp";
@@ -39,9 +39,9 @@ const Nav = (props) => {
             <input
               type="text"
               placeholder="Enter text"
-              className="pl-10 text-white pr-4 py-2 border-none bg-[#1D1932] rounded-md ml-10 w-full"
+              className="pl-12 text-white pr-20  py-3 border-none bg-[#1D1932] rounded-md ml-10 w-full"
             />
-            <div className="absolute left-12 top-1/2 transform -translate-y-1/2">
+            <div className="absolute left-14 top-1/2 transform -translate-y-1/2">
               <img
                 src={Search}
                 alt="Icon"
@@ -84,8 +84,8 @@ const Nav = (props) => {
             />
           </div>
         </section>
-        <section className=" fixed flex flex-col items-center bg-red-400 justify-top w-16 h-full mt-3 left-0">
-          <Link className="mt-3 w-10" to="/marketplace">
+        <section className=" fixed flex flex-col items-center bg-red-400 justify-top w-16 h-full left-0">
+          <Link className="mt-7 mb-8  w-10" to="/marketplace">
             <img src={LogoEnft} alt=" our Logo" />
           </Link>
           <div className=" child:my-7 flex flex-col items-center">
@@ -113,6 +113,7 @@ const Nav = (props) => {
                     : favorite
                 }
                 alt="favorite nft's"
+                className=" w-5"
               />
             </Link>
             <Link to="collection">
