@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <div className=" scroll-smooth w-full h-full overflow-x-hidden">
+    <div className="dark scroll-smooth w-full h-full overflow-x-hidden">
       {here ? "" : isLoading ? <LoadingComp /> : <LandingP />}
     </div>
   );

@@ -7,11 +7,19 @@ import MarketPlace from "./Components/MarketPlace/MarketP";
 import SignUp from "./LoginSign/SignUp";
 import Sign from "./LoginSign/Sign";
 import ErrorPage from "./ErrorPage";
+import { lazy } from "@loadable/component";
+const Settings = lazy(() =>
+  import("./Components/MarketPlace/Main/MainBody5/Settings")
+);
+const Bid = lazy(() =>
+  import("./Components/MarketPlace/Main/MainBody1/Bid")
+);
+
 
 const router = createBrowserRouter([
   {
     path: "*",
-    element: <ErrorPage/>,
+    element: <ErrorPage />,
   },
   {
     path: "/",
@@ -28,6 +36,13 @@ const router = createBrowserRouter([
   {
     path: "marketPlace",
     element: <MarketPlace />,
+    children: [
+      { path: "settings", element: <Settings /> },
+      {
+        path: "bid",
+        element: <Bid />,
+      },
+    ],
   },
 ]);
 
