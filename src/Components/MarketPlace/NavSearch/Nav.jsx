@@ -1,64 +1,155 @@
 import { useContext, lazy, Suspense } from "react";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import { DarkLightContext } from "../MarketP";
-import LogoEnft from "./../../../assets/Icons/Logo.webp";
-import DashBoardCurrent from "./../../../assets/Icons/DashBoard.webp";
-import DashBoard from "./../../../assets/Icons/DashBoard.png";
-import Bids from "./../../../assets/Icons/bid.webp";
-import favorite from "./../../../assets/Icons/heart.webp";
-import collection from "./../../../assets/Icons/Collection.webp";
-import profile from "./../../../assets/Icons/Profile.webp";
-import settings from "./../../../assets/Icons/setting.webp";
+import LogoEnft from "../../../assets/Icons/Logo.webp";
+import DashBoardCurrent from "../../../assets/Icons/DashBoard.webp";
+import DashBoard from "../../../assets/Icons/DashBoard.png";
+
+import Bids from "../../../assets/Icons/bid.webp";
+import favorite from "../../../assets/Icons/heart.webp";
+import collection from "../../../assets/Icons/Collection.webp";
+import profile from "../../../assets/Icons/Profile.webp";
+import settings from "../../../assets/Icons/setting.webp";
+import BinIn from "../../../assets/Icons/bid-active.webp";
+import favoriteIn from "../../../assets/Icons/heartIn.webp";
+import collectionIn from "../../../assets/Icons/CollectionIn.webp";
+import profileIn from "../../../assets/Icons/ProfileIn.webp";
+import SettingIn from "../../../assets/Icons/settingsIn.webp";
+import sun from "../../../assets/Icons/mode.webp";
+import moon from "../../../assets/Icons/halfMoon.png";
+import notifications from "../../../assets/Icons/bell.webp";
+import notificationsLight from "../../../assets/Icons/bell.png";
+import logOut from "../../../assets/Icons/sign-out.webp";
+import Search from "../../../assets/Icons/Search.webp";
+
 const Bid = lazy(() => import("../Main/MainBody1/Bid"));
 const Saved = lazy(() => import("../Main/MainBody2/Saved"));
 const Collection = lazy(() => import("../Main/MainBody3/Collection"));
 const Profile = lazy(() => import("../Main/MainBody4/Profile"));
 const Settings = lazy(() => import("../Main/MainBody5/Settings"));
 
-const Nav = () => {
+const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
   const location = useLocation();
   return (
-    <div>
-      <h1>Current Pathname {location.pathname}</h1>
-      <nav>
-        <section>
-          <button
-            className={`bg-gray-500 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-md ${
-              darkLight.darkMode ? "active" : ""
-            }`}
-            onClick={() => darkLight.setDarkMode(!darkLight.darkMode)}
-          >
-            {darkLight.darkMode ? "Light Mode" : "Dark Mode"}
-          </button>
+    <div className="h-full ">
+      <nav className="h-full">
+        <section className=" fixed top-0 right-0 w-[94%] flex  items-center justify-between py-6">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Enter text"
+              className="pl-10 text-white pr-4 py-2 border-none bg-[#1D1932] rounded-md ml-10 w-full"
+            />
+            <div className="absolute left-12 top-1/2 transform -translate-y-1/2">
+              <img
+                src={Search}
+                alt="Icon"
+                className="  w-6 h-16 object-contain"
+              />
+            </div>
+          </div>
+          <div className=" flex items-center justify-between w-28 mr-16">
+            <button
+              className={`${darkLight.darkMode ? "active" : ""}`}
+              onClick={() => darkLight.setDarkMode(!darkLight.darkMode)}
+            >
+              {darkLight.darkMode ? (
+                <img
+                  src={sun}
+                  alt="darkMode"
+                  className="object-contain border-none ring-0 outline-none"
+                />
+              ) : (
+                <img
+                  src={moon}
+                  alt="light mode"
+                  className="object-cover border-none ring-0 outline-none"
+                />
+              )}
+            </button>
+
+            <img
+              src={darkLight.darkMode ? notifications : notificationsLight}
+              alt=" Notifications"
+              className=" cursor-pointer "
+            />
+
+            <img
+              src={
+                "https://source.boringavatars.com/marble/120/Maria%20Mitchell?colors=AA65CD,9F28B8,4588C0,6512A2,60389D"
+              }
+              alt="image"
+              className=" w-10 ml-2 cursor-auto"
+            />
+          </div>
         </section>
-        <section>
-          <Link to="/marketplace">
+        <section className=" fixed flex flex-col items-center bg-red-400 justify-top w-16 h-full mt-3 left-0">
+          <Link className="mt-3 w-10" to="/marketplace">
             <img src={LogoEnft} alt=" our Logo" />
           </Link>
-          <Link to="/marketplace">
-            {location.pathname == "/marketplace" ? (
-              <img src={DashBoardCurrent} alt="DashBoard" />
-            ) : (
-              <img src={DashBoard} alt="DashBoard" />
-            )}
-          </Link>
-          <Link to="bids">
-            
-            <img src={Bids} alt="Bids" />
-          </Link>
-          <Link to="saved">
-            <img src={favorite} alt="favorite nft's" />
-          </Link>
-          <Link to="collection">
-            <img src={collection} alt="collection" />
-          </Link>
-          <Link to="profile">
-            <img src={profile} alt="profile" />
-          </Link>
-          <Link to="settings">
-            <img src={settings} alt="settings" />
-          </Link>
+          <div className=" child:my-7 flex flex-col items-center">
+            <Link to="/marketplace">
+              <img
+                src={
+                  location.pathname == "/marketplace"
+                    ? DashBoardCurrent
+                    : DashBoard
+                }
+                alt="DashBoard"
+              />
+            </Link>
+            <Link to="bids">
+              <img
+                src={location.pathname == "/marketplace/bids" ? BinIn : Bids}
+                alt="Bids"
+              />
+            </Link>
+            <Link to="saved">
+              <img
+                src={
+                  location.pathname == "/marketplace/saved"
+                    ? favoriteIn
+                    : favorite
+                }
+                alt="favorite nft's"
+              />
+            </Link>
+            <Link to="collection">
+              <img
+                src={
+                  location.pathname == "/marketplace/collection"
+                    ? collectionIn
+                    : collection
+                }
+                alt="collection"
+              />
+            </Link>
+            <Link to="profile">
+              <img
+                src={
+                  location.pathname == "/marketplace/profile"
+                    ? profileIn
+                    : profile
+                }
+                alt="profile"
+              />
+            </Link>
+            <Link to="settings">
+              <img
+                src={
+                  location.pathname == "/marketplace/settings"
+                    ? SettingIn
+                    : settings
+                }
+                alt="settings"
+                className=" w-5"
+              />
+            </Link>
+          </div>
+          <button onClick={props.loggingOut}>
+            <img src={logOut} alt="Sign out" />
+          </button>
         </section>
       </nav>
       <Routes>
