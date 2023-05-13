@@ -37,13 +37,13 @@ const MarketPlace = () => {
   return (
     <DarkLightContext.Provider value={{ darkMode, setDarkMode }}>
       <div
-        className={`${
-          darkMode ? "dark" : "light"
-        } w-screen h-screen  transition-all`}
+        className={`${darkMode ? "dark" : "light"} w-screen h-screen  transition-all`}
       >
-        <Suspense fallback={<LoadingComp />}>
-          <Nav loggingOut={handleLogout} hi={"HI"} />
-        </Suspense>
+        <div className=" w-full h-full">
+          <Suspense fallback={<LoadingComp />}>
+            <Nav loggingOut={handleLogout} hi={"HI"} />
+          </Suspense>
+        </div>
       </div>
     </DarkLightContext.Provider>
   );
