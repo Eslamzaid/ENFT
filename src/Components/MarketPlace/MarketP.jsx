@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { useState, useContext, createContext } from "react";
-import Nav from "./NavSearch/Nav";
+import LoadingComp from "../../loading/LoadingComp";
+const Nav = lazy(() => import("./NavSearch/Nav"));
 
 export const DarkLightContext = createContext();
 
@@ -35,8 +36,10 @@ const MarketPlace = () => {
   };
   return (
     <DarkLightContext.Provider value={{ darkMode, setDarkMode }}>
-      <div className={`${darkMode ? "dark":"light"} transition-all`}>
-        <Nav />
+      <div className={`${darkMode ? "dark" : "light"} transition-all`}>
+        <Suspense fallback={<LoadingComp />}>
+          <Nav />
+        </Suspense>
       </div>
     </DarkLightContext.Provider>
   );
