@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState, lazy, Suspense } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import { DarkLightContext } from "../MarketP";
 import SplitPane from "react-split-pane";

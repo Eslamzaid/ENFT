@@ -15,7 +15,7 @@ const Nav = lazy(() => import("./NavSearch/Nav"));
 export const DarkLightContext = createContext();
 
 const MarketPlace = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const navigate2 = useNavigate();
   const location = useLocation();
 
