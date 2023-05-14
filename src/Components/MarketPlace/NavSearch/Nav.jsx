@@ -1,11 +1,10 @@
-import { useContext, lazy, Suspense } from "react";
+import { useContext, useEffect, useState, lazy, Suspense } from "react";
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import { DarkLightContext } from "../MarketP";
 import SplitPane from "react-split-pane";
 import LogoEnft from "../../../assets/Icons/Logo.webp";
 import DashBoardCurrent from "../../../assets/Icons/DashBoard.webp";
 import DashBoard from "../../../assets/Icons/DashBoard.png";
-
 import Bids from "../../../assets/Icons/bid.webp";
 import favorite from "../../../assets/Icons/heart.png";
 import collection from "../../../assets/Icons/Collection.webp";
@@ -24,20 +23,31 @@ import logOut from "../../../assets/Icons/sign-out.webp";
 import Search from "../../../assets/Icons/Search.webp";
 import searchLight from "../../../assets/Icons/searchLight.png";
 
-const Bid = lazy(() => import("../Main/MainBody1/Bid"));
-const Saved = lazy(() => import("../Main/MainBody2/Saved"));
-const Collection = lazy(() => import("../Main/MainBody3/Collection"));
-const Profile = lazy(() => import("../Main/MainBody4/Profile"));
-const Settings = lazy(() => import("../Main/MainBody5/Settings"));
-
 const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
   const location = useLocation();
+  let [responsive, setResponse] = useState(false);
+
+  useEffect(() => {
+    console.log(responsive);
+    const manageScroll = () => {
+      if (window.scrollY > 100) {
+        setResponse(true);
+      } else {
+        setResponse(false);
+      }
+    };
+    window.addEventListener("scroll", manageScroll);
+    () => window.removeEventListener("scroll", manageScroll);
+  }, []);
+
   return (
     <div className="h-full w-16">
       <SplitPane split="vertical">
-        <nav className="h-full relative w-16 z-50">
-          <section className=" fixed top-0 right-0 w-[92%] ssm:w-[94%] flex  items-center justify-between py-6">
+        <nav className="h-full  relative w-16 z-50">
+          <section
+            className={`${responsive ? darkLight.darkMode ? "bg-[#141129]" : "bg-[#ededf2]"  : "bg-transparent"} transition-all fixed top-0 right-0 w-[92%] ssm:w-[94%] flex  items-center justify-between py-6`}
+          >
             <div className="relative">
               <input
                 type="text"
@@ -166,54 +176,12 @@ const Nav = (props) => {
         </nav>
         <div className=" z-40">
           <Routes>
-            <Route
-              path="settings"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Settings />
-                </Suspense>
-              }
-            />
-            <Route
-              path="bids"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Bid />
-                </Suspense>
-              }
-            />
-            <Route
-              path="saved"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Saved />
-                </Suspense>
-              }
-            />
-            <Route
-              path="collection"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Collection />
-                </Suspense>
-              }
-            />
-            <Route
-              path="profile"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Profile />
-                </Suspense>
-              }
-            />
-            <Route
-              path="settings"
-              element={
-                <Suspense fallback={"Loading..."}>
-                  <Settings />
-                </Suspense>
-              }
-            />
+            <Route path="settings" />
+            <Route path="bids" />
+            <Route path="saved" />
+            <Route path="collection" />
+            <Route path="profile" />
+            <Route path="settings" />
           </Routes>
         </div>
       </SplitPane>
