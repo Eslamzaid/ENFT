@@ -42,13 +42,13 @@ const Nav = (props) => {
               <input
                 type="text"
                 placeholder="Enter text"
-                className={`pl-12 ssm:pr-20 font-poppi font-medium  py-3 border-none ${
+                className={` pl-9 exsm:pl-12 ssm:pr-20 font-poppi font-medium  py-3 border-none ${
                   darkLight.darkMode
                     ? "text-white bg-[#1D1932]"
                     : "bg-[#FFFFFF] text-black"
                 } rounded-md ml-10 w-9/12  ssm:w-full`}
               />
-              <div className="absolute left-14 top-1/2 transform -translate-y-1/2">
+              <div className="phone:invisible md:visible absolute left-14 top-1/2 transform -translate-y-1/2">
                 <img
                   src={darkLight.darkMode ? Search : searchLight}
                   alt="Icon"
@@ -92,7 +92,7 @@ const Nav = (props) => {
             </div>
           </section>
           <section
-            className={` fixed flex flex-col items-center ${
+            className={` fixed top-0 flex flex-col items-center ${
               darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
             } justify-top w-16 h-full left-0`}
           >

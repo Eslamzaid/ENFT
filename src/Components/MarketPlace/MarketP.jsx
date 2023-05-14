@@ -1,9 +1,10 @@
 import { useEffect, lazy, Suspense } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { useState, useContext, createContext } from "react";
+import { useState, createContext } from "react";
 import LoadingComp from "../../loading/LoadingComp";
 const Nav = lazy(() => import("./NavSearch/Nav"));
+const MarketPBody = lazy(() => import("./MarketPlaceBody/MarketPBody"));
 
 export const DarkLightContext = createContext();
 
@@ -11,15 +12,15 @@ const MarketPlace = () => {
   const [darkMode, setDarkMode] = useState(false);
   const navigate2 = useNavigate();
 
-  const auth = getAuth();
-  const user = auth.currentUser;
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (!user) {
-        navigate2("/");
-      }
-    });
-  });
+  // const auth = getAuth();
+  // const user = auth.currentUser;
+  // useEffect(() => {
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (!user) {
+  //       navigate2("/");
+  //     }
+  //   });
+  // });
   const navigate = useNavigate();
   const logOut = () => {
     return signOut(auth);
@@ -37,12 +38,16 @@ const MarketPlace = () => {
   return (
     <DarkLightContext.Provider value={{ darkMode, setDarkMode }}>
       <div
-        className={`${darkMode ? "dark" : "light"} w-screen h-screen  transition-all`}
+        className={`${
+          darkMode ? "dark" : "light"
+        } w-full h-fit  transition-all`}
       >
-        <div className=" w-full h-full">
+        <div className=" overflow-hidden">
           <Suspense fallback={<LoadingComp />}>
             <Nav loggingOut={handleLogout} hi={"HI"} />
           </Suspense>
+            <MarketPBody />
+          
         </div>
       </div>
     </DarkLightContext.Provider>
