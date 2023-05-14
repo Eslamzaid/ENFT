@@ -3,14 +3,14 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, createContext } from "react";
 import LoadingComp from "../../loading/LoadingComp";
+import MarketPBody from "./MarketPlaceBody/MarketPBody";
+
 const Bid = lazy(() => import("./Main/MainBody1/Bid"));
 const Saved = lazy(() => import("./Main/MainBody2/Saved"));
 const Collections = lazy(() => import("./Main/MainBody3/Collection"));
 const Profile = lazy(() => import("./Main/MainBody4/Profile"));
 const Settings = lazy(() => import("./Main/MainBody5/Settings"));
-
 const Nav = lazy(() => import("./NavSearch/Nav"));
-const MarketPBody = lazy(() => import("./MarketPlaceBody/MarketPBody"));
 
 export const DarkLightContext = createContext();
 
@@ -19,8 +19,8 @@ const MarketPlace = () => {
   const navigate2 = useNavigate();
   const location = useLocation();
 
-  // const auth = getAuth();
-  // const user = auth.currentUser;
+  const auth = getAuth();
+  const user = auth.currentUser;
   // useEffect(() => {
   //   onAuthStateChanged(auth, (user) => {
   //     if (!user) {
@@ -53,18 +53,25 @@ const MarketPlace = () => {
           <Suspense fallback={<LoadingComp />}>
             <Nav loggingOut={handleLogout} hi={"HI"} />
           </Suspense>
-          <Suspense fallback={"Loading..."}>
-            {location.pathname == "/marketplace" ? <MarketPBody /> : ""}
-            {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
-            {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
-            {location.pathname == "/marketplace/collection" ? (
-              <Collections />
-            ) : (
-              ""
-            )}
-            {location.pathname == "/marketplace/profile" ? <Profile /> : ""}
-            {location.pathname == "/marketplace/settings" ? <Settings /> : ""}
-          </Suspense>
+          <main>
+            <Suspense fallback={"Loading..."}>
+              {location.pathname == "/marketPlace" ||
+              location.pathname == "/marketplace" ? (
+                <MarketPBody />
+              ) : (
+                ""
+              )}
+              {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
+              {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
+              {location.pathname == "/marketplace/collection" ? (
+                <Collections />
+              ) : (
+                ""
+              )}
+              {location.pathname == "/marketplace/profile" ? <Profile /> : ""}
+              {location.pathname == "/marketplace/settings" ? <Settings /> : ""}
+            </Suspense>
+          </main>
         </div>
       </div>
     </DarkLightContext.Provider>

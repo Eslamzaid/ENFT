@@ -29,7 +29,6 @@ const Nav = (props) => {
   let [responsive, setResponse] = useState(false);
 
   useEffect(() => {
-    console.log(responsive);
     const manageScroll = () => {
       if (window.scrollY > 100) {
         setResponse(true);
@@ -46,7 +45,13 @@ const Nav = (props) => {
       <SplitPane split="vertical">
         <nav className="h-full  relative w-16 z-50">
           <section
-            className={`${responsive ? darkLight.darkMode ? "bg-[#141129]" : "bg-[#ededf2]"  : "bg-transparent"} transition-all fixed top-0 right-0 w-[92%] ssm:w-[94%] flex  items-center justify-between py-6`}
+            className={`${
+              responsive
+                ? darkLight.darkMode
+                  ? "bg-[#141129]"
+                  : "bg-[#ededf2]"
+                : "bg-transparent"
+            } transition-all fixed top-0 right-0 w-[92%] ssm:w-[94%] flex  items-center justify-between py-6`}
           >
             <div className="relative">
               <input
