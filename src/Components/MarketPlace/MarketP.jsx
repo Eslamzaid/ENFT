@@ -53,7 +53,7 @@ const MarketPlace = () => {
           <Suspense fallback={<LoadingComp />}>
             <Nav loggingOut={handleLogout} hi={"HI"} />
           </Suspense>
-          <main>
+          <main className=" h-screen">
             <Suspense fallback={"Loading..."}>
               {location.pathname == "/marketPlace" ||
               location.pathname == "/marketplace" ? (
