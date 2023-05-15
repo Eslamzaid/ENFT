@@ -65,7 +65,7 @@ const Nav = (props) => {
                   darkLight.darkMode
                     ? "text-white bg-[#1D1932]"
                     : "bg-[#FFFFFF] text-black"
-                } rounded-md phone:ml-4 xlsm:ml-10 w-9/12  ssm:w-full`}
+                } phone:rounded-md rounded-md phone:ml-4 xlsm:ml-10 w-9/12  ssm:w-full`}
               />
               <div className="phone:hidden xlsm:block absolute left-14 top-1/2 transform -translate-y-1/2">
                 <img

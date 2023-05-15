@@ -9,7 +9,7 @@ const MarketPBody = () => {
   console.log(darkLight);
   return (
     <article
-      className={` flex flex-col items-center w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
+      className={` flex flex-col items-center phone:w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
     >
       <section className=" relative mt-28 w-full ml-0 xlsm:ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
         <div
@@ -58,7 +58,7 @@ const MarketPBody = () => {
               <img
                 src={verfiedUser}
                 alt="user logo"
-                className="rounded-full w-8 imd:w-12 dxl:w-fit mr-2 imd:mr-4"
+                className="rounded-full w-8 imd:w-12 dxl:w-fit phone:mr-2 imd:mr-4"
               />
               <h2 className="text-sm imd:text-lg font-medium font-headerFont">
                 user#999
@@ -68,7 +68,7 @@ const MarketPBody = () => {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
               </span>
             </div>
-            <h3 className="text-sm imd:text-md dxl:text-2xl font-semibold mt-3 font-poppi">
+            <h3 className="phone:text-sm imd:text-md dxl:text-2xl font-semibold mt-3 font-poppi">
               Birghten LQ
             </h3>
 
@@ -91,7 +91,7 @@ const MarketPBody = () => {
             </div>
 
             <div
-              className="w-full child:w-1/2 mt-2 text-white text-xs slg:text-sm dxl:text-md dxl:mt-8 child:py-2 xlsm:child:py-3 slg:child:py-3 phone:gap-x-8
+              className="phone:w-full child:w-1/2 mt-2 text-white phone:text-xs slg:text-sm dxl:text-md dxl:mt-8 phone:child:py-2 xlsm:child:py-3 slg:child:py-3 phone:gap-x-8
                             sss:gap-x-1 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0"
             >
               <button className="hover:bg-[#6a49f2] hover:text-slate-200 bg-[#6F4FF2] ">
