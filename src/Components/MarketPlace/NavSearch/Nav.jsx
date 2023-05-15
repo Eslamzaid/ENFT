@@ -45,25 +45,29 @@ const Nav = (props) => {
       <SplitPane split="vertical">
         <nav className="h-full  relative w-16 z-50">
           <section
-            className={`${
+            className={`
+            ${
               responsive
                 ? darkLight.darkMode
                   ? "bg-[#141129]"
                   : "bg-[#ededf2]"
                 : "bg-transparent"
-            } transition-all fixed top-0 right-0 w-[92%] ssm:w-[94%] flex  items-center justify-between py-6`}
+            }
+             transition-all fixed top-0 phone:right-[4%] xlsm:right-0  phone:w-11/12 xlsm:w-[92%] ssm:w-[94%] flex items-center justify-between py-6`}
           >
+            <img src={LogoEnft} className="xlsm:hidden phone:block w-10 " />
+
             <div className="relative">
               <input
                 type="text"
-                placeholder="Enter text"
-                className={` pl-9 exsm:pl-12 ssm:pr-20 font-poppi font-medium  py-3 border-none ${
+                placeholder="Search "
+                className={`xlsm:pl-12 ssm:pr-20 font-poppi font-medium py-3 border-none ${
                   darkLight.darkMode
                     ? "text-white bg-[#1D1932]"
                     : "bg-[#FFFFFF] text-black"
-                } rounded-md ml-10 w-9/12  ssm:w-full`}
+                } rounded-md phone:ml-4 xlsm:ml-10 w-9/12  ssm:w-full`}
               />
-              <div className="phone:invisible md:visible absolute left-14 top-1/2 transform -translate-y-1/2">
+              <div className="phone:hidden xlsm:block absolute left-14 top-1/2 transform -translate-y-1/2">
                 <img
                   src={darkLight.darkMode ? Search : searchLight}
                   alt="Icon"
@@ -71,7 +75,7 @@ const Nav = (props) => {
                 />
               </div>
             </div>
-            <div className=" flex items-center justify-between w-28 mr-6 ssm:mr-16">
+            <div className=" flex items-center justify-between phone:w-11/12 xlsm:w-28 xlsm:mr-7 sss:mr-16">
               <button
                 className={`${darkLight.darkMode ? "active" : ""}`}
                 onClick={() => darkLight.setDarkMode(!darkLight.darkMode)}
@@ -107,14 +111,17 @@ const Nav = (props) => {
             </div>
           </section>
           <section
-            className={` fixed top-0 flex flex-col items-center ${
+            className={` fixed phone:bottom-0  xlsm:top-0 flex phone:flex-row xlsm:flex-col  items-center ${
               darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
-            } justify-top w-16 h-full left-0`}
+            } phone:justify-around xlsm:justify-top phone:w-full phone:h-16 xlsm:w-16 xlsm:h-full xlsm:left-0`}
           >
-            <Link className="mt-7 mb-8  w-10" to="/marketplace">
+            <Link
+              className="xlsm:block phone:hidden mt-7 mb-8  w-10"
+              to="/marketplace"
+            >
               <img src={LogoEnft} alt=" our Logo" />
             </Link>
-            <div className=" child:my-7 flex flex-col items-center">
+            <div className=" child:my-7 flex phone:flex-row phone:justify-around xlsm:justify-normal w-11/12 xlsm:flex-col items-center">
               <Link to="/marketplace">
                 <img
                   src={
@@ -173,8 +180,14 @@ const Nav = (props) => {
                   className=" w-5"
                 />
               </Link>
+              <button onClick={props.loggingOut} className=" mb-24 mt-auto">
+                <img src={logOut} alt="Sign out" />
+              </button>
             </div>
-            <button onClick={props.loggingOut} className=" mb-24 mt-auto">
+            <button
+              onClick={props.loggingOut}
+              className="xlsm:block phone:hidden mb-24 mt-auto"
+            >
               <img src={logOut} alt="Sign out" />
             </button>
           </section>

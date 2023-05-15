@@ -11,7 +11,7 @@ const MarketPBody = () => {
     <article
       className={` flex flex-col items-center w-[92%] ml-auto h-full overflow-x-hidden text-center`}
     >
-      <section className=" relative mt-28 w-full ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-10 mb-5">
+      <section className=" relative mt-28 w-full ml-auto flex phone:  flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
         <div
           className=" [&>h1]:z-20 [&>h1]:relative [&>p]:z-20 [&>p]:relative
                          ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
@@ -73,25 +73,28 @@ const MarketPBody = () => {
               Birghten LQ
             </h3>
 
-            <div className="flex justify-between dxl:relative top-3 mt-2 sss:mt-0 dxl:flex-row sss:flex-col flex-row  w-full font-poppi">
-              <div className="ddxl:text-md imd:text-sm text-xs">
+            <div className="flex justify-between text-left dxl:relative top-3 mt-2 sss:mt-0 dxl:flex-row sss:flex-col flex-row  w-full font-poppi">
+              <div className="ddxl:text-md imd:text-sm mt-2 text-xs">
                 <h5>Auction time</h5>
-                <h5 className=" text-[#6C7AA0] text-center my-2 dxl:my-0 dxl:text-left mt-1">
+                <h5 className=" text-[#6C7AA0] text-left my-2 dxl:my-0 dxl:text-left mt-1">
                   3h 1m 50s
                 </h5>
               </div>
-              <div className="ddxl:text-md imd:text-sm text-xs">
+              <div className="ddxl:text-md imd:text-sm  text-xs">
                 <h5>
                   Current Bid :
                   <span className=" text-[#6F4FF2]"> 0.05 ETH</span>
                 </h5>
-                <h5 className=" text-[#6C7AA0] phone:text-center my-2 dxl:my-0 dxl:text-right">
+                <h5 className=" text-[#6C7AA0] phone:text-left my-2 dxl:my-0 dxl:text-right">
                   0.15 ETH
                 </h5>
               </div>
             </div>
 
-            <div className="w-full child:w-1/2 mt-2 text-white text-xs slg:text-sm dxl:text-md dxl:mt-8 child:py-2 slg:child:py-3 gap-x-8 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0">
+            <div
+              className="w-full child:w-1/2 mt-2 text-white text-xs slg:text-sm dxl:text-md dxl:mt-8 child:py-3 slg:child:py-3 phone:gap-x-8
+                            sss:gap-x-1 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0"
+            >
               <button className="hover:bg-[#6a49f2] hover:text-slate-200 bg-[#6F4FF2] ">
                 Bid
               </button>

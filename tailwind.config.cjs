@@ -60,7 +60,7 @@ export default {
         scrollAnimPNeg: "scrollingAnimNeg 3.5s ease-out",
       },
       screens: {
-        phone: "100px",
+        phone: "50px",
         baseM: "200px",
         extsm: "367px",
         eexx: "425px",
