@@ -11,7 +11,7 @@ const MarketPBody = () => {
     <article
       className={` flex flex-col items-center w-[92%] ml-auto h-full overflow-x-hidden text-center`}
     >
-      <section className=" relative mt-28 w-full ml-auto flex flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-10 mb-5">
+      <section className=" relative mt-28 w-full ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-10 mb-5">
         <div
           className=" [&>h1]:z-20 [&>h1]:relative [&>p]:z-20 [&>p]:relative
                          ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
@@ -40,13 +40,13 @@ const MarketPBody = () => {
         </div>
 
         <div
-          className={` ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex flex-col sss:flex-row justify-between items-center ${
+          className={` ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex phone:flex-col sss:flex-row justify-between items-center ${
             darkLight.darkMode
               ? "bg-[#1D1932] text-white"
               : "bg-[#FFFFFF] text-black"
           }`}
         >
-          <div className=" mt-4 sss:mt-0 flex justify-center sss:block">
+          <div className=" mt-4 sss:mt-0 flex  justify-center sss:block">
             <img
               src={redNft}
               alt="fluid nft "
@@ -85,7 +85,7 @@ const MarketPBody = () => {
                   Current Bid :
                   <span className=" text-[#6F4FF2]"> 0.05 ETH</span>
                 </h5>
-                <h5 className=" text-[#6C7AA0] text-center my-2 dxl:my-0 dxl:text-right">
+                <h5 className=" text-[#6C7AA0] phone:text-center my-2 dxl:my-0 dxl:text-right">
                   0.15 ETH
                 </h5>
               </div>
