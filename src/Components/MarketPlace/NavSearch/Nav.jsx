@@ -23,6 +23,7 @@ import logOut from "../../../assets/Icons/sign-out.webp";
 import Search from "../../../assets/Icons/Search.webp";
 import searchLight from "../../../assets/Icons/searchLight.png";
 
+
 const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
   const location = useLocation();
@@ -41,7 +42,7 @@ const Nav = (props) => {
   }, []);
 
   return (
-    <div className="h-full w-16">
+    <div className="h-full w-full xlsm:w-16">
       <SplitPane split="vertical">
         <nav className="h-full  relative w-16 z-50">
           <section

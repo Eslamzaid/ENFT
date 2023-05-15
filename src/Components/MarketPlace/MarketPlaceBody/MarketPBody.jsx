@@ -9,12 +9,12 @@ const MarketPBody = () => {
   console.log(darkLight);
   return (
     <article
-      className={` flex flex-col items-center w-[92%] ml-auto h-full overflow-x-hidden text-center`}
+      className={` flex flex-col items-center w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
     >
-      <section className=" relative mt-28 w-full ml-auto flex phone:  flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
+      <section className=" relative mt-28 w-full ml-0 xlsm:ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
         <div
           className=" [&>h1]:z-20 [&>h1]:relative [&>p]:z-20 [&>p]:relative
-                         ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
+                         xlsm:ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
                          "
         >
           <img
@@ -22,7 +22,7 @@ const MarketPBody = () => {
             className=" absolute z-10 top-2 w-[53rem] h-[18rem] object-cover rounded-3xl"
             alt="Marketplace"
           />
-          <h1 className=" relative text-2xl slg:text-4xl ml-8 mt-10 font-headerFont font-semibold text-left">
+          <h1 className=" relative text-xl xlsm:text-2xl slg:text-4xl ml-8 mt-10 font-headerFont font-semibold text-left">
             Discover, Collect, Sell
             <br /> and Create your NFT
           </h1>
@@ -38,9 +38,8 @@ const MarketPBody = () => {
             </button>
           </div>
         </div>
-
         <div
-          className={` ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex phone:flex-col sss:flex-row justify-between items-center ${
+          className={` xlsm:ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex phone:flex-col sss:flex-row justify-between items-center ${
             darkLight.darkMode
               ? "bg-[#1D1932] text-white"
               : "bg-[#FFFFFF] text-black"
@@ -51,10 +50,10 @@ const MarketPBody = () => {
               src={redNft}
               alt="fluid nft "
               className=" rounded-[23px] 
-                ml-4 w-10/12 h-5/12 xlsm:w-8/12   sss:w-48 sss:h-60 lsmd:w-60 object-cover"
+                ml-4 w-10/12 h-5/12 xlsm:w-96 sss:w-48 sss:h-60 lsmd:w-60 object-cover"
             />
           </div>
-          <div className=" w-2/3 h-fit ml-7 imd:ml-9  mr-3 flex flex-col items-start">
+          <div className="w-10/12 xlsm:w-2/3 h-fit ml-7 imd:ml-9  mr-3 flex flex-col items-start">
             <div className=" flex items-center  ">
               <img
                 src={verfiedUser}
@@ -73,14 +72,14 @@ const MarketPBody = () => {
               Birghten LQ
             </h3>
 
-            <div className="flex justify-between text-left dxl:relative top-3 mt-2 sss:mt-0 dxl:flex-row sss:flex-col flex-row  w-full font-poppi">
+            <div className=" flex justify-between text-left dxl:relative top-3 mt-2 sss:mt-0 dxl:flex-row sss:flex-col flex-row  w-full font-poppi">
               <div className="ddxl:text-md imd:text-sm mt-2 text-xs">
                 <h5>Auction time</h5>
                 <h5 className=" text-[#6C7AA0] text-left my-2 dxl:my-0 dxl:text-left mt-1">
                   3h 1m 50s
                 </h5>
               </div>
-              <div className="ddxl:text-md imd:text-sm  text-xs">
+              <div className="ddxl:text-md mt-2 imd:text-sm  text-xs">
                 <h5>
                   Current Bid :
                   <span className=" text-[#6F4FF2]"> 0.05 ETH</span>
@@ -92,7 +91,7 @@ const MarketPBody = () => {
             </div>
 
             <div
-              className="w-full child:w-1/2 mt-2 text-white text-xs slg:text-sm dxl:text-md dxl:mt-8 child:py-3 slg:child:py-3 phone:gap-x-8
+              className="w-full child:w-1/2 mt-2 text-white text-xs slg:text-sm dxl:text-md dxl:mt-8 child:py-2 xlsm:child:py-3 slg:child:py-3 phone:gap-x-8
                             sss:gap-x-1 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0"
             >
               <button className="hover:bg-[#6a49f2] hover:text-slate-200 bg-[#6F4FF2] ">
