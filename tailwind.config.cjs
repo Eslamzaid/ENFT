@@ -68,6 +68,7 @@ export default {
         esm: "480px",
         eee: "500px",
         xlsm: "530px",
+        lsxm: "580px",
         msm: "640px",
         sms: "701px",
         sss: "795px",

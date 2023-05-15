@@ -1,7 +1,6 @@
 import BCow from "../../../assets/images/nfts/pixelT.webp";
 import BGo from "../../../assets/images/nfts/strange23.webp";
 import BOld from "../../../assets/images/nfts/BOldMan.webp";
-import Boy from "../../../assets/images/nfts/Cboy2.webp";
 import Bpl1 from "../../../assets/images/nfts/CblindMon.webp";
 import strangeObj8 from "../../../assets/images/nfts/piCheap.webp";
 import strangeObj3 from "../../../assets/images/nfts/strange21.webp";
@@ -31,19 +30,10 @@ const data = [
     id: 3,
     nft: BOld,
     nftAlt: "An old man's face",
-    nftName: "BOld Man",
+    nftName: "Bold Man",
     time: "1h 45m 13s",
     currentBid: "0.01 ETH",
     totalBids: "238 ETH",
-  },
-  {
-    id: 4,
-    nft: Boy,
-    nftAlt: "Cartoon boy",
-    nftName: "Cboy2",
-    time: "5h 12m 37s",
-    currentBid: "0.03 ETH",
-    totalBids: "362 ETH",
   },
   {
     id: 5,

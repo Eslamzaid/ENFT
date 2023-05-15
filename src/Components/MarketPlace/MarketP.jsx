@@ -52,26 +52,30 @@ const MarketPlace = () => {
         <div className=" overflow-hidden">
           <Suspense fallback={<LoadingComp />}>
             <Nav loggingOut={handleLogout} hi={"HI"} />
+            <main className=" h-fit">
+              <Suspense fallback={"Loading..."}>
+                {location.pathname == "/marketPlace" ||
+                location.pathname == "/marketplace" ? (
+                  <MarketPBody />
+                ) : (
+                  ""
+                )}
+                {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
+                {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
+                {location.pathname == "/marketplace/collection" ? (
+                  <Collections />
+                ) : (
+                  ""
+                )}
+                {location.pathname == "/marketplace/profile" ? <Profile /> : ""}
+                {location.pathname == "/marketplace/settings" ? (
+                  <Settings />
+                ) : (
+                  ""
+                )}
+              </Suspense>
+            </main>
           </Suspense>
-          <main className=" h-fit">
-            <Suspense fallback={"Loading..."}>
-              {location.pathname == "/marketPlace" ||
-              location.pathname == "/marketplace" ? (
-                <MarketPBody />
-              ) : (
-                ""
-              )}
-              {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
-              {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
-              {location.pathname == "/marketplace/collection" ? (
-                <Collections />
-              ) : (
-                ""
-              )}
-              {location.pathname == "/marketplace/profile" ? <Profile /> : ""}
-              {location.pathname == "/marketplace/settings" ? <Settings /> : ""}
-            </Suspense>
-          </main>
         </div>
       </div>
     </DarkLightContext.Provider>

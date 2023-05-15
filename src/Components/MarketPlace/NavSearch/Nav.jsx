@@ -31,7 +31,7 @@ const Nav = (props) => {
   useEffect(() => {
     console.log(responsive)
     function HeightCha2() {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 60) {
         setResponse(() => (responsive = true));
       } else {
         console.log(responsive)
@@ -44,7 +44,7 @@ const Nav = (props) => {
   }, []);
 
   return (
-    <div className="h-full w-full xlsm:w-16">
+    <div className="h-full w-screen xlsm:w-16">
       <SplitPane split="vertical">
         <nav className="h-full  relative w-16 z-50">
           <section
@@ -53,10 +53,10 @@ const Nav = (props) => {
               responsive
                 ? darkLight.darkMode
                   ? "bg-[#141129]"
-                  : "bg-[#ededf2]"
+                  : "bg-[#F2F2F2]"
                 : "bg-transparent"
             }
-             transition-all fixed top-0 phone:right-[4%] xlsm:right-0  phone:w-11/12 xlsm:w-[92%] ssm:w-[94%] flex items-center justify-between py-6`}
+             transition-all fixed top-0 phone:right-[0%] phone:px-3 xlsm:px-0 xlsm:right-0  phone:w-full xlsm:w-[92%] ssm:w-[94%] flex items-center justify-between py-6`}
           >
             <img src={LogoEnft} className="xlsm:hidden phone:block w-10 " />
 

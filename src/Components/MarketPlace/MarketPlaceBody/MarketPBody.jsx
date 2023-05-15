@@ -3,6 +3,7 @@ import backFirst from "./../../../assets/Icons/BackWithImage.webp";
 import redNft from "./../../../assets/images/nfts/NFT.webp";
 import verfiedUser from "./../../../assets/images/Users/Verifi2.webp";
 import { DarkLightContext } from "../MarketP";
+import MarketPBody2 from "./MarketPBody2";
 
 const MarketPBody = () => {
   const darkLight = useContext(DarkLightContext);
@@ -11,6 +12,7 @@ const MarketPBody = () => {
       className={` flex flex-col items-center phone:w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
     >
       <section className=" relative mt-28 w-full ml-0 xlsm:ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
+
         <div
           className=" [&>h1]:z-20 [&>h1]:relative [&>p]:z-20 [&>p]:relative
                          xlsm:ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
@@ -52,7 +54,7 @@ const MarketPBody = () => {
                 ml-4 w-10/12 h-5/12 xlsm:w-96 sss:w-48 sss:h-60 lsmd:w-60 object-cover"
             />
           </div>
-          <div className="w-10/12 xlsm:w-2/3 h-fit ml-7 imd:ml-9  mr-3 flex flex-col items-start">
+          <div className="w-10/12 xlsm:w-2/3 h-fit ml-7 imd:ml-9 phone:mt-7 mr-3 flex flex-col items-start">
             <div className=" flex items-center  ">
               <img
                 src={verfiedUser}
@@ -103,7 +105,9 @@ const MarketPBody = () => {
           </div>
         </div>
       </section>
-      <section></section>
+      <section className="mb-20  msm:ml-5 bg-red-900 w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
+        <MarketPBody2 />
+      </section>
     </article>
   );
 };
