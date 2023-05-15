@@ -25,19 +25,22 @@ import searchLight from "../../../assets/Icons/searchLight.png";
 
 const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
-  const location = useLocation();
   let [responsive, setResponse] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    const manageScroll = () => {
-      if (window.scrollY > 100) {
-        setResponse(true);
+    console.log(responsive)
+    function HeightCha2() {
+      if (window.scrollY > 80) {
+        setResponse(() => (responsive = true));
       } else {
-        setResponse(false);
+        console.log(responsive)
+        setResponse(() => (responsive = false));
       }
-    };
-    window.addEventListener("scroll", manageScroll);
-    () => window.removeEventListener("scroll", manageScroll);
+    }
+
+    window.addEventListener("scroll", HeightCha2);
+    return () => window.removeEventListener("scroll", HeightCha2);
   }, []);
 
   return (
@@ -180,7 +183,7 @@ const Nav = (props) => {
                   className=" w-5"
                 />
               </Link>
-              <button onClick={props.loggingOut} className=" mb-24 mt-auto">
+              <button onClick={props.loggingOut} className="phone:block xlsm:hidden mb-24 mt-auto">
                 <img src={logOut} alt="Sign out" />
               </button>
             </div>

@@ -6,7 +6,6 @@ import { DarkLightContext } from "../MarketP";
 
 const MarketPBody = () => {
   const darkLight = useContext(DarkLightContext);
-  console.log(darkLight);
   return (
     <article
       className={` flex flex-col items-center phone:w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
@@ -39,7 +38,7 @@ const MarketPBody = () => {
           </div>
         </div>
         <div
-          className={` xlsm:ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex phone:flex-col sss:flex-row justify-between items-center ${
+          className={` py-6 xlsm:ml-5 w-11/12 mt-20 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full sss:mr-16 h-full sss:mt-4 rounded-[23px] flex phone:flex-col sss:flex-row justify-between items-center ${
             darkLight.darkMode
               ? "bg-[#1D1932] text-white"
               : "bg-[#FFFFFF] text-black"
@@ -92,7 +91,7 @@ const MarketPBody = () => {
 
             <div
               className="phone:w-full child:w-1/2 mt-2 text-white phone:text-xs slg:text-sm dxl:text-md dxl:mt-8 phone:child:py-2 xlsm:child:py-3 slg:child:py-3 phone:gap-x-8
-                            sss:gap-x-1 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0"
+                            sss:gap-x-3 child:transition-all child:font-medium child:rounded-lg flex justify-stretch mb-4 sss:mb-0"
             >
               <button className="hover:bg-[#6a49f2] hover:text-slate-200 bg-[#6F4FF2] ">
                 Bid
