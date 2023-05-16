@@ -80,6 +80,7 @@ export default {
         sty: "1043px",
         llg: "1170px",
         dxl: "1346px",
+        ddd: "1454px",
         ddxl: "1469px",
         remo: "1555px",
         llgg: "1700px",
