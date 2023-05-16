@@ -105,7 +105,7 @@ const MarketPBody = () => {
           </div>
         </div>
       </section>
-      <section className="mb-20  msm:ml-5 bg-red-900 w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
+      <section className="mb-20  msm:ml-5 w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
         <MarketPBody2 />
       </section>
     </article>

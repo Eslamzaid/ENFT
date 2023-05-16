@@ -6,14 +6,14 @@ const MarketPBody2 = () => {
   const DarkLight = useContext(DarkLightContext);
   return (
     <div className={` ${DarkLight.darkMode ? "text-white" : "text-black"}`}>
-      <h2 className=" text-2xl  text-left font-headerFont font-medium mb-10">
+      <h2 className=" ml-4 text-2xl  text-left font-headerFont font-medium mb-10">
         Trending Bids
       </h2>
-      <div className=" msm:mr-10 w-full px-3  bg-red-400 grid grid-cols-1 xlsm:grid-cols-2 imd:grid-cols-3 llg:grid-cols-4 gap-x-8 gap-y-8">
+      <div className=" msm:mr-10 w-full px-3 phone:grid grid-cols-1 xlsm:grid-cols-2 imd:grid-cols-3 llg:grid-cols-4 gap-x-8 gap-y-8">
         {data.map((item) => {
           return (
             <div
-              className={` px-8 py-6 rounded-[23px]
+              className={` px-5 py-4 msm:px-8 msm:py-6 rounded-[23px]
             ${DarkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"}`}
             >
               <img src={item.nft} className=" rounded-3xl" alt={item.nftAlt} />
@@ -22,7 +22,9 @@ const MarketPBody2 = () => {
               </h3>
               <div className=" flex justify-between relative font-poppi w-full">
                 <div className=" text-left">
-                  <h4 className="text-sm xlsm:text-sm msm:text-md font-medium">Auction</h4>
+                  <h4 className="text-sm xlsm:text-sm msm:text-md font-medium">
+                    Auction
+                  </h4>
                   <p className="mt-7 text-[#6C7AA0] text-sm msm:text-ms absolute bottom-0">
                     {item.time}
                   </p>
