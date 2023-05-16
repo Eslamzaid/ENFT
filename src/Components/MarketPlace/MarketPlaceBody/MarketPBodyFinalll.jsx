@@ -14,28 +14,30 @@ const MarketPBodyFinalll = () => {
   // dark: #1D1932
   return (
     <div
-      className={`flex flex-wrap justify-between gap-x-6 items-center w-full ${
+      className={`ml-1 flex-wrap flex justify-around gap-x-2 iii:gap-x-6 items-center w-full ${
         darkLight.darkMode ? "text-white " : "text-black"
       }`}
     >
-      <div className={` flex flex-col child:my-4 flex-none`}>
+      <div className={`w-full sss:w-fit flex flex-col child:my-4 flex-none`}>
         <h2 className=" font-headerFont text-3xl text-left">Overview</h2>
         <div
           className={` rounded-xl ${
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex justify-between items-center p-4 text-left">
+          <div className="flex justify-start sss:justify-between items-center p-3 sss:p-2 llg:p-4 text-left">
             <img
-              className="mr-5 bg-[#6F4FF2] p-4 rounded-full"
+              className="phone:mr-8 sss:mr-0 ddd:mr-5 bg-[#6F4FF2] p-3 ddd:p-4 rounded-full"
               src={artWorks}
               alt="Artworks"
             />
             <div>
-              <h3 className=" font-semibold text-3xl font-poppi">24K</h3>
+              <h3 className=" font-semibold text-2xl ddd:text-3xl font-poppi">
+                24K
+              </h3>
               <p className=" text-[#68676E] text-sm">Artworks</p>
             </div>
-            <p className=" text-[#50BB25] relative bottom-6 ml-8 mr-2">
+            <p className=" phone:hidden sss:block text-[#50BB25] relative bottom-6 ddd:ml-8 mr-2">
               +168.001%
             </p>
           </div>
@@ -45,17 +47,17 @@ const MarketPBodyFinalll = () => {
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex justify-between items-center p-4 text-left">
+          <div className="flex sss:justify-between items-center p-2 llg:p-4 text-left">
             <img
               src={acution}
               alt="Auction"
-              className="bg-[#DC3546] p-4 rounded-full"
+              className=" bg-[#DC3546] p-3 ddd:p-4 rounded-full"
             />
-            <div className=" relative right-5">
+            <div className=" sss:relative phone:ml-9 sss:ml-0 right-5">
               <h3 className="font-semibold text-3xl font-poppi">89</h3>
               <p className=" text-[#68676E] text-sm">Auction</p>
             </div>
-            <p className=" text-[#DC3546] relative bottom-6 right-4  mr-2">
+            <p className=" phone:hidden sss:block text-[#DC3546] relative bottom-6 right-4  mr-2">
               -8.001%
             </p>
           </div>
@@ -65,9 +67,9 @@ const MarketPBodyFinalll = () => {
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex justify-between items-center p-4 text-left">
+          <div className="flex sss:justify-between items-center p-2 llg:p-4 text-left">
             <img
-              className="mr- bg-[#50BB25] p-4 rounded-full"
+              className=" bg-[#50BB25] p-3 ddd:p-4 mr-8 sss:mr-2 ddd:ml-0 rounded-full"
               src={creators}
               alt="Creators"
             />
@@ -75,13 +77,13 @@ const MarketPBodyFinalll = () => {
               <h3 className=" font-semibold text-3xl font-poppi">82k</h3>
               <p className=" text-[#68676E] text-sm">Creators</p>
             </div>
-            <p className=" text-[#50BB25] relative bottom-6 ml-8 mr-2">
+            <p className="phone:hidden sss:block text-[#50BB25] relative bottom-6 ml-8 mr-2">
               +53.001%
             </p>
           </div>
         </div>
       </div>
-      <div className=" ddd:w-[40rem] remo:w-[45rem] mt-9 h-[25rem] flex flex-col items-center justify-center">
+      <div className="phone:w-full   mmm:w-[20rem] iii:w-[30rem] dxl:w-[40rem] remo:w-[45rem] llgg:w-[60rem] mt-9 h-[25rem] flex flex-col items-center justify-center flex-none">
         <h2 className=" font-headerFont text-3xl text-left relative bottom-9">
           ETH price
         </h2>
@@ -93,12 +95,12 @@ const MarketPBodyFinalll = () => {
           <LineD />
         </div>
       </div>
-      <div className="h-full mr-5">
-        <h2 className="relative -top-1 font-headerFont text-3xl text-left">
+      <div className="h-full sss:mr-5 phone:mb-6 sss:mb-0 grow mx-auto">
+        <h2 className="relative mx-auto -top-1 font-headerFont text-3xl mt-7 ggg:mt-0 ggg:text-left">
           Statistics
         </h2>
         <div
-          className={`w-80 flex-grow h-full mt-[2rem] rounded-xl ${
+          className={`mx-auto phone:w-full mmm:w-60 ddd:w-80 h-full mt-[2rem] rounded-xl ${
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
@@ -116,7 +118,9 @@ const MarketPBodyFinalll = () => {
               <p>
                 <span
                   className={`relative inline-flex rounded-full h-3 w-3 mr-2 ${
-                    darkLight.darkMode ? "border bg-[#262049]" : " border border-slate-300 bg-[#F0EDFE]"
+                    darkLight.darkMode
+                      ? "border bg-[#262049]"
+                      : " border border-slate-300 bg-[#F0EDFE]"
                   }`}
                 ></span>
                 Artwork Cancel
