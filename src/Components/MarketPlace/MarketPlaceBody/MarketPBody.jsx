@@ -3,7 +3,9 @@ import backFirst from "./../../../assets/Icons/BackWithImage.webp";
 import redNft from "./../../../assets/images/nfts/NFT.webp";
 import verfiedUser from "./../../../assets/images/Users/Verifi2.webp";
 import { DarkLightContext } from "../MarketP";
+import loadable from "@loadable/component";
 import MarketPBody2 from "./MarketPBody2";
+const MarketPBodyFinalll = loadable(() => import("./MarketPBodyFinalll"));
 
 const MarketPBody = () => {
   const darkLight = useContext(DarkLightContext);
@@ -11,8 +13,7 @@ const MarketPBody = () => {
     <article
       className={` flex flex-col items-center phone:w-full xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-center`}
     >
-      <section className=" relative mt-28 w-full ml-0 xlsm:ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
-
+      {/* <section className=" relative mt-28 w-full ml-0 xlsm:ml-auto flex phone:flex-col justify-center sss:flex-row sss:justify-between items-center sss:gap-x-7 ssm:gap-x-10 mb-5">
         <div
           className=" [&>h1]:z-20 [&>h1]:relative [&>p]:z-20 [&>p]:relative
                          xlsm:ml-5 w-11/12 sss:w-96 lg:w-[80%] slg:ml-0 slg:w-full h-72 relative text-white
@@ -104,9 +105,12 @@ const MarketPBody = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="mb-20  msm:ml-5 phone:w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
+        {/* <MarketPBody2 /> */}
       </section>
       <section className="mb-20  msm:ml-5 phone:w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
-        <MarketPBody2 />
+        <MarketPBodyFinalll />
       </section>
     </article>
   );

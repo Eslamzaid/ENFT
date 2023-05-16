@@ -13,6 +13,7 @@ const MarketPBody2 = () => {
         {data.map((item) => {
           return (
             <div
+              key={item.id}
               className={` px-5 py-4 msm:px-8 msm:py-6 rounded-[23px]
             ${DarkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"}`}
             >

@@ -4,24 +4,24 @@ import { DarkLightContext } from "../MarketP";
 import SplitPane from "react-split-pane";
 import LogoEnft from "../../../assets/Icons/Logo.webp";
 import DashBoardCurrent from "../../../assets/Icons/DashBoard.webp";
-import DashBoard from "../../../assets/Icons/DashBoard.png";
+import DashBoard from "../../../assets/Icons/DashBoard.webp";
 import Bids from "../../../assets/Icons/bid.webp";
-import favorite from "../../../assets/Icons/heart.png";
+import favorite from "../../../assets/Icons/heart.webp";
 import collection from "../../../assets/Icons/Collection.webp";
 import profile from "../../../assets/Icons/Profile.webp";
-import settings from "../../../assets/Icons/settings.png";
+import settings from "../../../assets/Icons/settings.webp";
 import SettingIn from "../../../assets/Icons/settingsIn.webp";
 import BinIn from "../../../assets/Icons/bid-active.webp";
-import favoriteIn from "../../../assets/Icons/heartIn.png";
+import favoriteIn from "../../../assets/Icons/heartIn.webp";
 import collectionIn from "../../../assets/Icons/CollectionIn.webp";
 import profileIn from "../../../assets/Icons/ProfileIn.webp";
 import sun from "../../../assets/Icons/mode.webp";
-import moon from "../../../assets/Icons/halfMoon.png";
+import moon from "../../../assets/Icons/halfMoon.webp";
 import notifications from "../../../assets/Icons/bell.webp";
-import notificationsLight from "../../../assets/Icons/bell.png";
+import notificationsLight from "../../../assets/Icons/bell.webp";
 import logOut from "../../../assets/Icons/sign-out.webp";
 import Search from "../../../assets/Icons/Search.webp";
-import searchLight from "../../../assets/Icons/searchLight.png";
+import searchLight from "../../../assets/Icons/searchLight.webp";
 
 const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
@@ -29,12 +29,10 @@ const Nav = (props) => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(responsive)
     function HeightCha2() {
       if (window.scrollY > 60) {
         setResponse(() => (responsive = true));
       } else {
-        console.log(responsive)
         setResponse(() => (responsive = false));
       }
     }
@@ -183,7 +181,10 @@ const Nav = (props) => {
                   className=" w-5"
                 />
               </Link>
-              <button onClick={props.loggingOut} className="phone:block xlsm:hidden mb-24 mt-auto">
+              <button
+                onClick={props.loggingOut}
+                className="phone:block xlsm:hidden mb-24 mt-auto"
+              >
                 <img src={logOut} alt="Sign out" />
               </button>
             </div>
