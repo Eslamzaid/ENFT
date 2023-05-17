@@ -16,14 +16,16 @@ const MarketPBodyFinalll = () => {
         darkLight.darkMode ? "text-white " : "text-black"
       }`}
     >
-      <div className={`w-full sss:w-fit flex flex-col child:my-4 flex-none`}>
+      <div
+        className={`phone:w-full sss:w-fit flex flex-col child:my-4 flex-none`}
+      >
         <h2 className=" font-headerFont text-3xl text-left">Overview</h2>
         <div
           className={` rounded-xl ${
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex justify-start sss:justify-between items-center p-3 sss:p-2 llg:p-4 text-left">
+          <div className="flex phone:justify-start sss:justify-between items-center phone:p-3 sss:p-2 llg:p-4 text-left">
             <img
               className="phone:mr-8 sss:mr-0 ddd:mr-5 bg-[#6F4FF2] p-3 ddd:p-4 rounded-full"
               src={artWorks}
@@ -45,11 +47,11 @@ const MarketPBodyFinalll = () => {
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex sss:justify-between items-center p-2 llg:p-4 text-left">
+          <div className="flex sss:justify-between items-center phone:p-2 llg:p-4 text-left">
             <img
               src={acution}
               alt="Auction"
-              className=" bg-[#DC3546] p-3 ddd:p-4 rounded-full"
+              className=" bg-[#DC3546] phone:p-3 ddd:p-4 rounded-full"
             />
             <div className=" sss:relative phone:ml-9 sss:ml-0 right-5">
               <h3 className="font-semibold text-3xl font-poppi">89</h3>
@@ -65,9 +67,9 @@ const MarketPBodyFinalll = () => {
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex sss:justify-between items-center p-2 llg:p-4 text-left">
+          <div className="flex sss:justify-between items-center phone:p-2 llg:p-4 text-left">
             <img
-              className=" bg-[#50BB25] p-3 ddd:p-4 mr-8 sss:mr-2 ddd:ml-0 rounded-full"
+              className=" bg-[#50BB25] phone:p-3 ddd:p-4 mr-8 sss:mr-2 ddd:ml-0 rounded-full"
               src={creators}
               alt="Creators"
             />

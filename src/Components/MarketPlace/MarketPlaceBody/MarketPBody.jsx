@@ -3,9 +3,9 @@ import backFirst from "./../../../assets/Icons/BackWithImage.webp";
 import redNft from "./../../../assets/images/nfts/NFT.webp";
 import verfiedUser from "./../../../assets/images/Users/Verifi2.webp";
 import { DarkLightContext } from "../MarketP";
-import loadable from "@loadable/component";
+import { lazy } from "@loadable/component";
 import MarketPBody2 from "./MarketPBody2";
-const MarketPBodyFinalll = loadable(() => import("./MarketPBodyFinalll"));
+const MarketPBodyFinalll = lazy(() => import("./MarketPBodyFinalll"));
 
 const MarketPBody = () => {
   const darkLight = useContext(DarkLightContext);
