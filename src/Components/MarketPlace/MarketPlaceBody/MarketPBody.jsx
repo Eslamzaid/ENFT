@@ -6,6 +6,7 @@ import { DarkLightContext } from "../MarketP";
 import { lazy } from "@loadable/component";
 import MarketPBody2 from "./MarketPBody2";
 const MarketPBodyFinalll = lazy(() => import("./MarketPBodyFinalll"));
+const MarketPLlat = lazy(() => import("./MarketPLat.jsx"))
 
 const MarketPBody = () => {
   const darkLight = useContext(DarkLightContext);
@@ -111,6 +112,9 @@ const MarketPBody = () => {
       </section>
       <section className="mb-20 phone:ml-0 msm:ml-5 phone:w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
         <MarketPBodyFinalll />
+      </section>
+      <section className="mb-20 phone:ml-0 msm:ml-5 phone:w-11/12 sss:w-full lg:w-full slg:ml-0 slg:w-full ">
+        <MarketPLlat />
       </section>
     </article>
   );
