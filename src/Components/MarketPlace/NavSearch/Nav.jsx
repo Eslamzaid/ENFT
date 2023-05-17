@@ -3,8 +3,8 @@ import { Route, Routes, Link, useLocation } from "react-router-dom";
 import { DarkLightContext } from "../MarketP";
 import SplitPane from "react-split-pane";
 import LogoEnft from "../../../assets/Icons/Logo.webp";
-import DashBoardCurrent from "../../../assets/Icons/DashBoard.webp";
-import DashBoard from "../../../assets/Icons/DashBoard.webp";
+import DashBoardCurrent from "../../../assets/Icons/homehover.png";
+import DashBoard from "../../../assets/Icons/homeStatic.png";
 import Bids from "../../../assets/Icons/bid.webp";
 import favorite from "../../../assets/Icons/heart.webp";
 import collection from "../../../assets/Icons/Collection.webp";
@@ -125,6 +125,7 @@ const Nav = (props) => {
             <div className=" child:my-7 flex phone:flex-row phone:justify-around xlsm:justify-normal w-11/12 xlsm:flex-col items-center">
               <Link to="/marketplace">
                 <img
+                  width="25px"
                   src={
                     location.pathname == "/marketplace"
                       ? DashBoardCurrent

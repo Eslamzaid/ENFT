@@ -24,7 +24,7 @@ const MarketPBody = () => {
             className=" absolute z-10 top-2 w-[53rem] h-[18rem] object-cover rounded-3xl"
             alt="Marketplace"
           />
-          <h1 className=" relative text-xl xlsm:text-2xl slg:text-4xl ml-8 mt-10 font-headerFont font-semibold text-left">
+          <h1 className=" relative text-xl xlsm:text-2xl slg:text-4xl ml-8 mt-10 font-headerFont font-medium xlsm:font-semibold text-left">
             Discover, Collect, Sell
             <br /> and Create your NFT
           </h1>
@@ -32,10 +32,10 @@ const MarketPBody = () => {
             Digital marketplace for crypto collectibles and non fungible tokens
           </p>
           <div className=" z-20 relative font-semibold child:transition-all font-poppi text-left mt-12 ml-8">
-            <button className=" hover:bg-[#6a49f2] hover:text-slate-200 mr-5 bg-[#6F4FF2] px-6 py-2 slg:px-10 slg:py-3 rounded-lg">
+            <button className=" hover:bg-[#6a49f2] hover:text-slate-200 mr-5 bg-[#6F4FF2] phone:px-4 extsm:px-6 py-2 slg:px-10 slg:py-3 rounded-lg">
               Explore
             </button>
-            <button className=" hover:bg-[#cc3343] hover:text-slate-200 bg-[#DC3546] px-6 py-2 slg:px-10 slg:py-3 rounded-lg">
+            <button className=" hover:bg-[#cc3343] hover:text-slate-200 bg-[#DC3546] phone:px-4 extsm:px-6 py-2 slg:px-10 slg:py-3 rounded-lg">
               Create
             </button>
           </div>
