@@ -12,7 +12,7 @@ const MarketPBodyFinalll = () => {
   const darkLight = useContext(DarkLightContext);
   return (
     <div
-      className={`ml-1 flex-wrap flex justify-around gap-x-2 iii:gap-x-6 items-center w-full ${
+      className={` xlsm:ml-2 flex-wrap flex justify-around gap-x-2 iii:gap-x-6 items-center w-full ${
         darkLight.darkMode ? "text-white " : "text-black"
       }`}
     >
@@ -81,8 +81,8 @@ const MarketPBodyFinalll = () => {
           </div>
         </div>
       </div>
-      <div className="phone:w-full   mmm:w-[20rem] iii:w-[30rem] dxl:w-[40rem] remo:w-[45rem] llgg:w-[60rem] mt-9 h-[25rem] flex flex-col items-center justify-center flex-none">
-        <h2 className="bg-red-400 w-full font-headerFont text-3xl text-left mt-5 sss:mt-0  relative bottom-9">
+      <div className="phone:w-full mmm:w-[20rem] iii:w-[30rem] dxl:w-[40rem] remo:w-[45rem] llgg:w-[60rem] mt-9 h-[25rem] flex flex-col items-center justify-center flex-none">
+        <h2 className="w-full font-headerFont text-3xl text-left relative mt-5 mmm:mt-0 phone:bottom-10 sss:bottom-5 llg:bottom-10 ddd:bottom-[3.25rem]">
           ETH price
         </h2>
         <div
