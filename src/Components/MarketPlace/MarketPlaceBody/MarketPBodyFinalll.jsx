@@ -10,8 +10,6 @@ import ChartW from "./../../../assets/Icons/ChartWhite.webp";
 
 const MarketPBodyFinalll = () => {
   const darkLight = useContext(DarkLightContext);
-  //#FFFFFF
-  // dark: #1D1932
   return (
     <div
       className={`ml-1 flex-wrap flex justify-around gap-x-2 iii:gap-x-6 items-center w-full ${
@@ -84,7 +82,7 @@ const MarketPBodyFinalll = () => {
         </div>
       </div>
       <div className="phone:w-full   mmm:w-[20rem] iii:w-[30rem] dxl:w-[40rem] remo:w-[45rem] llgg:w-[60rem] mt-9 h-[25rem] flex flex-col items-center justify-center flex-none">
-        <h2 className=" font-headerFont text-3xl text-left relative bottom-9">
+        <h2 className="bg-red-400 w-full font-headerFont text-3xl text-left mt-5 sss:mt-0  relative bottom-9">
           ETH price
         </h2>
         <div
@@ -96,7 +94,7 @@ const MarketPBodyFinalll = () => {
         </div>
       </div>
       <div className="h-full sss:mr-5 phone:mb-6 sss:mb-0 grow mx-auto">
-        <h2 className="relative mx-auto -top-1 font-headerFont text-3xl mt-7 ggg:mt-0 ggg:text-left">
+        <h2 className="relative mx-auto -top-1 font-headerFont text-3xl mt-7 ggg:mt-0 text-left sss:text-center ">
           Statistics
         </h2>
         <div
