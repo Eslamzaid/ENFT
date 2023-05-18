@@ -3,7 +3,7 @@ import { DarkLightContext } from "../MarketP";
 import loadable from "@loadable/component";
 const LineD = loadable(() => import("./lineD"));
 import artWorks from "./../../../assets/Icons/artworkds.webp";
-import acution from "./../../../assets/Icons/Artwork.webp";
+import acution from "./../../../assets/Icons/canceld.webp";
 import creators from "./../../../assets/Icons/creators.webp";
 import Chart from "./../../../assets/Icons/Chart.webp";
 import ChartW from "./../../../assets/Icons/ChartWhite.webp";

@@ -41,8 +41,8 @@ const MarketPLat = () => {
               src={nft1Ava}
               alt="User #1"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-5">
-              <h3 className="text-md llgg:text-xl">user #999</h3>
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-3 xlsm:ml-5">
+              <h3 className="text-sm xlsm:text-md llgg:text-xl">user #999</h3>
               <p className=" text-sm text-slate-300">0.06ETH Received</p>
             </div>
             <p className=" text-right w-full text-[#68676E]">24 mins ago</p>
@@ -53,8 +53,8 @@ const MarketPLat = () => {
               src={nft2Ava}
               alt="User #2"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-5">
-              <h3 className="text-md llgg:text-xl ">user #999</h3>
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-5">
+              <h3 className="text-sm xlsm:text-md llgg:text-xl ">user #999</h3>
               <p className="text-xs llgg:text-sm text-slate-300">
                 Purchase by you for 0.05 ETH
               </p>
@@ -67,8 +67,8 @@ const MarketPLat = () => {
               src={nft3Ava}
               alt="User #3"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-5">
-              <h3 className="text-md llgg:text-xl ">user #480</h3>
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-5">
+              <h3 className="text-sm xlsm:text-md llgg:text-xl ">user #480</h3>
               <p className="text-xs llgg:text-sm text-slate-300">
                 0.06ETH Received
               </p>
@@ -81,8 +81,8 @@ const MarketPLat = () => {
               src={nft4Ava}
               alt="User #4"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-5">
-              <h3 className="text-md llgg:text-xl ">user #245</h3>
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-5">
+              <h3 className="text-sm xlsm:text-md llgg:text-xl ">user #245</h3>
               <p className="text-xs llgg:text-sm text-slate-300">
                 Purchase by you for 0.05 ETH
               </p>
@@ -95,8 +95,8 @@ const MarketPLat = () => {
               src={nft5Ava}
               alt="User #5"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-5">
-              <h3 className="text-md llgg:text-xl ">user #111</h3>
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-5">
+              <h3 className="text-sm xlsm:text-md llgg:text-xl ">user #111</h3>
               <p className="text-xs llgg:text-sm text-slate-300">
                 Started Following you
               </p>
