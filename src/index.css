@@ -9,6 +9,15 @@
   src: url("./assets//ClashDisplay_Complete/Fonts/Variable/ClashDisplay-Variable.ttf");
 }
 
+@layer utilities {
+
+  td,
+  th {
+    @apply p-2;
+    @apply my-5;
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

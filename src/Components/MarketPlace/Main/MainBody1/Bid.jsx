@@ -1,8 +1,12 @@
 import { useContext } from "react";
+import { DarkLightContext } from "../../MarketP";
 import artWorks from "../../../../assets/Icons/artworkds.webp";
 import creators from "../../../../assets/Icons/creators.webp";
 import cancel from "../../../../assets/Icons/canceld.webp";
-import { DarkLightContext } from "../../MarketP";
+import user1 from "../../../../assets/images/nfts/NFT2.webp";
+import user2 from "../../../../assets/images/nfts/NFT-2.webp";
+import user3 from "../../../../assets/images/nfts/NFT-1.webp";
+import close from "../../../../assets/Icons/close.webp";
 
 const Bid = () => {
   const darkLight = useContext(DarkLightContext);
@@ -74,22 +78,7 @@ const Bid = () => {
           </button>
         </div>
         <div className=" my-20">
-          <table>
-            <tr>
-              <td>
-                <span className="relative inline-flex rounded-sm h-3 w-3 bg-[#C4C4C4]"></span>
-              </td>
-              <td>Item List</td>
-              <td>Open Price</td>
-              <td>Your Offer</td>
-              <td>Recent Offer</td>
-              <td>Time Left</td>
-              <td>Action</td>
-            </tr>
-            <tr>
-              
-            </tr>
-          </table>
+        
         </div>
       </div>
     </section>
