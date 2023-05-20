@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { DarkLightContext } from "../../MarketP";
 import artWorks from "../../../../assets/Icons/artworkds.webp";
 import creators from "../../../../assets/Icons/creators.webp";

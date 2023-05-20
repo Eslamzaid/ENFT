@@ -13,21 +13,23 @@ const Settings = lazy(() => import("./Main/MainBody5/Settings"));
 const Nav = lazy(() => import("./NavSearch/Nav"));
 
 export const DarkLightContext = createContext();
+export const SavedContext = createContext();
 
 const MarketPlace = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [saved, setSaved] = useState([]);
   const navigate2 = useNavigate();
   const location = useLocation();
 
   const auth = getAuth();
   const user = auth.currentUser;
-  // useEffect(() => {
-  //   onAuthStateChanged(auth, (user) => {
-  //     if (!user) {
-  //       navigate2("/");
-  //     }
-  //   });
-  // });
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        navigate2("/");
+      }
+    });
+  });
   const navigate = useNavigate();
   const logOut = () => {
     return signOut(auth);
@@ -52,29 +54,35 @@ const MarketPlace = () => {
         <div className=" overflow-hidden">
           <Suspense fallback={<LoadingComp />}>
             <Nav loggingOut={handleLogout} hi={"HI"} />
-            <main className=" h-fit">
-              <Suspense fallback={"Loading..."}>
-                {location.pathname == "/marketPlace" ||
-                location.pathname == "/marketplace" ? (
-                  <MarketPBody />
-                ) : (
-                  ""
-                )}
-                {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
-                {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
-                {location.pathname == "/marketplace/collection" ? (
-                  <Collections />
-                ) : (
-                  ""
-                )}
-                {location.pathname == "/marketplace/profile" ? <Profile /> : ""}
-                {location.pathname == "/marketplace/settings" ? (
-                  <Settings />
-                ) : (
-                  ""
-                )}
-              </Suspense>
-            </main>
+            <SavedContext.Provider value={{ saved, setSaved }}>
+              <main className=" h-fit">
+                <Suspense fallback={"Loading..."}>
+                  {location.pathname == "/marketPlace" ||
+                  location.pathname == "/marketplace" ? (
+                    <MarketPBody />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
+                  {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
+                  {location.pathname == "/marketplace/collection" ? (
+                    <Collections />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/profile" ? (
+                    <Profile />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/settings" ? (
+                    <Settings />
+                  ) : (
+                    ""
+                  )}
+                </Suspense>
+              </main>
+            </SavedContext.Provider>
           </Suspense>
         </div>
       </div>

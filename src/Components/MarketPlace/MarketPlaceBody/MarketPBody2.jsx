@@ -1,9 +1,26 @@
-import { useContext } from "react";
+import { useContext, useCallback, useEffect } from "react";
 import data from "./dataM";
 import { DarkLightContext } from "../MarketP";
+import { SavedContext } from "../MarketP";
 
 const MarketPBody2 = () => {
   const DarkLight = useContext(DarkLightContext);
+  const IsSaved = useContext(SavedContext);
+  const addToSavedList = useCallback(
+    (item) => {
+      IsSaved.setSaved((prevSaved) => [...prevSaved, item]);
+    },
+    [IsSaved.setSaved]
+  );
+  const removeFromSavedList = (itemId) => {
+    IsSaved.setSaved((prevSaved) =>
+      prevSaved.filter((item) => item.id !== itemId)
+    );
+  };
+
+  useEffect(() => {
+    console.log(IsSaved.saved);
+  }, [IsSaved.saved]);
   return (
     <div className={` ${DarkLight.darkMode ? "text-white" : "text-black"}`}>
       <h2 className=" ml-4 text-2xl  text-left font-headerFont font-medium mb-10">
@@ -11,6 +28,9 @@ const MarketPBody2 = () => {
       </h2>
       <div className=" msm:mr-10 w-full px-3 phone:grid grid-cols-1 xlsm:grid-cols-2 imd:grid-cols-3 llg:grid-cols-4 gap-x-8 gap-y-8">
         {data.map((item) => {
+          const isSaved = IsSaved.saved.some(
+            (savedItem) => savedItem.id === item.id
+          );
           return (
             <div
               key={item.id}
@@ -45,6 +65,25 @@ const MarketPBody2 = () => {
               >
                 Place a Bid
               </button>
+              {isSaved ? (
+                <button
+                  onClick={() => removeFromSavedList(item.id)}
+                  className={`${
+                    DarkLight.darkMode ? "text-white" : "text-white"
+                  } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
+                >
+                  Unsave
+                </button>
+              ) : (
+                <button
+                  onClick={() => addToSavedList(item)}
+                  className={`${
+                    DarkLight.darkMode ? "text-white" : "text-white"
+                  } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
+                >
+                  Save
+                </button>
+              )}
             </div>
           );
         })}
