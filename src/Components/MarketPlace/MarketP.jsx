@@ -63,19 +63,32 @@ const MarketPlace = () => {
                   ) : (
                     ""
                   )}
-                  {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
-                  {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
-                  {location.pathname == "/marketplace/collection" ? (
+                  {location.pathname == "/marketplace/bids" ||
+                  location.pathname == "/marketPlace/bids" ? (
+                    <Bid />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/saved" ||
+                  location.pathname == "/marketPlace/saved" ? (
+                    <Saved />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/collection" ||
+                  location.pathname == "/marketPlace/collection" ? (
                     <Collections />
                   ) : (
                     ""
                   )}
-                  {location.pathname == "/marketplace/profile" ? (
+                  {location.pathname == "/marketplace/profile" ||
+                  location.pathname == "/marketPlace/profile" ? (
                     <Profile />
                   ) : (
                     ""
                   )}
-                  {location.pathname == "/marketplace/settings" ? (
+                  {location.pathname == "/marketplace/settings" ||
+                  location.pathname == "/marketPlace/settings" ? (
                     <Settings />
                   ) : (
                     ""

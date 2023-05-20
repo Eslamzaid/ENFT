@@ -135,13 +135,13 @@ const Bid = () => {
               <img src={user1} alt="second user" />
               <div className=" flex flex-col ml-2">
                 <h4 className=" text-xl">Cube Cool</h4>
-                <p className=" text-sm">John Abraham</p>
+                <p className=" text-sm">Albert Mezosta</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s </p>
+            <p>0.4249ETH</p>
+            <p>0.0249ETH</p>
+            <p>0.4224ETH</p>
+            <p>1 Hours 1 min 30s </p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -172,10 +172,10 @@ const Bid = () => {
                 <p className="text-sm">Eslam zaid</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s </p>
+            <p>1.0329ETH</p>
+            <p>3.4249ETH</p>
+            <p>51.424ETH</p>
+            <p>2 Hours 3 min 12s </p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -203,13 +203,13 @@ const Bid = () => {
               <img src={user3} alt="second user" />
               <div className=" ml-2">
                 <h4 className="text-xl">Redosto</h4>
-                <p className="text-sm">John Abraham</p>
+                <p className="text-sm">Khalid Sultan</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s</p>
+            <p>8.1329ETH</p>
+            <p>9.149ETH</p>
+            <p>0.514ETH</p>
+            <p>3 Hours 54 min 1s</p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -237,13 +237,13 @@ const Bid = () => {
               <img src={user1} alt="second user" />
               <div className=" ml-2">
                 <h4 className=" text-xl">NFTLord</h4>
-                <p className=" text-sm">John Abraham</p>
+                <p className=" text-sm">Alexander Abraham</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s</p>
+            <p>1.329ETH</p>
+            <p>2.994ETH</p>
+            <p>4.0024ETH</p>
+            <p>5 Hours 43 min 34s</p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -274,10 +274,10 @@ const Bid = () => {
                 <p className=" text-sm">Salman Rashid</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s</p>
+            <p>0.1119ETH</p>
+            <p>7.7649ETH</p>
+            <p>5.3444ETH</p>
+            <p>6 Hours 29 min 23s</p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -342,10 +342,10 @@ const Bid = () => {
                 <p className="text-sm">Mandy savana</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s</p>
+            <p>25.133ETH</p>
+            <p>3.3333ETH</p>
+            <p>2.555ETH</p>
+            <p>14 Hours 2 min 3s</p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
@@ -376,10 +376,10 @@ const Bid = () => {
                 <p className="text-sm">Osama Ahmed</p>
               </div>
             </div>
-            <p>0.0029ETH</p>
-            <p>0.0049ETH</p>
-            <p>0.0024ETH</p>
-            <p>2 Hours 1 min 30s</p>
+            <p>1.994ETH</p>
+            <p>14.001ETH</p>
+            <p>421.13 ETH</p>
+            <p>14 Hours 15 min 42s</p>
             <img
               src={darkLight.darkMode ? close : closeBlack}
               alt="Close"
