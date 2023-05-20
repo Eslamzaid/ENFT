@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { DarkLightContext } from "../../MarketP";
 import artWorks from "../../../../assets/Icons/artworkds.webp";
 import creators from "../../../../assets/Icons/creators.webp";
@@ -6,13 +7,13 @@ import cancel from "../../../../assets/Icons/canceld.webp";
 import user1 from "../../../../assets/images/nfts/NFT2.webp";
 import user2 from "../../../../assets/images/nfts/NFT-2.webp";
 import user3 from "../../../../assets/images/nfts/NFT-1.webp";
-import user4 from "../../../../assets/images/nfts/solidLiquid.webp";
 import close from "../../../../assets/Icons/close.png";
 import closeBlack from "../../../../assets/Icons/closeBlack.png";
 
 const Bid = () => {
   const darkLight = useContext(DarkLightContext);
   const [buttonNum, setButtonNum] = useState([]);
+  const navigate = useNavigate();
 
   const handleClick1 = (num) => {
     setButtonNum((prevSelectedButtons) => {
@@ -31,9 +32,12 @@ const Bid = () => {
         darkLight.darkMode ? "text-white" : "text-black"
       }`}
     >
-      <div className=" phone:ml-3 xlsm:ml-10 mmd:ml-0">
-        <h1 className="mt-10 text-4xl font-headerFont font-semibold">Bids</h1>
-        <p className="font-poppi">Welcome Bids Page</p>
+      <div className=" flex justify-between items-end phone:ml-3 xlsm:ml-10 mmd:ml-0">
+        <div>
+          <h1 className="mt-10 text-4xl font-headerFont font-semibold">Bids</h1>
+          <p className="font-poppi">Welcome Bids Page</p>
+        </div>
+        <p className=" mr-4 esm:mr-16 font-poppi font-semibold child:cursor-pointer"><span className="hover:border-b transition-all" onClick={() => navigate('/marketplace')}>Home</span> {">"} <span className="hover:border-b transition-all">Bids</span></p>
       </div>
       <div
         className={`phone:ml-3 xlsm:ml-10 mmd:ml-0 phone:mr-6 xlsm:mr-16 grid gap-6 grid-cols-1 lsxm:grid-cols-2 ssm:grid-cols-3 llg:grid-cols-4 ${

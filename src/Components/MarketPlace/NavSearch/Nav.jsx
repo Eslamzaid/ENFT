@@ -136,16 +136,18 @@ const Nav = (props) => {
               </Link>
               <Link to="bids">
                 <img
+                  width="25px"
                   src={location.pathname == "/marketplace/bids" ? BinIn : Bids}
                   alt="Bids"
                 />
               </Link>
               <Link to="saved">
                 <img
+                width="25px"
                   src={
                     location.pathname == "/marketplace/saved"
-                      ? favoriteIn
-                      : favorite
+                      ? favorite
+                      : favoriteIn
                   }
                   alt="favorite nft's"
                   className=" w-5 h-5 object-cover"

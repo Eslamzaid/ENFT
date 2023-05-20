@@ -25,19 +25,19 @@ const MarketPBodyFinalll = () => {
             darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
           }`}
         >
-          <div className="flex phone:justify-start sss:justify-between items-center phone:p-3 sss:p-2 llg:p-4 text-left">
+          <div className="flex justify-start items-center p-3  llg:p-4 text-left">
             <img
-              className="phone:mr-8 sss:mr-0 ddd:mr-5 bg-[#6F4FF2] p-3 ddd:p-4 rounded-full"
+              className="phone:mr-8 sss:mr-2 ddd:mr-5 bg-[#6F4FF2] p-3 ddd:p-4 rounded-full"
               src={artWorks}
               alt="Artworks"
             />
             <div>
-              <h3 className=" font-semibold text-2xl ddd:text-3xl font-poppi">
+              <h3 className="font-semibold text-2xl ddd:text-3xl font-poppi">
                 24K
               </h3>
               <p className=" text-[#68676E] text-sm">Artworks</p>
             </div>
-            <p className=" phone:hidden sss:block text-[#50BB25] relative bottom-6 ddd:ml-8 mr-2">
+            <p className=" phone:hidden mx-auto extsm:block text-[#50BB25] relative bottom-6 ddd:ml-8 mr-2">
               +168.001%
             </p>
           </div>
@@ -53,12 +53,12 @@ const MarketPBodyFinalll = () => {
               alt="Auction"
               className=" bg-[#DC3546] phone:p-3 ddd:p-4 rounded-full"
             />
-            <div className=" sss:relative phone:ml-9 sss:ml-0 right-5">
+            <div className=" sss:relative phone:ml-9 slg:ml-7 dxl:ml-8 ddd:ml-10 right-5">
               <h3 className="font-semibold text-3xl font-poppi">89</h3>
               <p className=" text-[#68676E] text-sm">Auction</p>
             </div>
-            <p className=" phone:hidden sss:block text-[#DC3546] relative bottom-6 right-4  mr-2">
-              -8.001%
+            <p className=" phone:hidden mx-auto extsm:block text-[#DC3546] relative bottom-6  mr-2">
+              %018.001
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ const MarketPBodyFinalll = () => {
               <h3 className=" font-semibold text-3xl font-poppi">82k</h3>
               <p className=" text-[#68676E] text-sm">Creators</p>
             </div>
-            <p className="phone:hidden sss:block text-[#50BB25] relative bottom-6 ml-8 mr-2">
+            <p className="phone:hidden mx-auto extsm:block text-[#50BB25] relative bottom-6  mr-2">
               +53.001%
             </p>
           </div>
