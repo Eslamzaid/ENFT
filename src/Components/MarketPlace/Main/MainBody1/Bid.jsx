@@ -134,7 +134,7 @@ const Bid = () => {
             <div className="flex child:object-contain">
               <img src={user1} alt="second user" />
               <div className=" flex flex-col ml-2">
-                <h4 className=" text-xl">Cute Cube Cool</h4>
+                <h4 className=" text-xl">Cube Cool</h4>
                 <p className=" text-sm">John Abraham</p>
               </div>
             </div>
@@ -304,8 +304,8 @@ const Bid = () => {
             <div className=" flex">
               <img src={user2} alt="second user" />
               <div className=" ml-2">
-                <h4 className=" text-xl">Cute Cube Cool</h4>
-                <p className="text-sm">John Abraham</p>
+                <h4 className=" text-xl">SALPIY</h4>
+                <p className="text-sm">anonymous232</p>
               </div>
             </div>
             <p>0.0029ETH</p>
@@ -338,8 +338,8 @@ const Bid = () => {
             <div className="flex">
               <img src={user1} alt="second user" />
               <div className=" ml-2">
-                <h4 className=" text-xl">Cute Cube Cool</h4>
-                <p className="text-sm">Harry Jon</p>
+                <h4 className=" text-xl">Cubic</h4>
+                <p className="text-sm">Mandy savana</p>
               </div>
             </div>
             <p>0.0029ETH</p>
@@ -372,7 +372,7 @@ const Bid = () => {
             <div className=" flex">
               <img src={user2} alt="second user" />
               <div className=" ml-2">
-                <h4 className="text-xl">Incredible Man</h4>
+                <h4 className="text-xl">TBAS</h4>
                 <p className="text-sm">Osama Ahmed</p>
               </div>
             </div>

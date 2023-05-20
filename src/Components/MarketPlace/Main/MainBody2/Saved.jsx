@@ -13,10 +13,10 @@ const Saved = () => {
 
   return (
     <section
-      className={`relative flex flex-col gap-y-6 phone:w-full ${
+      className={`relative flex flex-col phone:w-full ${
         saved.length == 0
           ? "h-screen items-center justify-center"
-          : "h-screen pt-32"
+          : "h-full min-h-[53rem] mt-32"
       } xlsm:w-[92%] ml-0 xlsm:ml-auto h-full overflow-x-hidden text-left ${
         darkLight.darkMode ? "text-white" : "text-black"
       }`}
@@ -33,7 +33,7 @@ const Saved = () => {
           />
         </div>
       ) : (
-        <div className=" grid grid-cols-4">
+        <div className="mb-20 phone:ml-2 xlsm:ml-10 ssm:ml-5 h-full phone:grid grid-cols-1 xlsm:grid-cols-2 imd:grid-cols-3 llg:grid-cols-4 gap-x-8 gap-y-8">
           {saved.map((item) => (
             <div
               key={item.id}
@@ -65,7 +65,7 @@ const Saved = () => {
                 onClick={() => removeFromSavedList(item.id)}
                 className={`${
                   darkLight.darkMode ? "text-white" : "text-white"
-                } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt10 py-5 text-lg font-semibold rounded-2xl`}
+                } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
               >
                 Unsave
               </button>

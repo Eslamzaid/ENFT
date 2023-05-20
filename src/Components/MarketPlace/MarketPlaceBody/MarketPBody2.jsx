@@ -58,32 +58,34 @@ const MarketPBody2 = () => {
                   <p className=" text-md mt-1">{item.totalBids}</p>
                 </div>
               </div>
-              <button
-                className={`${
-                  DarkLight.darkMode ? "text-white" : "text-white"
-                } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
-              >
-                Place a Bid
-              </button>
-              {isSaved ? (
+              <div className=" flex gap-x-2">
                 <button
-                  onClick={() => removeFromSavedList(item.id)}
                   className={`${
                     DarkLight.darkMode ? "text-white" : "text-white"
                   } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
                 >
-                  Unsave
+                  Bid now
                 </button>
-              ) : (
-                <button
-                  onClick={() => addToSavedList(item)}
-                  className={`${
-                    DarkLight.darkMode ? "text-white" : "text-white"
-                  } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
-                >
-                  Save
-                </button>
-              )}
+                {isSaved ? (
+                  <button
+                    onClick={() => removeFromSavedList(item.id)}
+                    className={`${
+                      DarkLight.darkMode ? "text-white" : "text-white"
+                    } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
+                  >
+                    Unsave
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => addToSavedList(item)}
+                    className={`${
+                      DarkLight.darkMode ? "text-white" : "text-white"
+                    } hover:text-slate-300 hover:bg-[#6446e0] transition-all hover:outline outline-offset-4 outline-blue-800 bg-[#6F4FF2] w-full mt-10 py-5 text-lg font-semibold rounded-2xl`}
+                  >
+                    Save
+                  </button>
+                )}
+              </div>
             </div>
           );
         })}
