@@ -41,7 +41,7 @@ const MarketPLat = () => {
               src={nft1Ava}
               alt="User #1"
             />
-            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-3 xlsm:ml-5">
+            <div className=" w-full flex flex-col phone:pr-5 llg:pr-5 justify-center ml-3 xlsm:ml-5">
               <h3 className="text-sm xlsm:text-md llgg:text-xl">user #999</h3>
               <p className=" text-sm text-slate-300">0.06ETH Received</p>
             </div>
