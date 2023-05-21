@@ -20,9 +20,7 @@ const MarketPlace = () => {
   const [saved, setSaved] = useState([]);
   const navigate2 = useNavigate();
   const location = useLocation();
-
   const auth = getAuth();
-  const user = auth.currentUser;
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
@@ -53,9 +51,9 @@ const MarketPlace = () => {
       >
         <div className=" overflow-hidden">
           <Suspense fallback={<LoadingComp />}>
-            <Nav loggingOut={handleLogout} hi={"HI"} />
+            <Nav loggingOut={handleLogout} />
             <SavedContext.Provider value={{ saved, setSaved }}>
-              <main className=" h-fit">
+              <main className="relative h-fit">
                 <Suspense fallback={"Loading..."}>
                   {location.pathname == "/marketPlace" ||
                   location.pathname == "/marketplace" ? (

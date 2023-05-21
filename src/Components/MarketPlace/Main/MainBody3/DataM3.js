@@ -2,7 +2,7 @@ import more1 from "../../../../assets/images/nfts/goast1.webp";
 import more2 from "../../../../assets/images/nfts/goast3.webp";
 import more3 from "../../../../assets/images/nfts/goast4.webp";
 import more4 from "../../../../assets/images/nfts/dogy.webp";
-import more5 from "../../../../assets/images/nfts/dogy2.webp";
+import more5 from "../../../../assets/images/nfts/cowboyF.webp";
 import more6 from "../../../../assets/images/nfts/cowboy.webp";
 import more7 from "../../../../assets/images/nfts/cowboy5.webp";
 import more8 from "../../../../assets/images/nfts/cowboy4.webp";

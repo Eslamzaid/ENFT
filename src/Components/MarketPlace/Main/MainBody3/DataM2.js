@@ -3,8 +3,8 @@ import Boy from "../../../../assets/images/nfts/Boy.webp";
 import Cboy2Goast from "../../../../assets/images/nfts/Cboy4.webp";
 import Cboy3 from "../../../../assets/images/nfts/Cboy3.webp";
 import campGirl from "../../../../assets/images/nfts/campGirl.webp";
-import moneyBear from "../../../../assets/images/nfts/moneyBear.webp";
-import samori from "../../../../assets/images/nfts/samori.webp";
+import moneyBear from "../../../../assets/images/nfts/AcrocPi.webp";
+import samori from "../../../../assets/images/nfts/Acheap.webp";
 import whiteBear from "../../../../assets/images/nfts/whiteBear.webp";
 const artData = [
   {

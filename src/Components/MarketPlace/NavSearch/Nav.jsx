@@ -44,7 +44,7 @@ const Nav = (props) => {
   return (
     <div className="h-full w-screen xlsm:w-16">
       <SplitPane split="vertical">
-        <nav className="h-full  relative w-16 z-50">
+        <nav className="h-full  relative phone:w-1 xlsm:w-16 z-50">
           <section
             className={`
             ${
