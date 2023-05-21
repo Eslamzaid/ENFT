@@ -46,18 +46,26 @@ const Profile = () => {
         </p>
       </div>
       <div className="flex items-end">
-        <div className=" bg-red-400 mr-10 h-80">
+        <div
+          className={`font-poppi ${
+            darkLight.darkMode ? "bg-[#1D1932]" : "bg-white"
+          } child:ml-3 rounded-lg mr-10 h-80 `}
+        >
           <div>
-            <img className=" mt-3 ml-3 rounded-full border-[3px] object-contain" src={verfi} alt="user Profile" />
-            <h2>Welcome, user #999</h2>
-            <p>
+            <img
+              className=" mt-3 rounded-full border-[3px] object-contain"
+              src={verfi}
+              alt="user Profile"
+            />
+            <h2 className=" text-xl font-semibold mt-2">Welcome, user #999</h2>
+            <p className=" text-lg mr-3 mt-2 mb-4">
               Looks like you are not verified yet. Verify yourself to use the
               full potential of ENFT.
             </p>
           </div>
           <div>
-            <div>
-              <img src={check} alt="Verify" />
+            <div className="flex items-center bg-red-400 py-3">
+              <img src={check} className="object-contain mr-3 w-[4rem] bg-[#50BB25] px-4 py-4 rounded-full" alt="Verify" />
               <p>Verify account</p>
             </div>
             <div>
