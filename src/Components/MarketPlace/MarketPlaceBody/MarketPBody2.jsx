@@ -1,4 +1,4 @@
-import { useContext, useCallback, useEffect } from "react";
+import { useContext, useCallback } from "react";
 import data from "./dataM";
 import { DarkLightContext } from "../MarketP";
 import { SavedContext } from "../MarketP";
@@ -17,10 +17,6 @@ const MarketPBody2 = () => {
       prevSaved.filter((item) => item.id !== itemId)
     );
   };
-
-  useEffect(() => {
-    console.log(IsSaved.saved);
-  }, [IsSaved.saved]);
   return (
     <div className={` ${DarkLight.darkMode ? "text-white" : "text-black"}`}>
       <h2 className=" ml-4 text-2xl  text-left font-headerFont font-medium mb-10">

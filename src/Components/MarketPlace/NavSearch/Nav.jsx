@@ -143,7 +143,7 @@ const Nav = (props) => {
               </Link>
               <Link to="saved">
                 <img
-                width="25px"
+                  width="25px"
                   src={
                     location.pathname == "/marketplace/saved"
                       ? favorite

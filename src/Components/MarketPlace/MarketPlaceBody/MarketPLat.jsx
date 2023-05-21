@@ -8,8 +8,6 @@ import { DarkLightContext } from "../MarketP";
 
 const MarketPLat = () => {
   let [buttonNum, setButtonNum] = useState([]);
-
-  let [test, setTest] = useState(false);
   const darkLight = useContext(DarkLightContext);
 
   const handleClick1 = (num) => {

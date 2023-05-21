@@ -33,9 +33,11 @@ const Collections = () => {
         darkLight.darkMode ? "text-white" : "text-black"
       }`}
     >
-      <div className=" flex justify-between items-end phone:ml-3 xlsm:ml-10 mmd:ml-0">
+      <div className=" flex phone:flex-col xlsm:flex-row phone:justify-center xlsm:justify-between xlsm:items-end phone:ml-3 xlsm:ml-10 mmd:ml-2">
         <div>
-          <h1 className="mt-10 text-4xl font-headerFont font-semibold">Collections</h1>
+          <h1 className="mt-10 text-4xl font-headerFont font-semibold">
+            Collections
+          </h1>
         </div>
         <p className=" mr-4 esm:mr-16 font-poppi text-xs font-ligth child:cursor-pointer">
           <span
@@ -44,10 +46,11 @@ const Collections = () => {
           >
             Home
           </span>{" "}
-          {">"} <span className="hover:border-b transition-all">Collections</span>
+          {">"}{" "}
+          <span className="hover:border-b transition-all">Collections</span>
         </p>
       </div>
-      <div className="phone:ml-0 relative xlsm:ml-4 sss:ml-0 child:mx-4 child:transition-all transition-all phone:child:px-4 lsxm:child:px-6 child:py-3 font-headerFont font-medium child:rounded-lg">
+      <div className="phone:ml-0 relative xlsm:ml-4 sss:ml-0 phone:child:mx-3 xlsm:child:mx-4 child:transition-all transition-all phone:child:px-4 lsxm:child:px-6 child:py-3 font-headerFont font-medium child:rounded-lg">
         <button
           onClick={() => handleData(All)}
           className={
