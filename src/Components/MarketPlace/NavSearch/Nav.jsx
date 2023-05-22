@@ -6,13 +6,13 @@ import LogoEnft from "../../../assets/Icons/Logo.webp";
 import DashBoardCurrent from "../../../assets/Icons/homehover.png";
 import DashBoard from "../../../assets/Icons/homeStatic.png";
 import Bids from "../../../assets/Icons/bid.webp";
-import favorite from "../../../assets/Icons/heart.webp";
+import favorite from "../../../assets/Icons/heart.png";
+import favoriteIn from "../../../assets/Icons/heartIn.png";
 import collection from "../../../assets/Icons/Collection.webp";
 import profile from "../../../assets/Icons/Profile.webp";
 import settings from "../../../assets/Icons/settings.webp";
 import SettingIn from "../../../assets/Icons/settingsIn.webp";
 import BinIn from "../../../assets/Icons/bid-active.webp";
-import favoriteIn from "../../../assets/Icons/heartIn.webp";
 import collectionIn from "../../../assets/Icons/CollectionIn.webp";
 import profileIn from "../../../assets/Icons/ProfileIn.webp";
 import sun from "../../../assets/Icons/mode.webp";
@@ -146,8 +146,8 @@ const Nav = (props) => {
                   width="25px"
                   src={
                     location.pathname == "/marketplace/saved"
-                      ? favorite
-                      : favoriteIn
+                      ? favoriteIn
+                      : favorite
                   }
                   alt="favorite nft's"
                   className=" w-5 h-5 object-cover"

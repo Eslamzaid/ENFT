@@ -7,6 +7,7 @@ import lock from "../../../../assets/Icons/lock.png";
 import dataPr from "./DataProf";
 
 const Profile = () => {
+  const secondData = dataPr.reverse()
   const darkLight = useContext(DarkLightContext);
   const navigate = useNavigate();
   let [buttonNum, setButtonNum] = useState([]);
@@ -30,7 +31,7 @@ const Profile = () => {
         darkLight.darkMode ? "text-white" : "text-black"
       }`}
     >
-      {/* <div className=" flex phone:flex-col xlsm:flex-row phone:justify-start  xlsm:justify-between xlsm:items-end phone:ml-3 xlsm:ml-10 ssm:ml-5 llg:ml-2">
+      <div className=" flex phone:flex-col xlsm:flex-row phone:justify-start  xlsm:justify-between xlsm:items-end phone:ml-3 xlsm:ml-10 ssm:ml-5 llg:ml-2">
         <div>
           <h1 className="phone:mr-2 xlsm:mr-0 mt-10  text-4xl font-headerFont font-semibold">
             Profile
@@ -87,7 +88,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="phone:mt-10 sss:mt-0 phone:w-full xlsm:w-11/12 phone:mr-80 xlsm:mr-7 dxl:mr-10 min-h-[16rem] h-full">
+        <div className="relative sss:bottom-6 ggg:top-11 dxl:top-7 phone:mt-10 sss:mt-0 phone:w-full xlsm:w-11/12 phone:mr-80 xlsm:mr-7 dxl:mr-10 min-h-[16rem] h-full">
           <h3 className=" text-xl font-semibold mb-5">Following</h3>
           <div
             className={
@@ -215,11 +216,11 @@ const Profile = () => {
                     : "text-white ml-auto phone:mr-0 dxl:mr-5 bg-[#DC3546] phone:px-2 dxl:px-3 py-2 rounded-lg font-medium font-poppi hover:bg-[#c92c3c]"
                 }
               >
-                {buttonNum.includes(1) ? "follow" : "unfollow"}
+                {buttonNum.includes(4) ? "follow" : "unfollow"}
               </button>
             </div>
             {dis == 4 ? (
-              <h1 className="text-slate-700 text-3xl text-center w-full h-full ">
+              <h1 className="text-slate-700 font-semibold mt-4 text-3xl text-center w-full h-full ">
                 Your following list is empty
               </h1>
             ) : (
@@ -227,32 +228,74 @@ const Profile = () => {
             )}
           </div>
         </div>
-      </div> */}
-
-      <div className="mr-10">
+      </div>
+      <div className="phone:mr-4 xlsm:mr-10 phone:ml-3 xlsm:ml-10 ssm:ml-5 llg:ml-2">
         <h2 className="phone:mr-2 xlsm:mr-0 mt-10 text-2xl font-headerFont font-semibold">
           My bought
         </h2>
-        <div className="grid gap-8 grid-cols-4 mt-10 ">
+        <div className="grid gap-8 phone:grid-cols-1 xlsm:grid-cols-2 ssm:grid-cols-3 ggg:grid-cols-4 mt-10 ">
           {dataPr.map((item, index) => {
             return (
               <div
                 className={`${
                   darkLight.darkMode ? "bg-[#1D1932]" : "bg-white"
-                } px-6 pt-5 pb-2 rounded-lg`}
+                } px-6 pt-5 pb-4 rounded-lg`}
                 key={index}
               >
-                <img className=" rounded-2xl object-cover" src={item.nft} alt={item.nftAlt} />
-
+                <img
+                  className="w-full rounded-2xl object-cover"
+                  src={item.nft}
+                  alt={item.nftAlt}
+                />
                 <div className="flex items-center justify-between">
-                  <h5 className=" font-semibold mt-2 text-xl">{item.nftName}</h5>
-                  <img className=" relative right-4 w-12 rounded-full bottom-5 border-2" src={item.owner} alt={item.ownerAlt} />
+                  <h5 className=" font-semibold mt-2 phone:text-md ddd:text-xl">
+                    {item.nftName}
+                  </h5>
+                  <img
+                    className=" relative phone:right-2 xlsm:right-0 slg:right-4 w-12 rounded-full bottom-5 border-2"
+                    src={item.owner}
+                    alt={item.ownerAlt}
+                  />
                 </div>
               </div>
             );
           })}
         </div>
       </div>
+      <div className="mb-20 phone:mr-4 xlsm:mr-10 phone:ml-3 xlsm:ml-10 ssm:ml-5 llg:ml-2">
+        <h2 className="phone:mr-2 xlsm:mr-0 mt-10 text-2xl font-headerFont font-semibold">
+          My Collections
+        </h2>
+        <div className="grid gap-8 phone:grid-cols-1 xlsm:grid-cols-2 ssm:grid-cols-3 ggg:grid-cols-4 mt-10 ">
+          {secondData.reverse().map((item, index) => {
+            return (
+              <div
+                className={`${
+                  darkLight.darkMode ? "bg-[#1D1932]" : "bg-white"
+                } px-6 pt-5 pb-4 rounded-lg`}
+                key={index}
+              >
+                <img
+                  className="w-full rounded-2xl object-cover"
+                  src={item.nft}
+                  alt={item.nftAlt}
+                />
+                <div className="flex items-center justify-between">
+                  <h5 className=" font-semibold mt-2 phone:text-md ddd:text-xl">
+                    {item.nftName}
+                  </h5>
+                  <img
+                    className=" relative phone:right-2 xlsm:right-0 slg:right-4 w-12 rounded-full bottom-5 border-2"
+                    src={item.owner}
+                    alt={item.ownerAlt}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
       <div></div>
     </section>
   );

@@ -29,7 +29,7 @@ const dataPr = [
   {
     nft: Bouth4,
     nftAlt: "Bouth nft 4",
-    nftName: "Acrobatic Pikachu",
+    nftName: "PixiCr",
     owner: verfi,
     ownerAlt: "Verified owner",
   },
