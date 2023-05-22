@@ -12,7 +12,7 @@ function SureNot(props) {
         darkLight.darkMode
           ? "bg-[#342c5c] text-white"
           : "bg-slate-200 text-black"
-      } rounded-xl inset-x-0 phone:ml-0 phone:mr-0 xlsm:ml-16 xlsm:mr-16 mx-auto `}
+      } rounded-xl inset-x-0 phone:ml-0 phone:mr-5 xlsm:ml-16 xlsm:mr-5 mx-auto text-center`}
       open={isOpen}
       onClose={() => setIsOpen(false)}
     >
