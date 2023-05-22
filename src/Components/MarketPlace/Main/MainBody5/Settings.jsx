@@ -51,7 +51,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -83,7 +83,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-2 rounded-lg w-full`}
               type="text"
@@ -93,7 +93,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-2 rounded-lg w-full`}
               type="text"
@@ -119,7 +119,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -129,7 +129,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -139,7 +139,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -154,7 +154,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -164,7 +164,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"
@@ -174,7 +174,7 @@ const Settings = () => {
             <input
               className={`${
                 darkLight.darkMode
-                  ? "bg-[#131129] border-transparent"
+                  ? "bg-[#131129] border-[#1D1932]"
                   : "bg-white border-slate-800"
               } border my-3 rounded-lg w-full`}
               type="text"

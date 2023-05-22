@@ -96,7 +96,7 @@ const MarketPBodyFinalll = () => {
         </div>
       </div>
       <div className="h-full sss:mr-5 phone:mb-6 sss:mb-0 grow mx-auto">
-        <h2 className="relative mx-auto -top-1 font-headerFont text-3xl mt-7 ggg:mt-0 text-left sss:text-center ">
+        <h2 className="relative mx-auto -top-1 font-headerFont text-3xl mt-7 ggg:mt-0 phone:text-left sss:text-center ">
           Statistics
         </h2>
         <div

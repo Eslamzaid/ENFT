@@ -25,7 +25,7 @@ const MarketPBody = () => {
             className=" absolute z-10 top-2 w-[53rem] h-[18rem] object-cover rounded-3xl"
             alt="Marketplace"
           />
-          <h1 className=" relative text-xl xlsm:text-2xl slg:text-4xl ml-8 mt-10 font-headerFont font-medium xlsm:font-semibold text-left">
+          <h1 className=" relative phone:text-xl xlsm:text-2xl slg:text-4xl ml-8 mt-10 font-headerFont phone:font-medium xlsm:font-semibold text-left">
             Discover, Collect, Sell
             <br /> and Create your NFT
           </h1>
@@ -53,7 +53,7 @@ const MarketPBody = () => {
               src={redNft}
               alt="fluid nft "
               className=" rounded-[23px] 
-                ml-4 w-10/12 h-5/12 xlsm:w-96 sss:w-48 sss:h-60 lsmd:w-60 object-cover"
+                phone:ml-4 phone:w-10/12 h-5/12 xlsm:w-96 sss:w-48 sss:h-60 lsmd:w-60 object-cover"
             />
           </div>
           <div className="w-10/12 xlsm:w-2/3 h-fit ml-7 imd:ml-9 phone:mt-7 mr-3 flex flex-col items-start">

@@ -47,7 +47,7 @@ const MarketPlace = () => {
       <div
         className={`${
           darkMode ? "dark" : "light"
-        } w-full h-fit  transition-all`}
+        } w-full  h-fit  transition-all`}
       >
         <div className=" overflow-hidden">
           <Suspense fallback={<LoadingComp />}>

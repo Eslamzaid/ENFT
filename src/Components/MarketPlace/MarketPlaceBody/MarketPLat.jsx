@@ -117,7 +117,7 @@ const MarketPLat = () => {
               alt="new user"
             />
             <div className=" ml-4 flex flex-col h-20 my-auto justify-center ">
-              <h3 className="text-sm sss:text-xl">user #842</h3>
+              <h3 className="phone:text-sm sss:text-xl">user #842</h3>
               <p className=" text-sm text-slate-200">43 items</p>
             </div>
             <button
@@ -146,7 +146,7 @@ const MarketPLat = () => {
               alt="new user"
             />
             <div className=" ml-4 flex flex-col h-20 my-auto justify-center ">
-              <h3 className="text-sm sss:text-xl">user #052</h3>
+              <h3 className="phone:text-sm sss:text-xl">user #052</h3>
               <p className=" text-sm text-slate-200">52 items</p>
             </div>
             <button
@@ -175,7 +175,7 @@ const MarketPLat = () => {
               alt="new user"
             />
             <div className=" ml-4 flex flex-col h-20 my-auto justify-center ">
-              <h3 className="text-sm sss:text-xl">user #666</h3>
+              <h3 className="phone:text-sm sss:text-xl">user #666</h3>
               <p className=" text-sm text-slate-200">19 items</p>
             </div>
             <button
@@ -204,7 +204,7 @@ const MarketPLat = () => {
               alt="new user"
             />
             <div className=" ml-4 flex flex-col h-20 my-auto justify-center ">
-              <h3 className="text-sm sss:text-xl">user #425</h3>
+              <h3 className="phone:text-sm sss:text-xl">user #425</h3>
               <p className=" text-sm text-slate-200">84 items</p>
             </div>
             <button
@@ -233,7 +233,7 @@ const MarketPLat = () => {
               alt="new user"
             />
             <div className=" ml-4 flex flex-col h-20 my-auto justify-center ">
-              <h3 className="text-sm sss:text-xl">user #836</h3>
+              <h3 className="phone:text-sm sss:text-xl">user #836</h3>
               <p className=" text-sm text-slate-200">91 items</p>
             </div>
             <button
