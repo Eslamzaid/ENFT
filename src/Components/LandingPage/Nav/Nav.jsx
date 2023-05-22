@@ -42,7 +42,7 @@ const Nav = () => {
   return (
     <header
       style={{ backgroundImage: `url('${Shades}')` }}
-      className=" bg-no-repeat  flex flex-col  items-center object-cover w-screen"
+      className=" bg-no-repeat flex flex-col items-center object-cover w-screen"
       aria-label="navigation bar"
     >
       {thePrepi.open ? <LoginPage /> : ""}

@@ -29,7 +29,7 @@ const Nbody = () => {
   const myCon = useContext(theMainCon);
 
   return (
-    <section className="baseM:mt-36  lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36  extsm:mt-44 w-[89.6%] text-white imd:flex imd:justify-between imd:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
+    <section className="baseM:mt-36 lg:mt-44 mt-44 sm:mt-48 max-w-[180rem] esm:mt-44 exsm:mt-36  extsm:mt-44 w-[89.6%] text-white imd:flex imd:justify-between imd:items-middle xl:px-3 2xl:px-16 xl:w-[75rem] 2xl:w-11/12">
       <button
         ref={myCon.homePage}
         className="absolute top-0"
@@ -42,12 +42,8 @@ const Nbody = () => {
           className=" absolute left-24 border-white "
         />
         <h1
-          className=" relative bg-left text-4xl exsm:text-6xl extsm:text-5xl  font-headerFont font-semibold
-                      mb-7 
-                      imd:text-[3rem]
-                      lg:text-[4rem] lg:text-left 
-                      xl:text-[4.8rem]
-                      2xl:text-[5.5rem] "
+          className=" relative bg-left phone:text-4xl esm:text-6xl eexx:text-5xl  font-headerFont phone:font-semibold
+                      mb-7 imd:text-[3rem] lg:text-[4rem] lg:text-left  xl:text-[4.8rem] 2xl:text-[5.5rem]  "
         >
           Discover
           <br />
@@ -62,7 +58,7 @@ const Nbody = () => {
         </h1>
         <p
           className=" font-poppi extsm:text-base text-slate-200 extsm:w-80 exsm:w-96 relative bottom-7 
-          sm:mt-5 text-xs extsm:px-1 "
+          sm:mt-5 phone:text-xs phone:px-2 extsm:px-1 "
         >
           The leading NFT Marketplace on Ethereum Home to the next generation of
           digital creators. Discover the best NFT collections.

@@ -55,38 +55,20 @@ const MarketPlace = () => {
             <SavedContext.Provider value={{ saved, setSaved }}>
               <main className="relative h-fit">
                 <Suspense fallback={"Loading..."}>
-                  {location.pathname == "/marketPlace" ||
-                  location.pathname == "/marketplace" ? (
-                    <MarketPBody />
-                  ) : (
-                    ""
-                  )}
-                  {location.pathname == "/marketplace/bids" ||
-                  location.pathname == "/marketPlace/bids" ? (
-                    <Bid />
-                  ) : (
-                    ""
-                  )}
-                  {location.pathname == "/marketplace/saved" ||
-                  location.pathname == "/marketPlace/saved" ? (
-                    <Saved />
-                  ) : (
-                    ""
-                  )}
-                  {location.pathname == "/marketplace/collection" ||
-                  location.pathname == "/marketPlace/collection" ? (
+                  {location.pathname == "/marketplace" ? <MarketPBody /> : ""}
+                  {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
+                  {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
+                  {location.pathname == "/marketplace/collection" ? (
                     <Collections />
                   ) : (
                     ""
                   )}
-                  {location.pathname == "/marketplace/profile" ||
-                  location.pathname == "/marketPlace/profile" ? (
+                  {location.pathname == "/marketplace/profile" ? (
                     <Profile />
                   ) : (
                     ""
                   )}
-                  {location.pathname == "/marketplace/settings" ||
-                  location.pathname == "/marketPlace/settings" ? (
+                  {location.pathname == "/marketplace/settings" ? (
                     <Settings />
                   ) : (
                     ""

@@ -33,7 +33,7 @@ const MainP2 = () => {
   const myCon = useContext(theMainCon);
   return (
     <section className=" w-10/12 text-white ">
-      <button className=" mb-72" ref={myCon.three} aria-label="ref"></button>
+      <button className=" phone:mb-56 xlsm:mb-72" ref={myCon.three} aria-label="ref"></button>
       <div className="text-center">
         <img
           src={BgCol}

@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <Sign />,
   },
   {
-    path: "marketPlace",
+    path: "marketplace",
     element: <MarketPlace />,
     children: [
       { path: "bids" },

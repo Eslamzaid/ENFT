@@ -15,7 +15,7 @@ import SettingIn from "../../../assets/Icons/settingsIn.webp";
 import BinIn from "../../../assets/Icons/bid-active.webp";
 import collectionIn from "../../../assets/Icons/CollectionIn.webp";
 import profileIn from "../../../assets/Icons/ProfileIn.webp";
-import sun from "../../../assets/Icons/mode.webp";
+import sun from "../../../assets/Icons/sunny.png";
 import moon from "../../../assets/Icons/halfMoon.webp";
 import notifications from "../../../assets/Icons/bell.webp";
 import notificationsLight from "../../../assets/Icons/bell.webp";
@@ -68,17 +68,17 @@ const Nav = (props) => {
                   darkLight.darkMode
                     ? "text-white bg-[#1D1932]"
                     : "bg-[#FFFFFF] text-black"
-                } phone:rounded-md rounded-md phone:ml-4 xlsm:ml-10 w-9/12  ssm:w-full`}
+                } phone:rounded-md rounded-md phone:ml-2 xlsm:ml-10 w-11/12  ssm:w-full`}
               />
               <div className="phone:hidden xlsm:block absolute left-14 top-1/2 transform -translate-y-1/2">
                 <img
                   src={darkLight.darkMode ? Search : searchLight}
                   alt="Icon"
-                  className="  w-6 h-16 object-contain"
+                  className="phone:hidden xlsm:block w-6 h-16 object-contain"
                 />
               </div>
             </div>
-            <div className=" flex items-center justify-between phone:w-11/12 xlsm:w-28 xlsm:mr-7 sss:mr-16">
+            <div className=" flex items-center justify-between phone:w-32 flex-wrap xlsm:w-28 xlsm:mr-7 sss:mr-16">
               <button
                 className={`${darkLight.darkMode ? "active" : ""}`}
                 onClick={() => darkLight.setDarkMode(!darkLight.darkMode)}
@@ -87,13 +87,13 @@ const Nav = (props) => {
                   <img
                     src={sun}
                     alt="darkMode"
-                    className="object-contain border-none ring-0 outline-none"
+                    className="object-contain border-none w-5 ring-0 outline-none"
                   />
                 ) : (
                   <img
                     src={moon}
                     alt="light mode"
-                    className="object-cover border-none ring-0 outline-none"
+                    className="object-cover border-none w-5 ring-0 outline-none"
                   />
                 )}
               </button>
@@ -113,6 +113,7 @@ const Nav = (props) => {
               />
             </div>
           </section>
+
           <section
             className={` fixed phone:bottom-0  xlsm:top-0 flex phone:flex-row xlsm:flex-col  items-center ${
               darkLight.darkMode ? "bg-[#1D1932]" : "bg-[#FFFFFF]"
@@ -187,11 +188,20 @@ const Nav = (props) => {
                 />
               </Link>
               <button
-                onClick={props.loggingOut}
                 className="phone:block xlsm:hidden mb-24 mt-auto"
+                onClick={() => setShown(() => !show)}
               >
                 <img src={logOut} alt="Sign out" />
               </button>
+              {show ? (
+                <SureNot
+                  logg2={props.loggingOut}
+                  theState={show}
+                  falseAgain={setShown}
+                />
+              ) : (
+                ""
+              )}
             </div>
             <button
               onClick={() => setShown(() => !show)}
@@ -199,7 +209,15 @@ const Nav = (props) => {
             >
               <img src={logOut} alt="Sign out" />
             </button>
-            {show ? <SureNot logg2={props.loggingOut} theState={show} falseAgain={setShown} /> : ""}
+            {show ? (
+              <SureNot
+                logg2={props.loggingOut}
+                theState={show}
+                falseAgain={setShown}
+              />
+            ) : (
+              ""
+            )}
           </section>
         </nav>
         <div className=" z-40">
