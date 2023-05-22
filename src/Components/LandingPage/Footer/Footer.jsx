@@ -15,7 +15,7 @@ const Footer = () => {
       className=" bg-cover  w-full"
     >
       <div className=" z-40 bg-[#0D1135] bg-no-repeat bg-cover  mt-96 bg-top w-full text-white flex flex-col items-center justify-center py-5">
-        <section className=" relative z-50 transition-all child:transition-all border-b border-[#676A81] w-full  msm:w-10/12 pb-20  ">
+        <section className="max-w-[180rem] relative z-50 transition-all child:transition-all border-b border-[#676A81] w-full  msm:w-10/12 pb-20  ">
           <h2 className=" font-headerFont text-2xl exsm:text-4xl text-center font-semibold mt-20">
             Get More Updates
           </h2>
@@ -24,7 +24,7 @@ const Footer = () => {
             newest feature releases, NFT drops, and tips and tricks{" "}
           </p>
         </section>
-        <section className=" relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mimd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
+        <section className="max-w-[180rem] relative z-50 flex h-fit flex-wrap gap-y-10 px-5 mimd:px-0 gap-x-6 mt-28 w-10/12 justify-between">
           <div className=" flex-none">
             <img
               src={logoText}
@@ -108,7 +108,7 @@ const Footer = () => {
             </ul>
           </div>
         </section>
-        <section className=" relative z-50 flex opacity-80 mt-10">
+        <section className="max-w-[180rem] relative z-50 flex opacity-80 mt-10">
           <img
             className=" w-3 relative bottom-[0.65rem] exsm:w-fit object-contain"
             src={copyWrite}

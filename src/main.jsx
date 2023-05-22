@@ -11,7 +11,7 @@ import ErrorPage from "./ErrorPage";
 const router = createBrowserRouter([
   {
     path: "*",
-    element: <ErrorPage/>,
+    element: <ErrorPage />,
   },
   {
     path: "/",
@@ -26,8 +26,15 @@ const router = createBrowserRouter([
     element: <Sign />,
   },
   {
-    path: "marketPlace",
+    path: "marketplace",
     element: <MarketPlace />,
+    children: [
+      { path: "bids" },
+      { path: "saved" },
+      { path: "collection" },
+      { path: "profile" },
+      { path: "settings" },
+    ],
   },
 ]);
 

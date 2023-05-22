@@ -29,7 +29,7 @@ const LandingP = () => {
   };
 
   return (
-    <div className=" bg-no-repeat bg-contain w-screen h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
+    <div className="scrollbar bg-no-repeat bg-contain w-screen h-full flex flex-col justify-start gap-x-10 relative items-center bg-[#141845] overflow-x-hidden">
       <theMainCon.Provider
         value={{
           homePage: home,

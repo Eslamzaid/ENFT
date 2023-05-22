@@ -104,4 +104,4 @@ const moreData = [
     Collection: "Cowboy Collection",
   },
 ];
-export default moreData
+export default moreData;

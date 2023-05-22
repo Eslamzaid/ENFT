@@ -1,12 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, createContext } from "react";
+import LoadingComp from "../../loading/LoadingComp";
+import MarketPBody from "./MarketPlaceBody/MarketPBody";
+
+const Bid = lazy(() => import("./Main/MainBody1/Bid"));
+const Saved = lazy(() => import("./Main/MainBody2/Saved"));
+const Collections = lazy(() => import("./Main/MainBody3/Collection"));
+const Profile = lazy(() => import("./Main/MainBody4/Profile"));
+const Settings = lazy(() => import("./Main/MainBody5/Settings"));
+const Nav = lazy(() => import("./NavSearch/Nav"));
+
+export const DarkLightContext = createContext();
+export const SavedContext = createContext();
 
 const MarketPlace = () => {
+  const [darkMode, setDarkMode] = useState(true);
+  const [saved, setSaved] = useState([]);
   const navigate2 = useNavigate();
-
+  const location = useLocation();
   const auth = getAuth();
-  const user = auth.currentUser;
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
@@ -29,19 +43,43 @@ const MarketPlace = () => {
     }
   };
   return (
-    <div className=" w-screen text-center h-screen bg-[#141845] flex justify-center items-center text-white">
-      <div>
-        <h1 className="text-xl font-semibold lg:text-3xl">
-          The Marketplace is currently{" "}
-          <span className=" text-red-400 font-bold"> under construction </span>
-          and is expected to be completed as soon as possible.
-        </h1>
-        <button onClick={handleLogout} className=" mt-10 border p-4 rounded-sm">
-          {" "}
-          Log Out
-        </button>
+    <DarkLightContext.Provider value={{ darkMode, setDarkMode }}>
+      <div
+        className={`${
+          darkMode ? "dark" : "light"
+        } w-full  h-fit  transition-all`}
+      >
+        <div className=" overflow-hidden">
+          <Suspense fallback={<LoadingComp />}>
+            <Nav loggingOut={handleLogout} />
+            <SavedContext.Provider value={{ saved, setSaved }}>
+              <main className="relative h-fit">
+                <Suspense fallback={"Loading..."}>
+                  {location.pathname == "/marketplace" ? <MarketPBody /> : ""}
+                  {location.pathname == "/marketplace/bids" ? <Bid /> : ""}
+                  {location.pathname == "/marketplace/saved" ? <Saved /> : ""}
+                  {location.pathname == "/marketplace/collection" ? (
+                    <Collections />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/profile" ? (
+                    <Profile />
+                  ) : (
+                    ""
+                  )}
+                  {location.pathname == "/marketplace/settings" ? (
+                    <Settings />
+                  ) : (
+                    ""
+                  )}
+                </Suspense>
+              </main>
+            </SavedContext.Provider>
+          </Suspense>
+        </div>
       </div>
-    </div>
+    </DarkLightContext.Provider>
   );
 };
 

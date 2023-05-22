@@ -29,3 +29,14 @@ select:-webkit-autofill:focus {
 [type=email] [type=password] {
   background-color: #253341;
 }
+
+
+
+
+.dark {
+  background-color: #131129;
+}
+
+.light {
+  background-color: #F2F2F2;
+}

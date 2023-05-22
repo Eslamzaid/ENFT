@@ -30,7 +30,7 @@ const SignUp = () => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((useCredential) => {
-        navigate("/marketPlace");
+        navigate("/marketplace");
       })
       .catch((error) => {
         console.log("Login failed");
@@ -71,7 +71,7 @@ const SignUp = () => {
     signInWithPopup(auth, provider)
       .then((result) => {
         const user = result.user;
-        navigate("/marketPlace");
+        navigate("/marketplace");
       })
       .catch((error) => {
         console.log(error);
@@ -82,7 +82,7 @@ const SignUp = () => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       if (currentUser) {
-        navigate("/marketPlace");
+        navigate("/marketplace");
       }
     });
     return () => unsubscribe();
