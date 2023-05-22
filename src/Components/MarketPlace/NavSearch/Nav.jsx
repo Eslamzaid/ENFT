@@ -70,13 +70,6 @@ const Nav = (props) => {
                     : "bg-[#FFFFFF] text-black"
                 } phone:rounded-md rounded-md phone:ml-2 xlsm:ml-10 w-11/12  ssm:w-full`}
               />
-              <div className="phone:hidden xlsm:block absolute left-14 top-1/2 transform -translate-y-1/2">
-                <img
-                  src={darkLight.darkMode ? Search : searchLight}
-                  alt="Icon"
-                  className="phone:hidden xlsm:block w-6 h-16 object-contain"
-                />
-              </div>
             </div>
             <div className=" flex items-center justify-between phone:w-32 flex-wrap xlsm:w-28 xlsm:mr-7 sss:mr-16">
               <button
