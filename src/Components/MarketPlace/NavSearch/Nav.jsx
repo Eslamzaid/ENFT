@@ -22,10 +22,12 @@ import notificationsLight from "../../../assets/Icons/bell.webp";
 import logOut from "../../../assets/Icons/sign-out.webp";
 import Search from "../../../assets/Icons/Search.webp";
 import searchLight from "../../../assets/Icons/searchLight.webp";
+import SureNot from "./SureNot";
 
 const Nav = (props) => {
   const darkLight = useContext(DarkLightContext);
   let [responsive, setResponse] = useState(false);
+  const [show, setShown] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -192,11 +194,12 @@ const Nav = (props) => {
               </button>
             </div>
             <button
-              onClick={props.loggingOut}
+              onClick={() => setShown(() => !show)}
               className="xlsm:block phone:hidden mb-24 mt-auto"
             >
               <img src={logOut} alt="Sign out" />
             </button>
+            {show ? <SureNot logg2={props.loggingOut} theState={show} falseAgain={setShown} /> : ""}
           </section>
         </nav>
         <div className=" z-40">
