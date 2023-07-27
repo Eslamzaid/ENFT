@@ -6,7 +6,7 @@ import App from "./App";
 import MarketPlace from "./Components/MarketPlace/MarketP";
 import SignUp from "./LoginSign/SignUp";
 import Sign from "./LoginSign/Sign";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./Components/ErrorPage";
 
 const router = createBrowserRouter([
   {
